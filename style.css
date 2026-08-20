@@ -115,3 +115,71 @@ site-header,
     font-weight: 600 !important;
     margin-left: 8px !important;
 }
+
+/* Press Items Marquee Scrolling Banner */
+.press-parent-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 40px auto !important;
+    padding: 0 !important;
+}
+
+.press-container {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 40px 0 !important;
+    overflow: hidden !important;
+}
+
+.press-container p {
+    color: #000000 !important;
+    padding-left: 40px !important;
+    margin-bottom: 24px !important;
+    font-weight: 600 !important;
+}
+
+.press-img-container {
+    overflow: hidden !important;
+    background: #ffffff !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.press-img-container:hover .inline-images {
+    animation-play-state: paused !important;
+}
+
+.inline-images {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    animation: bl-press-slide 25s linear infinite !important;
+}
+
+.inline-images a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 35px !important;
+    flex-shrink: 0 !important;
+}
+
+.inline-images img {
+    height: 36px !important;
+    width: auto !important;
+    max-width: 160px !important;
+    object-fit: contain !important;
+    filter: none !important;
+}
+
+@keyframes bl-press-slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

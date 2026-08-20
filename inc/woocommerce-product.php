@@ -1,6 +1,6 @@
 <?php
 /**
- * WooCommerce & Custom Product Features with Pure N/A Fallback for New Products
+ * WooCommerce & Custom Product Features with Pure N/A Fallback and Solid CRUD Saving
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -152,15 +152,6 @@ function bl_register_product_metaboxes( $post_type = '', $post = null ) {
         'bl_render_product_visual_metabox',
         'product',
         'normal',
-        'high'
-    );
-
-    add_meta_box(
-        'bl_product_quick_specs',
-        __( '⚙️ Thông số phần cứng & Giá bán (Specs)', 'brilliant' ),
-        'bl_render_product_specs_metabox',
-        'product',
-        'normal',
         'default'
     );
 }
@@ -259,10 +250,8 @@ function bl_get_default_product_layout_content() {
 </div>';
 }
 
-// 5. Render ONE Unified Visual Editor
+// 6. Render ONE Unified Visual Editor
 function bl_render_product_visual_metabox( $post ) {
-    wp_nonce_field( 'bl_save_product_meta', 'bl_product_meta_nonce' );
-
     $body_content = get_post_meta( $post->ID, '_bl_product_body_content', true );
     if ( empty( $body_content ) && $post->post_name === 'halo' ) {
         $body_content = bl_get_default_product_layout_content();
@@ -274,7 +263,7 @@ function bl_render_product_visual_metabox( $post ) {
         'bl_product_body_content',
         array(
             'textarea_name' => '_bl_product_body_content',
-            'textarea_rows' => 26,
+            'textarea_rows' => 22,
             'media_buttons' => true,
             'teeny'         => false,
             'quicktags'     => true,
@@ -284,172 +273,32 @@ function bl_render_product_visual_metabox( $post ) {
     echo '</div>';
 }
 
-// 6. Render Quick Specs
-function bl_render_product_specs_metabox( $post ) {
-    $price          = get_post_meta( $post->ID, '_regular_price', true ) ?: get_post_meta( $post->ID, '_price', true );
-    $weight         = get_post_meta( $post->ID, '_halo_weight', true );
-    $ipd            = get_post_meta( $post->ID, '_halo_ipd', true );
-    $diopter        = get_post_meta( $post->ID, '_halo_diopter', true );
-    $display_type   = get_post_meta( $post->ID, '_halo_display_type', true );
-    $audio          = get_post_meta( $post->ID, '_halo_audio', true );
-    $mic            = get_post_meta( $post->ID, '_halo_mic', true );
-    $processor      = get_post_meta( $post->ID, '_halo_processor', true );
-    $model_3d_url   = get_post_meta( $post->ID, '_halo_3d_model_url', true );
-    $shipping_status = get_post_meta( $post->ID, '_halo_shipping_status', true );
-    ?>
-    <style>
-        .bl-specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-        .bl-spec-item label { display: block; font-weight: 600; margin-bottom: 4px; font-size: 12px; color: #1d2327; }
-        .bl-spec-item input { width: 100%; border: 1px solid #8c8f94; border-radius: 3px; padding: 6px 8px; }
-    </style>
-    <div class="bl-specs-grid">
-        <div class="bl-spec-item">
-            <label>💵 Giá bán ($ USD):</label>
-            <input type="text" name="_regular_price" value="<?php echo esc_attr( $price ); ?>" placeholder="299 (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>⚖️ Trọng lượng:</label>
-            <input type="text" name="_halo_weight" value="<?php echo esc_attr( $weight ); ?>" placeholder="Ví dụ: 40g (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>📏 Khoảng cách IPD:</label>
-            <input type="text" name="_halo_ipd" value="<?php echo esc_attr( $ipd ); ?>" placeholder="Ví dụ: 58 - 72mm (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>👓 Điều chỉnh Diopter:</label>
-            <input type="text" name="_halo_diopter" value="<?php echo esc_attr( $diopter ); ?>" placeholder="+2 đến -6 diopters (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>🖥️ Màn hình:</label>
-            <input type="text" name="_halo_display_type" value="<?php echo esc_attr( $display_type ); ?>" placeholder="Màn hình màu (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>🔊 Âm thanh:</label>
-            <input type="text" name="_halo_audio" value="<?php echo esc_attr( $audio ); ?>" placeholder="Loa truyền xương kép (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>🎙️ Microphone:</label>
-            <input type="text" name="_halo_mic" value="<?php echo esc_attr( $mic ); ?>" placeholder="Micro kép (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item">
-            <label>⚡ Chip AI:</label>
-            <input type="text" name="_halo_processor" value="<?php echo esc_attr( $processor ); ?>" placeholder="Bộ xử lý AI (Bỏ trống = N/A)" />
-        </div>
-        <div class="bl-spec-item" style="grid-column: 1 / -1;">
-            <label>🧊 File 3D Model (.glb):</label>
-            <input type="text" name="_halo_3d_model_url" value="<?php echo esc_attr( $model_3d_url ); ?>" placeholder="Đường dẫn file 3D .glb" />
-        </div>
-        <div class="bl-spec-item" style="grid-column: 1 / -1;">
-            <label>🚚 Thông báo giao hàng:</label>
-            <input type="text" name="_halo_shipping_status" value="<?php echo esc_attr( $shipping_status ); ?>" placeholder="Thông báo vận chuyển (Bỏ trống = N/A)" />
-        </div>
-    </div>
-    <?php
-}
-
 // 7. Save Product Meta Data
-function bl_save_product_metaboxes( $post_id ) {
-    if ( ! isset( $_POST['bl_product_meta_nonce'] ) || ! wp_verify_nonce( $_POST['bl_product_meta_nonce'], 'bl_save_product_meta' ) ) {
+function bl_save_product_metaboxes( $post_id, $post = null ) {
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
         return;
     }
 
-    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-        return;
+    if ( $parent_id = wp_is_post_revision( $post_id ) ) {
+        $post_id = $parent_id;
     }
 
     if ( ! current_user_can( 'edit_post', $post_id ) ) {
         return;
     }
 
-    $text_fields = array(
-        '_regular_price',
-        '_price',
-        '_halo_weight',
-        '_halo_ipd',
-        '_halo_diopter',
-        '_halo_display_type',
-        '_halo_audio',
-        '_halo_mic',
-        '_halo_processor',
-        '_halo_3d_model_url',
-        '_halo_shipping_status',
-    );
-
-    foreach ( $text_fields as $tf ) {
-        if ( isset( $_POST[ $tf ] ) ) {
-            $val = sanitize_text_field( $_POST[ $tf ] );
-            update_post_meta( $post_id, $tf, $val );
-            if ( $tf === '_regular_price' ) {
-                update_post_meta( $post_id, '_price', $val );
-            }
-        }
+    if ( get_post_type( $post_id ) !== 'product' ) {
+        return;
     }
 
     if ( isset( $_POST['_bl_product_body_content'] ) ) {
-        update_post_meta( $post_id, '_bl_product_body_content', wp_kses_post( $_POST['_bl_product_body_content'] ) );
+        update_post_meta( $post_id, '_bl_product_body_content', wp_kses_post( wp_unslash( $_POST['_bl_product_body_content'] ) ) );
     }
-}
-add_action( 'save_post_product', 'bl_save_product_metaboxes' );
-add_action( 'save_post', 'bl_save_product_metaboxes' );
 
-// 8. Render Dynamic Products Dropdown for "Đặt hàng ngay"
-function bl_render_products_dropdown( $extra_classes = '' ) {
-    $all_products = get_posts( array(
-        'post_type'      => 'product',
-        'post_status'    => 'publish',
-        'posts_per_page' => -1,
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-    ) );
-    ?>
-    <div class="bl-product-dropdown-wrap tw-relative <?php echo esc_attr( $extra_classes ); ?>">
-        <a class="tw-z-[10] tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-pink tw-px-4 tw-py-2 tw-text-xs tw-font-bold tw-uppercase tw-text-white hover:tw-bg-pink hover:tw-text-white hover:tw-opacity-100 md:tw-px-8 md:tw-py-4 md:tw-text-sm tw-flex tw-gap-2 bl-dropdown-btn" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" data-buy-button="ĐẶT HÀNG ngay">
-            <span>ĐẶT HÀNG ngay</span>
-            <svg style="width: 10px; height: 10px; transition: transform 0.2s;" class="bl-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </a>
-
-        <!-- Dropdown Menu -->
-        <div class="bl-product-dropdown-menu">
-            <div class="bl-dropdown-header">
-                <a href="<?php echo esc_url( home_url( '/products/' ) ); ?>" class="bl-dropdown-all-link">
-                    <span>🛍️ Xem tất cả sản phẩm</span>
-                    <span style="font-size: 16px;">&rarr;</span>
-                </a>
-            </div>
-            <div class="bl-dropdown-list">
-                <?php if ( ! empty( $all_products ) ) : ?>
-                    <?php foreach ( $all_products as $p ) : 
-                        $p_price = get_post_meta( $p->ID, '_regular_price', true ) ?: get_post_meta( $p->ID, '_price', true );
-                        $p_price_display = ( $p_price !== '' && $p_price !== false ) ? '$' . esc_html( $p_price ) . '.00 USD' : 'N/A';
-                        $p_thumb = get_the_post_thumbnail_url( $p->ID, 'thumbnail' );
-                        $p_url = get_permalink( $p->ID );
-                    ?>
-                        <a href="<?php echo esc_url( $p_url ); ?>" class="bl-dropdown-item">
-                            <?php if ( $p_thumb ) : ?>
-                                <img src="<?php echo esc_url( $p_thumb ); ?>" alt="<?php echo esc_attr( $p->post_title ); ?>" class="bl-item-thumb" />
-                            <?php else : ?>
-                                <div class="bl-item-thumb-placeholder">👓</div>
-                            <?php endif; ?>
-                            <div class="bl-item-info">
-                                <span class="bl-item-title"><?php echo esc_html( $p->post_title ); ?></span>
-                                <span class="bl-item-price"><?php echo esc_html( $p_price_display ); ?></span>
-                            </div>
-                            <span class="bl-item-chevron">&rsaquo;</span>
-                        </a>
-                    <?php endforeach; ?>
-                <?php else : ?>
-                    <a href="<?php echo esc_url( home_url( '/product/halo/' ) ); ?>" class="bl-dropdown-item">
-                        <div class="bl-item-info">
-                            <span class="bl-item-title">Halo – Kính thông minh AI</span>
-                            <span class="bl-item-price">$299.00 USD</span>
-                        </div>
-                    </a>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
-    <?php
+    clean_post_cache( $post_id );
 }
+add_action( 'save_post_product', 'bl_save_product_metaboxes', 10, 2 );
+add_action( 'save_post', 'bl_save_product_metaboxes', 10, 2 );
 
 // 8. Render Header Buy Button with Compact Hover Submenu
 function bl_render_header_buy_button( $is_mobile = false ) {
@@ -478,7 +327,12 @@ function bl_render_header_buy_button( $is_mobile = false ) {
                 <?php if ( ! empty( $all_products ) ) : ?>
                     <?php foreach ( $all_products as $p ) : 
                         $p_price = get_post_meta( $p->ID, '_regular_price', true ) ?: get_post_meta( $p->ID, '_price', true );
-                        $p_price_txt = ( $p_price !== '' && $p_price !== false ) ? '$' . esc_html( $p_price ) : '';
+                        if ( $p_price !== '' && $p_price !== false && $p_price !== 'N/A' ) {
+                            $num_p = floatval( preg_replace( '/[^0-9.]/', '', (string) $p_price ) );
+                            $p_price_txt = number_format( $num_p, 0, ',', '.' ) . ' ₫';
+                        } else {
+                            $p_price_txt = '';
+                        }
                         $p_url = get_permalink( $p->ID );
                     ?>
                         <a href="<?php echo esc_url( $p_url ); ?>" class="bl-sub-item">
@@ -491,7 +345,7 @@ function bl_render_header_buy_button( $is_mobile = false ) {
                 <?php else : ?>
                     <a href="<?php echo esc_url( home_url( '/product/halo/' ) ); ?>" class="bl-sub-item">
                         <span class="bl-sub-title">Halo</span>
-                        <span class="bl-sub-price">$299</span>
+                        <span class="bl-sub-price">8.867.000 ₫</span>
                     </a>
                 <?php endif; ?>
             </div>

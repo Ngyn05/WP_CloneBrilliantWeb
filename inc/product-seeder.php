@@ -8,6 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function bl_seed_halo_product() {
+    if ( get_option( 'bl_halo_product_initial_seeded_done' ) ) {
+        return;
+    }
+
     $theme_dir = get_template_directory();
 
     // 1. Create Product Category: Kính thông minh AI (smart-glasses)
@@ -165,6 +169,7 @@ function bl_seed_halo_product() {
                 update_post_meta( $product_id, '_product_image_gallery', implode( ',', $gallery_ids ) );
             }
 
+            update_option( 'bl_halo_product_initial_seeded_done', 1 );
             update_option( 'bl_product_comprehensive_seeded_v4', 1 );
         }
     }
