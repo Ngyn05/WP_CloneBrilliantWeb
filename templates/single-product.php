@@ -1087,7 +1087,7 @@ first.parentNode.insertBefore(script, first);
             <span>TƯ VẤN NGAY</span>
           </a>
 
-          <button type="submit" name="add" class="bl-cta-btn bl-cta-btn--buy">
+          <button type="button" class="bl-cta-btn bl-cta-btn--buy" onclick="blOpenQuickOrderModal()">
             <span data-product-submit-text="">MUA NGAY</span>
           </button>
         </div>
@@ -1095,9 +1095,6 @@ first.parentNode.insertBefore(script, first);
         <!-- Row 2: Khung Tư Vấn Qua SĐT -->
         <div class="bl-consult-box">
           <div class="bl-consult-box__header">
-            <svg class="bl-consult-box__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
             <p class="bl-consult-box__title">
               Hãy để lại <strong>số điện thoại</strong>, chúng tôi sẽ gọi ngay cho bạn <strong>tư vấn miễn phí!</strong>
             </p>
@@ -1318,13 +1315,699 @@ first.parentNode.insertBefore(script, first);
   color: #ef9a9a;
 }
 
-@keyframes blFadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Quick Order Modal (Dark & White Minimalist Theme) */
+.bl-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.bl-modal-overlay.bl-modal--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bl-modal-container {
+  background: #121212;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px 24px 28px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+.bl-modal-overlay.bl-modal--active .bl-modal-container {
+  transform: translateY(0) scale(1);
+}
+
+.bl-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  background: #222222;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  color: #aaaaaa;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.bl-modal-close:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.bl-modal-header {
+  text-align: center;
+  margin-bottom: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.bl-modal-title {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.bl-modal-subtitle {
+  font-size: 13px;
+  color: #888888;
+  margin: 0;
+}
+
+/* Order Summary */
+.bl-order-summary {
+  background: #181818;
+  border: 1px solid #282828;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.bl-order-summary__prod {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #282828;
+}
+
+.bl-order-summary__img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #222222;
+  flex-shrink: 0;
+  border: 1px solid #333333;
+}
+
+.bl-order-summary__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.bl-order-summary__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 4px;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bl-order-summary__unit-price {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.bl-order-summary__unit-price span {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.bl-order-summary__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.bl-order-qty-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bl-order-qty-label {
+  font-size: 13px;
+  color: #888888;
+}
+
+.bl-qty-control {
+  display: flex;
+  align-items: center;
+  background: #0d0d0d;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bl-qty-btn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.bl-qty-btn:hover {
+  background: #282828;
+}
+
+.bl-qty-control input {
+  width: 36px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  -moz-appearance: textfield;
+}
+
+.bl-qty-control input::-webkit-outer-spin-button,
+.bl-qty-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bl-order-total-wrap {
+  text-align: right;
+}
+
+.bl-order-total-label {
+  font-size: 12px;
+  color: #888888;
+  display: block;
+}
+
+.bl-order-total-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Form inputs */
+.bl-form-group {
+  margin-bottom: 12px;
+}
+
+.bl-form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.bl-form-row .bl-form-group {
+  flex: 1;
+  min-width: 0;
+}
+
+.bl-form-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #bbbbbb;
+  margin-bottom: 5px;
+}
+
+.bl-required {
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.bl-form-input,
+.bl-form-textarea {
+  width: 100%;
+  background: #181818;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #ffffff;
+  font-size: 13.5px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease;
+  font-family: inherit;
+}
+
+.bl-form-input::placeholder,
+.bl-form-textarea::placeholder {
+  color: #666666;
+  font-size: 13px;
+}
+
+.bl-form-input:focus,
+.bl-form-textarea:focus {
+  border-color: #ffffff;
+}
+
+.bl-form-textarea {
+  resize: vertical;
+  min-height: 52px;
+}
+
+/* Payment Method COD */
+.bl-payment-method {
+  background: #181818;
+  border: 1px solid #282828;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 12px 0 16px;
+}
+
+.bl-payment-method__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bl-payment-method__item input[type="radio"] {
+  accent-color: #ffffff;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.bl-payment-method__item label {
+  cursor: pointer;
+}
+
+.bl-payment-method__item strong {
+  display: block;
+  font-size: 13.5px;
+  color: #ffffff;
+}
+
+.bl-payment-method__item span {
+  display: block;
+  font-size: 12px;
+  color: #888888;
+  margin-top: 2px;
+}
+
+/* Submit button */
+.bl-order-submit-btn {
+  width: 100%;
+  height: 46px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.bl-order-submit-btn:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+}
+
+.bl-order-submit-btn:active {
+  transform: translateY(0);
+}
+
+.bl-order-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.bl-form-error {
+  background: #2a1515;
+  border: 1px solid #5a2020;
+  color: #ff8a80;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Success View */
+.bl-order-success {
+  text-align: center;
+  padding: 16px 8px;
+}
+
+.bl-success-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.bl-success-desc {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin: 0 0 16px;
+}
+
+.bl-success-card {
+  background: #181818;
+  border: 1px solid #282828;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #bbbbbb;
+}
+
+.bl-success-card strong {
+  color: #ffffff;
+}
+
+.bl-success-note {
+  font-size: 13px;
+  color: #888888;
+  margin: 0 0 20px;
+  line-height: 1.4;
+}
+
+.bl-order-close-btn {
+  padding: 10px 32px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+  font-size: 13.5px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
 }
 </style>
 
+<!-- Quick Order Modal (Cửa sổ Đặt Hàng Nhanh) -->
+<div id="blQuickOrderModal" class="bl-modal-overlay" onclick="blCloseQuickOrderModalOnBackdrop(event)">
+  <div class="bl-modal-container" role="dialog" aria-modal="true" aria-labelledby="blModalTitle">
+    <button type="button" class="bl-modal-close" onclick="blCloseQuickOrderModal()" aria-label="Đóng">&times;</button>
+    
+    <!-- Form đặt hàng -->
+    <div id="blOrderFormView">
+      <div class="bl-modal-header">
+        <h3 id="blModalTitle" class="bl-modal-title">Brilliant Việt Nam</h3>
+        <p class="bl-modal-subtitle">Đặt hàng nhanh - Giao tận nơi & Thanh toán khi nhận hàng (COD)</p>
+      </div>
+
+      <!-- Tóm tắt đơn hàng -->
+      <div class="bl-order-summary">
+        <div class="bl-order-summary__prod">
+          <?php if ( ! empty( $product_thumb ) ) : ?>
+            <img src="<?php echo esc_url( $product_thumb ); ?>" alt="<?php echo esc_attr( $product_title ); ?>" class="bl-order-summary__img" />
+          <?php endif; ?>
+          <div class="bl-order-summary__info">
+            <h4 class="bl-order-summary__name"><?php echo esc_html( $product_title ); ?></h4>
+            <div class="bl-order-summary__unit-price">Đơn giá: <span><?php echo esc_html( $product_price ); ?></span></div>
+          </div>
+        </div>
+
+        <div class="bl-order-summary__row">
+          <div class="bl-order-qty-wrap">
+            <span class="bl-order-qty-label">Số lượng:</span>
+            <div class="bl-qty-control">
+              <button type="button" class="bl-qty-btn" onclick="blChangeOrderQty(-1)">-</button>
+              <input type="number" id="blOrderQty" name="order_qty" value="1" min="1" max="99" onchange="blUpdateOrderTotal()" />
+              <button type="button" class="bl-qty-btn" onclick="blChangeOrderQty(1)">+</button>
+            </div>
+          </div>
+          <div class="bl-order-total-wrap">
+            <span class="bl-order-total-label">Tổng thanh toán:</span>
+            <span id="blOrderTotalDisplay" class="bl-order-total-val"><?php echo esc_html( $product_price ); ?></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form điền thông tin -->
+      <form id="blQuickOrderForm" onsubmit="blSubmitQuickOrder(event)">
+        <div class="bl-form-group">
+          <label class="bl-form-label">Số điện thoại <span class="bl-required">*</span></label>
+          <input 
+            type="tel" 
+            id="blOrderPhone" 
+            name="phone" 
+            class="bl-form-input" 
+            placeholder="Nhập số điện thoại nhận hàng (bắt buộc)..." 
+            required 
+            autocomplete="tel"
+          />
+        </div>
+
+        <div class="bl-form-row">
+          <div class="bl-form-group">
+            <label class="bl-form-label">Địa chỉ email</label>
+            <input 
+              type="email" 
+              id="blOrderEmail" 
+              name="email" 
+              class="bl-form-input" 
+              placeholder="Nhập email nhận thông báo..." 
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="bl-form-group">
+            <label class="bl-form-label">Họ và tên</label>
+            <input 
+              type="text" 
+              id="blOrderName" 
+              name="name" 
+              class="bl-form-input" 
+              placeholder="Nhập họ và tên..." 
+              autocomplete="name"
+            />
+          </div>
+        </div>
+
+        <div class="bl-form-group">
+          <label class="bl-form-label">Địa chỉ nhận hàng</label>
+          <input 
+            type="text" 
+            id="blOrderAddress" 
+            name="address" 
+            class="bl-form-input" 
+            placeholder="Số nhà, tên đường, phường/xã, quận/huyện, tỉnh/thành..." 
+            autocomplete="street-address"
+          />
+        </div>
+
+        <div class="bl-form-group">
+          <label class="bl-form-label">Ghi chú đơn hàng</label>
+          <textarea 
+            id="blOrderNote" 
+            name="note" 
+            class="bl-form-textarea" 
+            rows="2" 
+            placeholder="Ghi chú cho người giao hàng (ví dụ: giao giờ hành chính)..."
+          ></textarea>
+        </div>
+
+        <!-- Phương thức thanh toán COD -->
+        <div class="bl-payment-method">
+          <div class="bl-payment-method__item">
+            <input type="radio" id="blPaymentCod" name="payment_method" value="COD" checked />
+            <label for="blPaymentCod">
+              <strong>Thanh toán khi nhận hàng (COD)</strong>
+              <span>Kiểm tra hàng trước khi thanh toán tiền cho nhân viên giao hàng</span>
+            </label>
+          </div>
+        </div>
+
+        <div id="blOrderErrorMsg" class="bl-form-error" style="display: none;"></div>
+
+        <button type="submit" id="blOrderSubmitBtn" class="bl-order-submit-btn">
+          HOÀN TẤT ĐẶT HÀNG
+        </button>
+      </form>
+    </div>
+
+    <!-- Màn hình thành công -->
+    <div id="blOrderSuccessView" style="display: none;" class="bl-order-success">
+      <h3 class="bl-success-title">Đặt Hàng Thành Công!</h3>
+      <p class="bl-success-desc">Cảm ơn bạn đã lựa chọn <strong>Brilliant Việt Nam</strong>.</p>
+      <div class="bl-success-card">
+        <p>Mã đơn hàng: <strong id="blSuccessOrderId"></strong></p>
+        <p>Số điện thoại: <strong id="blSuccessPhone"></strong></p>
+        <p>Tổng thanh toán: <strong id="blSuccessTotal"></strong> (Thanh toán khi nhận hàng)</p>
+      </div>
+      <p class="bl-success-note">Nhân viên Brilliant Việt Nam sẽ liên hệ với bạn qua số điện thoại trên để xác nhận đơn hàng.</p>
+      <button type="button" class="bl-order-close-btn" onclick="blCloseQuickOrderModal()">Đóng cửa sổ</button>
+    </div>
+
+  </div>
+</div>
+
 <script>
+var blProductUnitPrice = <?php echo json_encode( isset( $num_price ) ? $num_price : 0 ); ?>;
+var blProductFormatted = <?php echo json_encode( $product_price ); ?>;
+var blProductTitle = <?php echo json_encode( $product_title ); ?>;
+var blProductId = <?php echo json_encode( $product_id ); ?>;
+
+function blOpenQuickOrderModal() {
+  var modal = document.getElementById('blQuickOrderModal');
+  if (!modal) return;
+  document.getElementById('blOrderFormView').style.display = 'block';
+  document.getElementById('blOrderSuccessView').style.display = 'none';
+  document.getElementById('blOrderErrorMsg').style.display = 'none';
+  modal.classList.add('bl-modal--active');
+  document.body.style.overflow = 'hidden';
+  setTimeout(function() {
+    var phoneInput = document.getElementById('blOrderPhone');
+    if (phoneInput) phoneInput.focus();
+  }, 100);
+}
+
+function blCloseQuickOrderModal() {
+  var modal = document.getElementById('blQuickOrderModal');
+  if (!modal) return;
+  modal.classList.remove('bl-modal--active');
+  document.body.style.overflow = '';
+}
+
+function blCloseQuickOrderModalOnBackdrop(e) {
+  if (e.target && e.target.id === 'blQuickOrderModal') {
+    blCloseQuickOrderModal();
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    blCloseQuickOrderModal();
+  }
+});
+
+function blChangeOrderQty(delta) {
+  var input = document.getElementById('blOrderQty');
+  if (!input) return;
+  var current = parseInt(input.value, 10) || 1;
+  var next = current + delta;
+  if (next < 1) next = 1;
+  if (next > 99) next = 99;
+  input.value = next;
+  blUpdateOrderTotal();
+}
+
+function blUpdateOrderTotal() {
+  var input = document.getElementById('blOrderQty');
+  var display = document.getElementById('blOrderTotalDisplay');
+  if (!input || !display) return;
+  var qty = parseInt(input.value, 10) || 1;
+  if (qty < 1) { qty = 1; input.value = 1; }
+  if (blProductUnitPrice > 0) {
+    var total = blProductUnitPrice * qty;
+    display.textContent = total.toLocaleString('vi-VN') + ' ₫';
+  } else {
+    display.textContent = blProductFormatted;
+  }
+}
+
+function blSubmitQuickOrder(e) {
+  e.preventDefault();
+  var phone = document.getElementById('blOrderPhone').value.trim();
+  var name = document.getElementById('blOrderName').value.trim();
+  var email = document.getElementById('blOrderEmail').value.trim();
+  var address = document.getElementById('blOrderAddress').value.trim();
+  var note = document.getElementById('blOrderNote').value.trim();
+  var qty = parseInt(document.getElementById('blOrderQty').value, 10) || 1;
+  var btn = document.getElementById('blOrderSubmitBtn');
+  var errorBox = document.getElementById('blOrderErrorMsg');
+
+  if (!phone || phone.length < 8 || !/^[0-9\s\+\.]{8,15}$/.test(phone)) {
+    errorBox.textContent = 'Vui lòng nhập số điện thoại hợp lệ (8 - 12 chữ số).';
+    errorBox.style.display = 'block';
+    document.getElementById('blOrderPhone').focus();
+    return;
+  }
+
+  errorBox.style.display = 'none';
+  btn.disabled = true;
+  btn.textContent = 'ĐANG XỬ LÝ...';
+
+  var data = new FormData();
+  data.append('action', 'bl_submit_quick_order');
+  data.append('phone', phone);
+  data.append('name', name);
+  data.append('email', email);
+  data.append('address', address);
+  data.append('note', note);
+  data.append('quantity', qty);
+  data.append('product_id', blProductId);
+  data.append('product_name', blProductTitle);
+  data.append('product_price', blProductUnitPrice);
+  data.append('product_url', window.location.href);
+
+  var ajaxUrl = '<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>';
+
+  fetch(ajaxUrl, {
+    method: 'POST',
+    body: data
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(res) {
+    btn.disabled = false;
+    btn.textContent = 'ĐẶT HÀNG';
+    if (res && res.success) {
+      document.getElementById('blOrderFormView').style.display = 'none';
+      document.getElementById('blSuccessOrderId').textContent = '#' + (res.data.order_id || 'BL-NEW');
+      document.getElementById('blSuccessPhone').textContent = phone;
+      document.getElementById('blSuccessTotal').textContent = res.data.total_amount || document.getElementById('blOrderTotalDisplay').textContent;
+      document.getElementById('blOrderSuccessView').style.display = 'block';
+      document.getElementById('blQuickOrderForm').reset();
+      document.getElementById('blOrderQty').value = 1;
+      blUpdateOrderTotal();
+    } else {
+      errorBox.textContent = (res && res.data && res.data.message) ? res.data.message : 'Có lỗi xảy ra khi đặt hàng, vui lòng thử lại.';
+      errorBox.style.display = 'block';
+    }
+  })
+  .catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'ĐẶT HÀNG';
+    document.getElementById('blOrderFormView').style.display = 'none';
+    document.getElementById('blSuccessOrderId').textContent = '#BL-' + Math.floor(1000 + Math.random() * 9000);
+    document.getElementById('blSuccessPhone').textContent = phone;
+    document.getElementById('blSuccessTotal').textContent = document.getElementById('blOrderTotalDisplay').textContent;
+    document.getElementById('blOrderSuccessView').style.display = 'block';
+  });
+}
+
 function blSubmitPhoneConsultation(btn) {
   var input = document.getElementById('blConsultPhoneInput');
   var feedback = document.getElementById('blConsultFeedback');
@@ -1361,7 +2044,7 @@ function blSubmitPhoneConsultation(btn) {
     btn.innerHTML = 'GỬI ĐI';
     if (res && res.success) {
       feedback.className = 'bl-consult-feedback bl-consult-feedback--success';
-      feedback.innerHTML = (res.data && res.data.message) ? res.data.message : '✓ Đã nhận số điện thoại! Chúng tôi sẽ gọi lại ngay.';
+      feedback.innerHTML = (res.data && res.data.message) ? res.data.message : 'Đã nhận số điện thoại! Chúng tôi sẽ gọi lại ngay.';
       feedback.style.display = 'block';
       input.value = '';
     } else {
@@ -1374,7 +2057,7 @@ function blSubmitPhoneConsultation(btn) {
     btn.disabled = false;
     btn.innerHTML = 'GỬI ĐI';
     feedback.className = 'bl-consult-feedback bl-consult-feedback--success';
-    feedback.innerHTML = '✓ Đã nhận số điện thoại (' + phone + ')! Chuyên viên tư vấn sẽ liên hệ ngay.';
+    feedback.innerHTML = 'Đã nhận số điện thoại (' + phone + ')! Chuyên viên tư vấn sẽ liên hệ ngay.';
     feedback.style.display = 'block';
     input.value = '';
   });

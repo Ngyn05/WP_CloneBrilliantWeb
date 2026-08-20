@@ -223,6 +223,13 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /**
+ * Filter sender name for outgoing emails
+ */
+add_filter( 'wp_mail_from_name', function( $original_name ) {
+    return 'Brilliant Việt Nam';
+} );
+
+/**
  * Handle AJAX for phone consultation leads
  */
 function bl_ajax_phone_consultation() {
@@ -253,18 +260,301 @@ function bl_ajax_phone_consultation() {
 
     // Send email notification to admin
     $admin_email = get_option( 'admin_email' );
-    $subject     = '[Tư Vấn Sản Phẩm] Yêu cầu gọi lại từ khách hàng: ' . $phone;
-    $body        = "Khách hàng yêu cầu tư vấn:\n\n";
-    $body       .= "- Số điện thoại: " . $phone . "\n";
-    $body       .= "- Sản phẩm: " . $product_name . "\n";
-    $body       .= "- Link: " . $product_url . "\n";
-    $body       .= "- Thời gian: " . current_time( 'd/m/Y H:i:s' ) . "\n";
-    @wp_mail( $admin_email, $subject, $body );
+    $subject     = '[Brilliant Việt Nam] Yêu cầu tư vấn sản phẩm mới - SĐT: ' . $phone;
+
+    // Headers
+    $headers = array(
+        'Content-Type: text/html; charset=UTF-8',
+        'From: Brilliant Việt Nam <' . $admin_email . '>',
+    );
+
+    // HTML Email Template (Tiếng Việt)
+    $time_formatted = current_time( 'd/m/Y H:i:s' );
+    $safe_phone     = esc_html( $phone );
+    $safe_prod_name = esc_html( $product_name );
+    $safe_prod_url  = esc_url( $product_url );
+
+    $body = '<!DOCTYPE html>
+    <html lang="vi">
+    <head><meta charset="UTF-8"></head>
+    <body style="margin: 0; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f7; color: #1f2937;">
+      <div style="max-width: 580px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.06); border: 1px solid #e5e7eb;">
+        
+        <!-- Header -->
+        <div style="background-color: #000000; padding: 24px 28px; text-align: center;">
+          <h1 style="margin: 0; color: #ffffff; font-size: 20px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;">BRILLIANT VIỆT NAM</h1>
+          <p style="margin: 6px 0 0; color: #9ca3af; font-size: 13px;">Thông báo yêu cầu gọi lại tư vấn khách hàng</p>
+        </div>
+
+        <!-- Body Content -->
+        <div style="padding: 28px;">
+          <p style="margin: 0 0 16px; font-size: 15px; line-height: 1.5; color: #374151;">
+            Xin chào Quản trị viên, website <strong>Brilliant Việt Nam</strong> vừa nhận được thông tin đăng ký tư vấn từ khách hàng:
+          </p>
+
+          <!-- Details Card -->
+          <table style="width: 100%; border-collapse: separate; border-spacing: 0; background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 20px; overflow: hidden;">
+            <tr>
+              <td style="padding: 12px 16px; width: 140px; font-weight: 600; color: #4b5563; font-size: 14px; border-bottom: 1px solid #e5e7eb;">Số điện thoại:</td>
+              <td style="padding: 12px 16px; border-bottom: 1px solid #e5e7eb;">
+                <a href="tel:' . $safe_phone . '" style="font-size: 16px; font-weight: 700; color: #2563eb; text-decoration: none;">' . $safe_phone . '</a>
+                <span style="font-size: 12px; color: #6b7280; margin-left: 8px;">(Bấm để gọi)</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 16px; font-weight: 600; color: #4b5563; font-size: 14px; border-bottom: 1px solid #e5e7eb;">Sản phẩm:</td>
+              <td style="padding: 12px 16px; font-weight: 600; color: #111827; font-size: 14px; border-bottom: 1px solid #e5e7eb;">' . $safe_prod_name . '</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 16px; font-weight: 600; color: #4b5563; font-size: 14px; border-bottom: 1px solid #e5e7eb;">Trang quan tâm:</td>
+              <td style="padding: 12px 16px; font-size: 14px; border-bottom: 1px solid #e5e7eb;">
+                <a href="' . $safe_prod_url . '" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; word-break: break-all;">' . $safe_prod_url . '</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 16px; font-weight: 600; color: #4b5563; font-size: 14px;">Thời gian gửi:</td>
+              <td style="padding: 12px 16px; color: #6b7280; font-size: 14px;">' . $time_formatted . '</td>
+            </tr>
+          </table>
+
+          <!-- Action Box -->
+          <div style="background-color: #ecfdf5; border-left: 4px solid #10b981; border-radius: 4px; padding: 12px 16px;">
+            <p style="margin: 0; font-size: 13px; color: #065f46; line-height: 1.4;">
+              <strong>Lưu ý:</strong> Hãy liên hệ lại với khách hàng sớm nhất có thể để hỗ trợ tư vấn!
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background-color: #f9fafb; padding: 14px 24px; text-align: center; border-top: 1px solid #e5e7eb;">
+          <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+            Email tự động từ hệ thống website <strong>Brilliant Việt Nam</strong>
+          </p>
+        </div>
+
+      </div>
+    </body>
+    </html>';
+
+    $mail_sent = wp_mail( $admin_email, $subject, $body, $headers );
 
     wp_send_json_success( array(
-        'message' => 'Cảm ơn bạn! Chuyên viên tư vấn sẽ liên hệ ngay qua số ' . esc_html( $phone ) . '.',
+        'message'   => 'Cảm ơn bạn! Chuyên viên tư vấn sẽ liên hệ ngay qua số ' . esc_html( $phone ) . '.',
+        'mail_sent' => $mail_sent,
     ) );
 }
 add_action( 'wp_ajax_bl_submit_phone_consultation', 'bl_ajax_phone_consultation' );
 add_action( 'wp_ajax_nopriv_bl_submit_phone_consultation', 'bl_ajax_phone_consultation' );
+
+/**
+ * Handle AJAX for Quick Order (Mua Ngay)
+ */
+function bl_ajax_quick_order() {
+    $phone        = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
+    $name         = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
+    $email        = isset( $_POST['email'] ) ? sanitize_email( $_POST['email'] ) : '';
+    $address      = isset( $_POST['address'] ) ? sanitize_textarea_field( $_POST['address'] ) : '';
+    $note         = isset( $_POST['note'] ) ? sanitize_textarea_field( $_POST['note'] ) : '';
+    $product_id   = isset( $_POST['product_id'] ) ? intval( $_POST['product_id'] ) : 0;
+    $product_name = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : 'Sản phẩm Brilliant';
+    $product_url  = isset( $_POST['product_url'] ) ? esc_url_raw( $_POST['product_url'] ) : '';
+    $product_price= isset( $_POST['product_price'] ) ? floatval( $_POST['product_price'] ) : 0;
+    $quantity     = isset( $_POST['quantity'] ) ? max( 1, intval( $_POST['quantity'] ) ) : 1;
+    $payment_method = 'Thanh toán khi nhận hàng (COD)';
+
+    if ( empty( $phone ) ) {
+        wp_send_json_error( array( 'message' => 'Vui lòng nhập số điện thoại để chúng tôi liên hệ giao hàng.' ) );
+    }
+
+    $total_amount = $product_price * $quantity;
+    $total_display = ( $total_amount > 0 ) ? number_format( $total_amount, 0, ',', '.' ) . ' ₫' : 'Liên hệ';
+    $unit_price_display = ( $product_price > 0 ) ? number_format( $product_price, 0, ',', '.' ) . ' ₫' : 'Liên hệ';
+
+    $order_id = 'BL-' . date( 'ymd' ) . '-' . rand( 1000, 9999 );
+
+    // Save order into options list (keeps last 200 orders)
+    $orders = get_option( 'bl_quick_orders', array() );
+    if ( ! is_array( $orders ) ) {
+        $orders = array();
+    }
+    $order_data = array(
+        'order_id'       => $order_id,
+        'phone'          => $phone,
+        'name'           => $name,
+        'email'          => $email,
+        'address'        => $address,
+        'note'           => $note,
+        'product_id'     => $product_id,
+        'product_name'   => $product_name,
+        'product_url'    => $product_url,
+        'unit_price'     => $unit_price_display,
+        'quantity'       => $quantity,
+        'total_amount'   => $total_display,
+        'payment_method' => $payment_method,
+        'status'         => 'Chờ xử lý',
+        'created_at'     => current_time( 'mysql' ),
+        'ip'             => isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( $_SERVER['REMOTE_ADDR'] ) : '',
+    );
+    array_unshift( $orders, $order_data );
+    if ( count( $orders ) > 200 ) {
+        $orders = array_slice( $orders, 0, 200 );
+    }
+    update_option( 'bl_quick_orders', $orders );
+
+    // Send email notification to admin
+    $admin_email = get_option( 'admin_email' );
+    $subject     = '[Brilliant Việt Nam] Đơn hàng mới #' . $order_id . ' - SĐT: ' . $phone;
+
+    $headers = array(
+        'Content-Type: text/html; charset=UTF-8',
+        'From: Brilliant Việt Nam <' . $admin_email . '>',
+    );
+
+    $time_formatted = current_time( 'd/m/Y H:i:s' );
+    $safe_phone     = esc_html( $phone );
+    $safe_name      = esc_html( $name ?: 'Không cung cấp' );
+    $safe_email     = esc_html( $email ?: 'Không cung cấp' );
+    $safe_address   = esc_html( $address ?: 'Chưa cung cấp (chờ gọi xác nhận)' );
+    $safe_note      = esc_html( $note ?: 'Không có' );
+    $safe_prod_name = esc_html( $product_name );
+    $safe_prod_url  = esc_url( $product_url );
+
+    $body = '<!DOCTYPE html>
+    <html lang="vi">
+    <head><meta charset="UTF-8"></head>
+    <body style="margin: 0; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f7; color: #1f2937;">
+      <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.06); border: 1px solid #e5e7eb;">
+        
+        <!-- Header -->
+        <div style="background-color: #000000; padding: 24px 28px; text-align: center;">
+          <h1 style="margin: 0; color: #ffffff; font-size: 20px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;">BRILLIANT VIỆT NAM</h1>
+          <p style="margin: 6px 0 0; color: #9ca3af; font-size: 13px;">Thông báo đơn hàng mới từ website</p>
+        </div>
+
+        <!-- Body Content -->
+        <div style="padding: 28px;">
+          <p style="margin: 0 0 16px; font-size: 15px; line-height: 1.5; color: #374151;">
+            Xin chào Quản trị viên, bạn vừa nhận được đơn đặt hàng mới <strong>#' . $order_id . '</strong>:
+          </p>
+
+          <!-- Order Summary Card -->
+          <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+            <h3 style="margin: 0 0 12px; font-size: 15px; color: #111827; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px;">Tóm tắt đơn hàng</h3>
+            <table style="width: 100%; font-size: 14px; line-height: 1.6;">
+              <tr>
+                <td style="color: #4b5563; width: 140px;">Sản phẩm:</td>
+                <td style="font-weight: 600; color: #111827;"><a href="' . $safe_prod_url . '" target="_blank" style="color: #111827; text-decoration: none;">' . $safe_prod_name . '</a></td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Đơn giá:</td>
+                <td style="color: #374151;">' . $unit_price_display . '</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Số lượng:</td>
+                <td style="font-weight: 600; color: #111827;">' . $quantity . '</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563; padding-top: 8px; border-top: 1px dashed #e5e7eb; font-weight: 600;">Tổng thanh toán:</td>
+                <td style="color: #dc2626; font-size: 16px; font-weight: 700; padding-top: 8px; border-top: 1px dashed #e5e7eb;">' . $total_display . ' (COD)</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Customer Info Card -->
+          <div style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 20px;">
+            <h3 style="margin: 0 0 12px; font-size: 15px; color: #111827; border-bottom: 1px solid #e5e7eb; padding-bottom: 8px;">Thông tin khách hàng</h3>
+            <table style="width: 100%; font-size: 14px; line-height: 1.6;">
+              <tr>
+                <td style="color: #4b5563; width: 140px; font-weight: 600;">Số điện thoại:</td>
+                <td><a href="tel:' . $safe_phone . '" style="color: #2563eb; font-weight: 700; font-size: 15px; text-decoration: none;">' . $safe_phone . '</a> (Bấm để gọi)</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Họ và tên:</td>
+                <td style="color: #111827;">' . $safe_name . '</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Email:</td>
+                <td style="color: #374151;">' . $safe_email . '</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Địa chỉ nhận hàng:</td>
+                <td style="color: #111827;">' . $safe_address . '</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Ghi chú:</td>
+                <td style="color: #374151;">' . $safe_note . '</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Phương thức:</td>
+                <td style="color: #111827; font-weight: 600;">Thanh toán khi nhận hàng (COD)</td>
+              </tr>
+              <tr>
+                <td style="color: #4b5563;">Thời gian đặt:</td>
+                <td style="color: #6b7280;">' . $time_formatted . '</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Note Box -->
+          <div style="background-color: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 4px; padding: 12px 16px;">
+            <p style="margin: 0; font-size: 13px; color: #1e40af; line-height: 1.4;">
+              <strong>Hành động:</strong> Hãy gọi điện cho khách hàng qua số <strong>' . $safe_phone . '</strong> để xác nhận đơn hàng và chuẩn bị đóng gói giao hàng.
+            </p>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background-color: #f9fafb; padding: 14px 24px; text-align: center; border-top: 1px solid #e5e7eb;">
+          <p style="margin: 0; font-size: 12px; color: #9ca3af;">
+            Email tự động từ hệ thống website <strong>Brilliant Việt Nam</strong>
+          </p>
+        </div>
+
+      </div>
+    </body>
+    </html>';
+
+    $mail_sent = wp_mail( $admin_email, $subject, $body, $headers );
+
+    // If customer provided email, send confirmation to customer
+    if ( ! empty( $email ) && is_email( $email ) ) {
+        $cust_subject = '[Brilliant Việt Nam] Xác nhận đặt hàng thành công #' . $order_id;
+        $cust_body = '<!DOCTYPE html>
+        <html lang="vi">
+        <head><meta charset="UTF-8"></head>
+        <body style="margin: 0; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f7; color: #1f2937;">
+          <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.06); border: 1px solid #e5e7eb;">
+            <div style="background-color: #000000; padding: 24px 28px; text-align: center;">
+              <h1 style="margin: 0; color: #ffffff; font-size: 20px; letter-spacing: 2px; font-weight: 700; text-transform: uppercase;">BRILLIANT VIỆT NAM</h1>
+              <p style="margin: 6px 0 0; color: #9ca3af; font-size: 13px;">Xác nhận đơn hàng #' . $order_id . '</p>
+            </div>
+            <div style="padding: 28px;">
+              <p style="font-size: 15px; color: #374151;">Xin chào <strong>' . $safe_name . '</strong>,</p>
+              <p style="font-size: 14px; color: #4b5563; line-height: 1.6;">Cảm ơn bạn đã đặt hàng tại <strong>Brilliant Việt Nam</strong>. Đơn hàng của bạn đã được tiếp nhận và nhân viên sẽ liên hệ với bạn trong thời gian sớm nhất qua số điện thoại <strong>' . $safe_phone . '</strong> để xác nhận và gửi hàng.</p>
+              
+              <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin: 20px 0;">
+                <p style="margin: 0 0 8px; font-weight: 600;">Sản phẩm: ' . $safe_prod_name . '</p>
+                <p style="margin: 0 0 8px;">Số lượng: ' . $quantity . '</p>
+                <p style="margin: 0; font-weight: 700; color: #dc2626;">Tổng thanh toán: ' . $total_display . ' (COD - Thanh toán khi nhận hàng)</p>
+              </div>
+              <p style="font-size: 13px; color: #6b7280;">Nếu cần hỗ trợ gấp, vui lòng liên hệ hotline/Zalo: 0917 834 532.</p>
+            </div>
+            <div style="background-color: #f9fafb; padding: 14px 24px; text-align: center; border-top: 1px solid #e5e7eb;">
+              <p style="margin: 0; font-size: 12px; color: #9ca3af;">Brilliant Việt Nam</p>
+            </div>
+          </div>
+        </body>
+        </html>';
+        @wp_mail( $email, $cust_subject, $cust_body, $headers );
+    }
+
+    wp_send_json_success( array(
+        'order_id'     => $order_id,
+        'phone'        => $phone,
+        'total_amount' => $total_display,
+        'message'      => 'Đặt hàng thành công!',
+    ) );
+}
+add_action( 'wp_ajax_bl_submit_quick_order', 'bl_ajax_quick_order' );
+add_action( 'wp_ajax_nopriv_bl_submit_quick_order', 'bl_ajax_quick_order' );
 
