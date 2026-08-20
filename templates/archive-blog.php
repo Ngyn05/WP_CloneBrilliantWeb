@@ -680,9 +680,7 @@ first.parentNode.insertBefore(script, first);
             Nhà phát triển
           </span>
         </a>
-      </li></ul><div><a class="tw-z-[10] tw-flex tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-white tw-px-4 tw-py-2 tw-text-xs tw-font-bold tw-uppercase tw-text-white hover:tw-bg-white/[0.7] hover:tw-text-black md:tw-px-11 md:tw-py-4 md:tw-text-sm" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" data-buy-button="ĐẶT HÀNG ngay">
-            ĐẶT HÀNG ngay
-          </a></div>
+      </li></ul><div><?php if ( function_exists( "bl_render_header_buy_button" ) ) { bl_render_header_buy_button(true); } ?></div>
   </div>
 </div>
 </div>
@@ -709,9 +707,7 @@ first.parentNode.insertBefore(script, first);
 </div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
 
     
-<div class="tw-flex tw-justify-end tw-gap-2 md:tw-gap-6"><a class="tw-z-[10] tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-pink tw-px-4 tw-py-2 tw-text-xs tw-font-bold tw-uppercase tw-text-white hover:tw-bg-pink hover:tw-text-white hover:tw-opacity-100 md:tw-px-11 md:tw-py-4 md:tw-text-sm tw-flex" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" data-buy-button="ĐẶT HÀNG ngay">
-              ĐẶT HÀNG ngay
-            </a></div></div><div class="search-bar search-bar--header" role="region" aria-label="Tìm kiếm" data-search-bar=""><predictive-search data-loading-text="Loading..."><form class="search-bar__form" action="/search" method="get" role="search">
+<div class="tw-flex tw-justify-end tw-gap-2 md:tw-gap-6"><?php if ( function_exists( "bl_render_header_buy_button" ) ) { bl_render_header_buy_button(false); } ?></div></div><div class="search-bar search-bar--header" role="region" aria-label="Tìm kiếm" data-search-bar=""><predictive-search data-loading-text="Loading..."><form class="search-bar__form" action="/search" method="get" role="search">
     <label class="visually-hidden" for="search-bar">Tìm kiếm</label>
 
     <input class="search-bar__input" id="search-bar" type="search" name="q" value="" placeholder="Tìm kiếm" data-search-bar-input="" role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false"><div class="predictive-search" tabindex="-1" data-predictive-search=""></div>

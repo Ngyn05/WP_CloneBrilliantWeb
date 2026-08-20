@@ -1,34 +1,70 @@
 <?php
 /**
  * Dynamic Template for Single Product (WooCommerce & Brilliant Labs)
+ * Powered by Unified Visual Editor (wp_editor)
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-global $post;
+global $post, $wp_query;
+
 $product_id = get_the_ID();
 if ( ! $product_id || get_post_type( $product_id ) !== 'product' ) {
+    $slug = get_query_var( 'name' );
+    if ( $slug ) {
+        $p = get_page_by_path( $slug, OBJECT, 'product' );
+        if ( $p ) { $product_id = $p->ID; }
+    }
+}
+if ( ! $product_id ) {
     $product_obj = get_page_by_path( 'halo', OBJECT, 'product' );
     $product_id = $product_obj ? $product_obj->ID : 0;
 }
 
-$product_title   = $product_id ? get_the_title( $product_id ) : 'Halo';
-$product_price   = $product_id ? ( get_post_meta( $product_id, '_regular_price', true ) ?: get_post_meta( $product_id, '_price', true ) ?: '299' ) : '299';
+$product_title   = $product_id ? ( get_the_title( $product_id ) ?: 'N/A' ) : 'N/A';
+$raw_price       = $product_id ? ( get_post_meta( $product_id, '_regular_price', true ) ?: get_post_meta( $product_id, '_price', true ) ) : '';
+$product_price   = ( $raw_price !== '' && $raw_price !== false ) ? '$' . esc_html( $raw_price ) . '.00 USD' : 'N/A';
 $product_excerpt = $product_id ? get_post_field( 'post_excerpt', $product_id ) : '';
 $product_content = $product_id ? get_post_field( 'post_content', $product_id ) : '';
 $product_thumb   = $product_id ? get_the_post_thumbnail_url( $product_id, 'full' ) : '';
 
-$weight       = $product_id ? ( get_post_meta( $product_id, '_halo_weight', true ) ?: '40g' ) : '40g';
-$ipd          = $product_id ? ( get_post_meta( $product_id, '_halo_ipd', true ) ?: '58-72mm' ) : '58-72mm';
-$diopter      = $product_id ? ( get_post_meta( $product_id, '_halo_diopter', true ) ?: '+2 đến -6 diopters' ) : '+2 đến -6 diopters';
-$display_type = $product_id ? ( get_post_meta( $product_id, '_halo_display_type', true ) ?: 'Màn hình màu (Color Display)' ) : 'Màn hình màu (Color Display)';
-$audio        = $product_id ? ( get_post_meta( $product_id, '_halo_audio', true ) ?: 'Loa dẫn truyền qua xương kép (Dual bone conduction speakers)' ) : 'Loa dẫn truyền qua xương kép';
-$mic          = $product_id ? ( get_post_meta( $product_id, '_halo_mic', true ) ?: 'Micro kép với tính năng nhận diện hoạt động âm thanh' ) : 'Micro kép';
-$processor    = $product_id ? ( get_post_meta( $product_id, '_halo_processor', true ) ?: 'Bộ xử lý AI siêu tiết kiệm điện năng' ) : 'Bộ xử lý AI';
-$model_3d_url = $product_id ? ( get_post_meta( $product_id, '_halo_3d_model_url', true ) ?: ( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/glasses_v3-6a3aeba0.glb' ) ) : '';
-$lens_partner = $product_id ? ( get_post_meta( $product_id, '_halo_lens_partner_url', true ) ?: 'https://www.smartbuyglasses.com/designer-eyeglasses/Brilliant-Labs/Cut-Lens-for-Brilliant-Labs-Frame-2.html' ) : '';
-$shipping_msg = $product_id ? ( get_post_meta( $product_id, '_halo_shipping_status', true ) ?: 'Halo sẽ bắt đầu được giao hàng trong thời gian tới 🚀' ) : '';
+$is_halo = ( $product_id && get_post_field( 'post_name', $product_id ) === 'halo' );
+
+// Group 1: Specs (Strict N/A fallback for new products)
+$weight       = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_weight', true ) ) !== '' ) ? $v : ( $is_halo ? '40g' : 'N/A' );
+$ipd          = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_ipd', true ) ) !== '' ) ? $v : ( $is_halo ? '58 - 72mm' : 'N/A' );
+$diopter      = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_diopter', true ) ) !== '' ) ? $v : ( $is_halo ? '+2 đến -6 diopters' : 'N/A' );
+$display_type = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_display_type', true ) ) !== '' ) ? $v : ( $is_halo ? 'Màn hình màu (Color Display)' : 'N/A' );
+$audio        = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_audio', true ) ) !== '' ) ? $v : ( $is_halo ? 'Loa dẫn truyền qua xương kép' : 'N/A' );
+$mic          = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_mic', true ) ) !== '' ) ? $v : ( $is_halo ? 'Micro kép phát hiện âm thanh' : 'N/A' );
+$processor    = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_processor', true ) ) !== '' ) ? $v : ( $is_halo ? 'Bộ xử lý AI' : 'N/A' );
+$model_3d_url = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_3d_model_url', true ) ) !== '' ) ? $v : ( $is_halo ? ( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/glasses_v3-6a3aeba0.glb' ) : '' );
+$shipping_msg = ( $product_id && ( $v = get_post_meta( $product_id, '_halo_shipping_status', true ) ) !== '' ) ? $v : ( $is_halo ? 'Halo sẽ bắt đầu được giao hàng trong thời gian tới 🚀' : 'N/A' );
+
+// ONE Unified Visual Editor Content from Metabox
+$body_content = $product_id ? get_post_meta( $product_id, '_bl_product_body_content', true ) : '';
+if ( empty( $body_content ) && $is_halo && function_exists( 'bl_get_default_product_layout_content' ) ) {
+    $body_content = bl_get_default_product_layout_content();
+}
+
+// Dynamic gallery images
+$gallery_meta = $product_id ? get_post_meta( $product_id, '_product_image_gallery', true ) : '';
+$gallery_ids = array_filter( array_map( 'trim', explode( ',', (string) $gallery_meta ) ) );
+$gallery_urls = array();
+
+if ( $product_thumb ) {
+    $gallery_urls[] = $product_thumb;
+}
+
+if ( ! empty( $gallery_ids ) ) {
+    foreach ( $gallery_ids as $gid ) {
+        $gurl = wp_get_attachment_image_url( $gid, 'full' );
+        if ( $gurl && ! in_array( $gurl, $gallery_urls ) ) {
+            $gallery_urls[] = $gurl;
+        }
+    }
+}
 ?>
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="vi">
   <head>
     <meta charset="utf-8">
@@ -823,21 +859,28 @@ first.parentNode.insertBefore(script, first);
   <path d="M7.85352 5.57159V10.1432" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
   <path d="M10.1458 7.85745H5.57422" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg></button><div class="swiper-wrapper" data-swiper-wrapper="">
-      <div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41830617776439" data-index="0" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1.png?v=1753738731' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1.png' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-1.png' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-2.png' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-3.png' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-4.png' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-5.png' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-6.png' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-7.png' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-8.png' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-9.png' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-10.png' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-11.png' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41830617776439"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41830617415991" data-index="1" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b.png?v=1753738731' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b.png' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-1.png' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-2.png' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-3.png' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-4.png' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-5.png' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-6.png' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-7.png' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-8.png' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-9.png' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-10.png' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-11.png' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41830617415991"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41830617579831" data-index="2" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b.png?v=1753738731' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b.png' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-1.png' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-2.png' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-3.png' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-4.png' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-5.png' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-6.png' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-7.png' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-8.png' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-9.png' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-10.png' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-11.png' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41830617579831"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838085439799" data-index="3" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348.jpg?v=1753932704' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-10.jpg' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-11.jpg' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2268" height="2268" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838085439799"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838089273655" data-index="4" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255.jpg?v=1753934758' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-10.jpg' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-11.jpg' ); ?> 2160w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-12.jpg' ); ?> 2376w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-13.jpg' ); ?> 2592w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2739" height="2739" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838089273655"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838085701943" data-index="5" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253.jpg?v=1753934758' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-10.jpg' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-11.jpg' ); ?> 2160w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-12.jpg' ); ?> 2376w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-13.jpg' ); ?> 2592w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-14.jpg' ); ?> 2808w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-15.jpg' ); ?> 3024w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="3213" height="3213" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838085701943"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838085538103" data-index="6" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350.jpg?v=1753934758' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-10.jpg' ); ?> 1944w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2136" height="2136" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838085538103"></div>
+      <?php if ( ! empty( $gallery_urls ) ) : ?>
+        <?php foreach ( $gallery_urls as $s_idx => $s_url ) : ?>
+          <div class="swiper-slide" data-index="<?php echo $s_idx; ?>" data-swiper-slide="">
+            <div class="image-ratio image-ratio--natural">
+              <img class="product-media__image" src="<?php echo esc_url( $s_url ); ?>" alt="<?php echo esc_attr( $product_title ); ?>" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;">
+            </div>
           </div>
+        <?php endforeach; ?>
+      <?php else : ?>
+        <div class="swiper-slide" data-index="0" data-swiper-slide="">
+          <div class="image-ratio image-ratio--natural" style="background: #0d0d0d; display: flex; align-items: center; justify-content: center; min-height: 480px; border-radius: 12px; border: 1px solid #222;">
+            <div style="text-align: center; color: #555; padding: 40px;">
+              <svg style="width: 56px; height: 56px; margin: 0 auto 14px; display: block; opacity: 0.4;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #666;">Chưa có hình ảnh</p>
+            </div>
+          </div>
+        </div>
+      <?php endif; ?>
     </div>
   </div><popup-wrapper class="popup popup--full" data-popup-id="product-media-popup-template--24912567468343__main">
   <div class="popup__content-wrapper" data-simplebar="">
@@ -857,23 +900,15 @@ first.parentNode.insertBefore(script, first);
 </popup-wrapper>
 <noscript>
     <div class="product-media__no-js">
-      <div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41830617776439" data-index="0" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1.png?v=1753738731' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1.png' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-1.png' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-2.png' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-3.png' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-4.png' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-5.png' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-6.png' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-7.png' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-8.png' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-9.png' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-10.png' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_1-11.png' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41830617776439"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41830617415991" data-index="1" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b.png?v=1753738731' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b.png' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-1.png' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-2.png' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-3.png' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-4.png' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-5.png' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-6.png' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-7.png' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-8.png' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-9.png' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-10.png' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_3b-11.png' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41830617415991"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41830617579831" data-index="2" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b.png?v=1753738731' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b.png' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-1.png' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-2.png' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-3.png' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-4.png' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-5.png' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-6.png' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-7.png' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-8.png' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-9.png' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-10.png' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_6b-11.png' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2200" height="2200" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41830617579831"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838085439799" data-index="3" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348.jpg?v=1753932704' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-10.jpg' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1348-11.jpg' ); ?> 2160w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2268" height="2268" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838085439799"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838089273655" data-index="4" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255.jpg?v=1753934758' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-10.jpg' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-11.jpg' ); ?> 2160w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-12.jpg' ); ?> 2376w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3255-13.jpg' ); ?> 2592w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2739" height="2739" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838089273655"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838085701943" data-index="5" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253.jpg?v=1753934758' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-10.jpg' ); ?> 1944w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-11.jpg' ); ?> 2160w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-12.jpg' ); ?> 2376w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-13.jpg' ); ?> 2592w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-14.jpg' ); ?> 2808w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1253-15.jpg' ); ?> 3024w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="3213" height="3213" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838085701943"></div>
-          </div><div class="swiper-slide  " data-option-1-value="Halo" data-slide-id="41838085538103" data-index="6" data-swiper-slide="">
-            <div class="image-ratio image-ratio--natural"><img class="product-media__image" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350.jpg?v=1753934758' ); ?>" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350.jpg' ); ?> 50w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-1.jpg' ); ?> 100w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-2.jpg' ); ?> 180w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-3.jpg' ); ?> 360w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-4.jpg' ); ?> 540w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-5.jpg' ); ?> 720w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-6.jpg' ); ?> 1080w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-7.jpg' ); ?> 1296w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-8.jpg' ); ?> 1512w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-9.jpg' ); ?> 1728w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1350-10.jpg' ); ?> 1944w" sizes="(max-width: 767px) 100vw, (max-width: 1024px) 50vw, 700px" alt="Halo" loading="lazy" width="2136" height="2136" style="object-position: 50.0% 50.0%;" data-product-media-image="" data-image-id="41838085538103"></div>
+      <?php foreach ( $gallery_urls as $n_idx => $n_url ) : ?>
+        <div class="swiper-slide" data-index="<?php echo $n_idx; ?>">
+          <div class="image-ratio image-ratio--natural">
+            <img class="product-media__image" src="<?php echo esc_url( $n_url ); ?>" alt="<?php echo esc_attr( $product_title ); ?>" loading="lazy" width="2200" height="2200">
           </div>
+        </div>
+      <?php endforeach; ?>
     </div>
-  </noscript></product-media></div>
+</noscript></product-media></div>
 
       <div class="col-12 col-md-6 col-lg-5">
         <div class="product__content"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-product-rating.css?v=146575650222427282611752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
@@ -885,9 +920,7 @@ first.parentNode.insertBefore(script, first);
         Giá niêm yết
       </span>
 
-      <span class="product-price__value" data-product-regular-price="">
-        $<?php echo esc_html( $product_price ); ?>.00 USD
-      </span>
+      <span class="product-price__value" data-product-regular-price=""><?php echo esc_html( $product_price ); ?></span>
     </div>
 
     <div class="product-price__sale">
@@ -895,9 +928,7 @@ first.parentNode.insertBefore(script, first);
         Giá khuyến mãi
       </span>
 
-      <span class="product-price__value product-price__value--sale" data-product-regular-price="">
-        $<?php echo esc_html( $product_price ); ?>.00 USD
-      </span>
+      <span class="product-price__value product-price__value--sale" data-product-regular-price=""><?php echo esc_html( $product_price ); ?></span>
         <span class="visually-hidden">
           Giá niêm yết
         </span>
@@ -936,15 +967,14 @@ first.parentNode.insertBefore(script, first);
 <form method="post" action="/cart/add" id="product-form-installment-template--24912567468343__main" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="50778480509239" data-shop-pay-input="">
                     <div class="product__shop-pay"></div><input type="hidden" name="product-id" value="10217206972727"><input type="hidden" name="section-id" value="template--24912567468343__main"></form><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-product-price.css?v=54116176018763529501752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 <div class="product__description">
-                    <h3 style="text-align: left;" dir="ltr"><span>Giới thiệu <span style="color: rgb(255, 0, 255);"><span style="color: rgb(242, 136, 191);"><strong><?php echo esc_html( $product_title ); ?></strong>! </span></span></span></h3>
-<h5 dir="ltr" style="text-align: left;"><span>Kính AI mã nguồn mở dành cho những người tò mò, sáng tạo và có tầm nhìn tương lai.</span></h5>
-<p><strong>Halo</strong> sở hữu thiết kế hoàn toàn mới, hệ thống quang học và linh kiện điện tử được tái định hình, cùng <strong>Noa</strong> — tác nhân AI đàm thoại riêng tư sở hữu bộ nhớ dài hạn về cuộc sống của bạn.</p>
-<p>Với Miniapps, <strong>Halo</strong> cho phép bạn xây dựng các trải nghiệm mới bằng ngôn ngữ tự nhiên và chia sẻ chúng với mọi người trên App Store của chúng tôi.</p>
-<p>&nbsp;</p>
-<p>Tất cả các tính năng thông minh này đều được tích hợp sẵn khi mở hộp với hạn mức sử dụng hàng ngày miễn phí.</p>
-<p class="p1">&nbsp;</p>
-<p class="p1"><b>Những chiếc kính Halo đầu tiên đang hoàn thiện dây chuyền sản xuất và sẽ sớm được giao đến tay người dùng. 🚀</b></p>
-                  </div><variant-selects class="no-js-hidden" data-url="/products/halo"><div class="variant-picker__dropdown  ">
+  <?php if ( ! empty( $product_content ) ) : ?>
+    <?php echo wp_kses_post( $product_content ); ?>
+  <?php elseif ( ! empty( $product_excerpt ) ) : ?>
+    <p><?php echo esc_html( $product_excerpt ); ?></p>
+  <?php else : ?>
+    <p style="color: #888;">N/A</p>
+  <?php endif; ?>
+</div><variant-selects class="no-js-hidden" data-url="/products/halo"><div class="variant-picker__dropdown  ">
           <label class="variant-picker__label h5 font-body " for="option-template--24912567468343__main-0">
             Màu sắc
           </label>
@@ -1075,280 +1105,16 @@ first.parentNode.insertBefore(script, first);
 
 
 <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-multiblock.css?v=52716211481695956391752050583' ); ?>" rel="stylesheet" type="text/css" media="all">
+<link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-accordion.css?v=26510281912245942681752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<div class="container multiblock" style="padding-top: 152px; padding-bottom: 72px">
-  <div class="multiblock-grid tw-grid tw-min-h-[720px] tw-gap-8 md:tw-grid-cols-multiblock md:tw-grid-rows-2">
-    
-      
-      <div class="
-             md:tw-row-span-2
-            
-            
-          tw-relative tw-flex tw-min-h-[350px] tw-flex-col tw-justify-between tw-overflow-hidden tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[54px] tw-pt-[47px]
-        ">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248.png?v=1753645843&width=720' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248-1.png' ); ?> 352w?v=1753645843&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248.png' ); ?> 720wg?v=1753645843&amp;width=720 720w" width="720" height="405" class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0 tw-object-cover">
-<p class="tw-relative tw-text-[16px] tw-text-white"></p>
-        <div class="tw-relative tw-flex tw-flex-col tw-justify-between tw-gap-10">
-          <p class="tw-text-[30px] tw-leading-[4rem] tw-text-white"></p>
-          
-            <a class="tw-self-end tw-rounded-[40px] tw-bg-white tw-px-[14px] tw-py-[14px] tw-text-black" href=""></a>
-          
-        </div>
-      </div>
-    
-      
-      <div class="
-             md:tw-row-span-2
-            
-            
-          tw-relative tw-flex tw-min-h-[350px] tw-flex-col tw-justify-center tw-overflow-hidden tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[54px] tw-pt-[47px]
-        "><p class="tw-relative tw-text-[16px] tw-text-white"></p>
-        <div class="tw-relative tw-flex tw-flex-col tw-justify-between tw-gap-10">
-          <p class="tw-text-[30px] tw-leading-[4rem] tw-text-white">Need a prescription with your <strong>Halo</strong>?  Click below to purchase on our partner's website</p>
-          
-            <a class="tw-self-end tw-rounded-[40px] tw-bg-white tw-px-[14px] tw-py-[14px] tw-text-black" href="https://www.smartbuyglasses.com/designer-eyeglasses/Brilliant-Labs/Cut-Lens-Halo-718803.html?cache_bust=123">Smart-Buy-Glasses</a>
-          
-        </div>
-      </div>
-    
-  </div>
+<!-- Render Content from Unified Visual Editor -->
+<div class="product-visual-body-content" style="background: #000; color: #fff;">
+  <?php if ( ! empty( $body_content ) ) : ?>
+    <?php echo apply_filters( 'the_content', $body_content ); ?>
+  <?php else : ?>
+    <div class="container" style="padding: 60px 20px; text-align: center; color: #666;"><p>N/A</p></div>
+  <?php endif; ?>
 </div>
-
-
-</div><div id="shopify-section-template--24912567468343__gallery_4pCcUN" class="shopify-section">
-
-
-  <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/gallery-a958234d.js' ); ?>" type="module" crossorigin="anonymous"></script>
-  <link rel="modulepreload" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/index-329fb091.js' ); ?>" crossorigin="anonymous">
-  <link rel="modulepreload" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/ScrollTrigger-78a65e54.js' ); ?>" crossorigin="anonymous">
-  <link rel="modulepreload" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/CSSPlugin-f50ba96c.js' ); ?>" crossorigin="anonymous">
-
-
-<div class="container gallery-container" style="padding-top: 72px; padding-bottom: 120px">
-  <div class="tw-grid tw-gap-8 md:tw-min-h-[325px] md:tw-grid-cols-2">
-    
-    <div class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 140px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/image_1.webp?v=1753972968&width=690' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/image_1-1.webp' ); ?> 352w?v=1753972968&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/image_1.webp' ); ?> 690wp?v=1753972968&amp;width=690 690w" width="690" height="325" class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0 tw-object-cover tw-transition-transform">
-</div>
-        <div class="tw-relative tw-flex tw-flex-col">
-          <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
-          <p class="tw-text-[30px] tw-pb-10 tw-text-white tw-leading-[4rem]"></p>
-          <p class="tw-text-[22px] tw-font-light tw-text-white"></p>
-        </div>
-      </div>
-    
-    <div class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 140px"></div>
-        <div class="tw-relative tw-flex tw-flex-col">
-          <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
-          <p class="tw-text-[30px] tw-pb-10 tw-text-white tw-leading-[4rem]">Hệ thống quang học hiển thị của Halo có thể điều chỉnh từ +2 đến -6 diop, đáp ứng đa dạng các nhu cầu điều chỉnh tật khúc xạ thị lực.</p>
-          <p class="tw-text-[22px] tw-font-light tw-text-white"></p>
-        </div>
-      </div>
-    
-  </div>
-</div>
-
-
-</div><div id="shopify-section-template--24912567468343__gallery_Vd7TFc" class="shopify-section">
-
-
-  <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/gallery-a958234d.js' ); ?>" type="module" crossorigin="anonymous"></script>
-  <link rel="modulepreload" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/index-329fb091.js' ); ?>" crossorigin="anonymous">
-  <link rel="modulepreload" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/ScrollTrigger-78a65e54.js' ); ?>" crossorigin="anonymous">
-  <link rel="modulepreload" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/CSSPlugin-f50ba96c.js' ); ?>" crossorigin="anonymous">
-
-
-<div class="container gallery-container" style="padding-top: 72px; padding-bottom: 120px">
-  <div class="tw-grid tw-gap-8 md:tw-min-h-[325px] md:tw-grid-cols-2">
-    
-    <div class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 280px"></div>
-        <div class="tw-relative tw-flex tw-flex-col">
-          <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
-          <p class="tw-text-[30px] tw-pb-10 tw-text-white tw-leading-[4rem]">Kích thước Halo</p>
-          <p class="tw-text-[22px] tw-font-light tw-text-white"></p>
-        </div>
-      </div>
-    
-    <div class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 280px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png?v=1758846333&width=690' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69-1.png' ); ?> 352w?v=1758846333&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png' ); ?> 690wg?v=1758846333&amp;width=690 690w" width="690" height="380" loading="lazy" class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0 tw-object-cover tw-transition-transform">
-</div>
-        <div class="tw-relative tw-flex tw-flex-col">
-          <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
-          <p class="tw-text-[30px] tw-pb-10 tw-text-white tw-leading-[4rem]"></p>
-          <p class="tw-text-[22px] tw-font-light tw-text-white"></p>
-        </div>
-      </div>
-    
-  </div>
-</div>
-
-
-</div><div id="shopify-section-template--24912567468343__dd2b3841-e68d-4e5c-b90a-65ac3a230233" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-accordion.css?v=26510281912245942681752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
-
-<div class="accordions accordions--template--24912567468343__dd2b3841-e68d-4e5c-b90a-65ac3a230233 color-scheme--default">
-  <div class="container container--default" data-aos="fade-up"><div class="section-heading section-heading--medium section-heading--left"><div class="row row--align-center">
-        <div class="col-md-6">
-          <h2 class="h4 text-left">
-            Câu hỏi thường gặp
-          </h2>
-        </div></div></div><div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Thông số thiết bị
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Halo được thiết kế để vừa vặn với hầu hết mọi người. Thiết bị chỉ nặng hơn 40g và với mức sử dụng thông thường ước tính có thể đạt thời lượng pin cả ngày. Thiết bị tích hợp màn hình màu, cảm biến quang học tiết kiệm điện cho suy luận AI, micro kép với tính năng nhận diện hoạt động âm thanh, bộ xử lý AI siêu tiết kiệm điện và loa dẫn truyền qua xương kép. Halo hoàn toàn là mã nguồn mở, toàn bộ tệp thiết kế và mã nguồn đều có trên GitHub.<br>Halo được thiết kế cho khoảng cách đồng tử (IPD) từ 58-72mm. Khoảng cách này phù hợp với phần lớn người dùng và chúng tôi khuyến nghị bạn sử dụng ứng dụng <a href="https://apps.apple.com/us/app/eyemeasure/id1417435049" target="_blank" title="Eye Measure">Eye Measure</a> để kiểm tra xem Halo có phù hợp với bạn hay không.<br></p>
-      
-    </div>
-  </details>
-</div>
-<div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Vận chuyển
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Halo sẽ bắt đầu được giao hàng trong thời gian tới 🚀</p>
-      
-    </div>
-  </details>
-</div>
-<div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Halo có thể làm gì ngay khi xuất xưởng?
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Halo rất hữu ích cho bất kỳ ai muốn tăng cường trí nhớ và đối thoại thông minh cùng AI về những gì bạn nhìn và nghe thấy, bao gồm cả tính năng dịch thuật tức thì giữa nhiều ngôn ngữ. Đối với các nhà phát triển, Halo là một nền tảng phần cứng và phần mềm mã nguồn mở để bạn tự do sáng tạo, phát triển nguyên mẫu thử nghiệm và mở rộng giới hạn của công nghệ.</p>
-      
-    </div>
-  </details>
-</div>
-<div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Làm thế nào để phát triển cho Halo?
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Sử dụng Brilliant SDK để xây dựng ứng dụng và đối với iOS và Android, chúng tôi có sẵn Flutter SDK. Toàn bộ tài liệu kỹ thuật của chúng tôi đều có sẵn trên trang web tại đây: <a href="<?php echo esc_url( home_url( '/developers/' ) ); ?>" title="Nhà phát triển – Brilliant Labs">Nhà phát triển – Brilliant Labs</a></p>
-      
-    </div>
-  </details>
-</div>
-<div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Thuế & phí hải quan?
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Thuế và các loại phí không được thu tại thời điểm thanh toán. Chúng tôi khuyến nghị bạn nên tham khảo trước quy định của cơ quan hải quan địa phương để biết mức phí dự kiến. Mỗi quốc gia có mức thuế nhập khẩu hoặc thuế GTGT (VAT) khác nhau.<br><br></p>
-      
-    </div>
-  </details>
-</div>
-<div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Có hỗ trợ tròng kính cận hoặc kính râm không?
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Hoàn toàn có thể! Khi bạn đặt mua Halo, chúng tôi sẽ cung cấp liên kết đến trang web đối tác của chúng tôi để bạn đặt mua tròng kính: <a href="https://www.smartbuyglasses.com/designer-eyeglasses/Brilliant-Labs/Cut-Lens-for-Brilliant-Labs-Frame-2.html" target="_blank" title="SmartBuyGlasses">SmartBuyGlasses</a>.</p><p>Hệ thống quang học hiển thị của Halo có thể điều chỉnh linh hoạt từ +2 đến -6 Diop để hỗ trợ độ khúc xạ thị lực của mắt.</p>
-      
-    </div>
-  </details>
-</div>
-<div class="accordion">
-  <details>
-    <summary class="accordion__summary">
-      <div class="accordion__summary-inner">
-        <p class="accordion__heading p--bold">
-          Chính sách đổi trả là gì?
-        </p><svg class="icon icon-plus" aria-hidden="true" focusable="false" role="presentation" width="10" height="10" viewbox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M5 9V1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-  <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg><svg class="icon icon-minus" aria-hidden="true" focusable="false" role="presentation" width="10" height="2" viewbox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 1H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg></div>
-    </summary>
-
-    <div class="accordion__content">
-      <p>Nếu chiếc Halo của bạn bị hỏng, lỗi kỹ thuật hoặc lỗi sản xuất rõ ràng, chúng tôi rất sẵn lòng đổi mới cho bạn một sản phẩm khác. Đối với trường hợp đổi trả ngoài các lý do trên, chúng tôi sẽ hoàn tiền đầy đủ trừ đi phí lưu kho $49 và bạn sẽ chịu chi phí vận chuyển thiết bị trả lại cho chúng tôi. Bạn chỉ cần liên hệ với đội ngũ hỗ trợ của chúng tôi qua email hello@itsbrilliant.co để bắt đầu quy trình đổi trả.</p><p></p>
-      
-    </div>
-  </details>
-</div>
-</div>
-</div><style data-shopify="">.accordions--template--24912567468343__dd2b3841-e68d-4e5c-b90a-65ac3a230233 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    
-  }
-
-  @media screen and (min-width: 768px) {
-    .accordions--template--24912567468343__dd2b3841-e68d-4e5c-b90a-65ac3a230233 {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding-top: 72px;
-      padding-bottom: 72px;
-
-      
-    }
-  }</style>
 </div><div id="shopify-section-template--24912567468343__press-items" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-press-items.css?v=180064749476445111791752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 
 

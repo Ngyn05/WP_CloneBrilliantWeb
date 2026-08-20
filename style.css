@@ -6,3 +6,112 @@ Description: WordPress theme converted from the provided Brilliant.xyz HTML/CSS/
 Version: 1.0.0
 Text Domain: brilliant-xyz
 */
+
+/* Ensure header container does not clip the dropdown menu */
+site-header,
+.site-header,
+.header-wrapper,
+.site-header__wrapper,
+.header-container,
+.header__inner,
+.tw-flex.tw-justify-end {
+    overflow: visible !important;
+}
+
+/* Compact Submenu on Hover */
+.bl-nav-buy-wrap {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    z-index: 99999 !important;
+    padding-bottom: 12px !important;
+    margin-bottom: -12px !important;
+}
+
+.bl-nav-buy-wrap a.tw-border-pink,
+.bl-nav-buy-wrap a.tw-border-white {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-decoration: none !important;
+    color: #ffffff !important;
+    white-space: nowrap !important;
+}
+
+.bl-nav-buy-wrap:hover .bl-sub-dropdown,
+.bl-nav-buy-wrap:focus-within .bl-sub-dropdown {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+}
+
+.bl-sub-dropdown {
+    position: absolute !important;
+    top: 100% !important;
+    right: 0 !important;
+    min-width: 240px !important;
+    background: #141414 !important;
+    border: 1px solid #333333 !important;
+    border-radius: 14px !important;
+    padding: 8px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.95) !important;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s !important;
+    pointer-events: none;
+    z-index: 999999 !important;
+}
+
+/* Invisible Bridge to prevent mouseleave when moving from button to dropdown */
+.bl-sub-dropdown::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -16px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 16px !important;
+    background: transparent !important;
+}
+
+.bl-sub-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+}
+
+.bl-sub-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+    white-space: nowrap !important;
+}
+
+.bl-sub-item:hover {
+    background: #242424 !important;
+    color: #f288bf !important;
+}
+
+.bl-sub-title {
+    max-width: 160px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+.bl-sub-price {
+    font-size: 12px !important;
+    color: #f288bf !important;
+    font-weight: 600 !important;
+    margin-left: 8px !important;
+}
