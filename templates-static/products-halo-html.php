@@ -1119,7 +1119,7 @@ first.parentNode.insertBefore(script, first);
     <div class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 140px"></div>
         <div class="tw-relative tw-flex tw-flex-col">
           <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
-          <p class="tw-text-[30px] tw-pb-10 tw-text-white tw-leading-[4rem]">The Halo display optic is adjustable from +2 to -6 diopters, supporting a wide range of corrective vision needs.</p>
+          <p class="tw-text-[30px] tw-pb-10 tw-text-white tw-leading-[4rem]">Hệ thống quang học hiển thị của Halo có thể điều chỉnh từ +2 đến -6 diop, đáp ứng đa dạng các nhu cầu điều chỉnh tật khúc xạ thị lực.</p>
           <p class="tw-text-[22px] tw-font-light tw-text-white"></p>
         </div>
       </div>
@@ -1184,7 +1184,7 @@ first.parentNode.insertBefore(script, first);
     </summary>
 
     <div class="accordion__content">
-      <p>Halo is designed to fit most people, but not all. The device weighs just over than 40g and, at estimated normal use, can achieve all-day battery life.  The device contains a color display, low-power optical sensor for AI inference, dual mics with audio activity detection, a low-power AI processor, and dual bone conduction speakers.  Halo is totally open source, design files and code are on Github.<br> Halo has been designed for an IPD (inter-pupillary distance) range of 58-72mm. This covers most, but not all, people and we suggest using the <a href="https://apps.apple.com/us/app/eyemeasure/id1417435049" target="_blank" title="https://apps.apple.com/us/app/eyemeasure/id1417435049">Eye Measure</a> app to gauge whether Halo is suitable for you.<br></p>
+      <p>Halo được thiết kế để vừa vặn với hầu hết mọi người. Thiết bị chỉ nặng hơn 40g và với mức sử dụng thông thường ước tính có thể đạt thời lượng pin cả ngày. Thiết bị tích hợp màn hình màu, cảm biến quang học tiết kiệm điện cho suy luận AI, micro kép với tính năng nhận diện hoạt động âm thanh, bộ xử lý AI siêu tiết kiệm điện và loa dẫn truyền qua xương kép. Halo hoàn toàn là mã nguồn mở, toàn bộ tệp thiết kế và mã nguồn đều có trên GitHub.<br>Halo được thiết kế cho khoảng cách đồng tử (IPD) từ 58-72mm. Khoảng cách này phù hợp với phần lớn người dùng và chúng tôi khuyến nghị bạn sử dụng ứng dụng <a href="https://apps.apple.com/us/app/eyemeasure/id1417435049" target="_blank" title="Eye Measure">Eye Measure</a> để kiểm tra xem Halo có phù hợp với bạn hay không.<br></p>
       
     </div>
   </details>
@@ -1224,7 +1224,7 @@ first.parentNode.insertBefore(script, first);
     </summary>
 
     <div class="accordion__content">
-      <p>Halo is useful for anyone to use for memory enhancement and AI dialogue about what you see and hear, including translation across a wide range of languages.  For developers, Halo is an open source hardware and software platform for expressing your creativity, prototyping, and pushing the boundaries of what’s possible.</p>
+      <p>Halo rất hữu ích cho bất kỳ ai muốn tăng cường trí nhớ và đối thoại thông minh cùng AI về những gì bạn nhìn và nghe thấy, bao gồm cả tính năng dịch thuật tức thì giữa nhiều ngôn ngữ. Đối với các nhà phát triển, Halo là một nền tảng phần cứng và phần mềm mã nguồn mở để bạn tự do sáng tạo, phát triển nguyên mẫu thử nghiệm và mở rộng giới hạn của công nghệ.</p>
       
     </div>
   </details>
@@ -1244,7 +1244,7 @@ first.parentNode.insertBefore(script, first);
     </summary>
 
     <div class="accordion__content">
-      <p>Use the Brilliant SDK to build apps and, for iOS and Android, we have a Flutter SDK. All our technical docs are available on the website here: <a href="<?php echo esc_url( home_url( '/developers/' ) ); ?>" title="https://brilliant.xyz/pages/developers">Nhà phát triển – Brilliant Labs</a></p>
+      <p>Sử dụng Brilliant SDK để xây dựng ứng dụng và đối với iOS và Android, chúng tôi có sẵn Flutter SDK. Toàn bộ tài liệu kỹ thuật của chúng tôi đều có sẵn trên trang web tại đây: <a href="<?php echo esc_url( home_url( '/developers/' ) ); ?>" title="Nhà phát triển – Brilliant Labs">Nhà phát triển – Brilliant Labs</a></p>
       
     </div>
   </details>
@@ -1264,7 +1264,7 @@ first.parentNode.insertBefore(script, first);
     </summary>
 
     <div class="accordion__content">
-      <p>Taxes are not collected at the time of purchase. We recommend checking your country’s local customs authority before making a purchase to get a sense of what you will be expected to pay. Every country has a different import or VAT tax rate. <br><br></p>
+      <p>Thuế và các loại phí không được thu tại thời điểm thanh toán. Chúng tôi khuyến nghị bạn nên tham khảo trước quy định của cơ quan hải quan địa phương để biết mức phí dự kiến. Mỗi quốc gia có mức thuế nhập khẩu hoặc thuế GTGT (VAT) khác nhau.<br><br></p>
       
     </div>
   </details>
@@ -1284,7 +1284,7 @@ first.parentNode.insertBefore(script, first);
     </summary>
 
     <div class="accordion__content">
-      <p>Absolutely! Once you purchase Halo, we will share a link to our partner’s website to purchase. <a href="https://www.smartbuyglasses.com/designer-eyeglasses/Brilliant-Labs/Cut-Lens-for-Brilliant-Labs-Frame-2.html" target="_blank" title="SmartBuyGlasses">SmartBuyGlasses</a></p><p>Halo display optic can be adjusted between +2 and -6 Diopters for corrective vision</p>
+      <p>Hoàn toàn có thể! Khi bạn đặt mua Halo, chúng tôi sẽ cung cấp liên kết đến trang web đối tác của chúng tôi để bạn đặt mua tròng kính: <a href="https://www.smartbuyglasses.com/designer-eyeglasses/Brilliant-Labs/Cut-Lens-for-Brilliant-Labs-Frame-2.html" target="_blank" title="SmartBuyGlasses">SmartBuyGlasses</a>.</p><p>Hệ thống quang học hiển thị của Halo có thể điều chỉnh linh hoạt từ +2 đến -6 Diop để hỗ trợ độ khúc xạ thị lực của mắt.</p>
       
     </div>
   </details>
@@ -1304,7 +1304,7 @@ first.parentNode.insertBefore(script, first);
     </summary>
 
     <div class="accordion__content">
-      <p>If your Halo is clearly broken, defective or faulty, then we’d be happy to exchange it for a new unit. For a return outside of these reasons, we will issue a full refund minus a restocking fee of $49 and you are responsible for the cost of shipping the device back to us. Just reach out to our support team to get the process started via hello@itsbrilliant.co </p><p></p>
+      <p>Nếu chiếc Halo của bạn bị hỏng, lỗi kỹ thuật hoặc lỗi sản xuất rõ ràng, chúng tôi rất sẵn lòng đổi mới cho bạn một sản phẩm khác. Đối với trường hợp đổi trả ngoài các lý do trên, chúng tôi sẽ hoàn tiền đầy đủ trừ đi phí lưu kho $49 và bạn sẽ chịu chi phí vận chuyển thiết bị trả lại cho chúng tôi. Bạn chỉ cần liên hệ với đội ngũ hỗ trợ của chúng tôi qua email hello@itsbrilliant.co để bắt đầu quy trình đổi trả.</p><p></p>
       
     </div>
   </details>
