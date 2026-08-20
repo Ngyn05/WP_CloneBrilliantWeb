@@ -16,6 +16,10 @@ function brilliant_xyz_setup() {
 }
 add_action( 'after_setup_theme', 'brilliant_xyz_setup' );
 
+// Bật giao diện Trình soạn thảo Cổ điển (Classic Editor) chuẩn WordPress
+add_filter( 'use_block_editor_for_post', '__return_false', 10 );
+add_filter( 'use_widgets_block_editor', '__return_false' );
+
 // Include Inc Modules
 require_once get_template_directory() . '/inc/metaboxes.php';
 require_once get_template_directory() . '/inc/database-seeder.php';
