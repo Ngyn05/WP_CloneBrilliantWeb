@@ -123,21 +123,21 @@ function brilliant_xyz_template_include( $template ) {
     $req_uri  = isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '';
     $req_path = trim( (string) parse_url( $req_uri, PHP_URL_PATH ), '/' );
 
-    // 0. Front Page / Home Page
-    if ( is_front_page() || empty( $req_path ) ) {
-        $front_candidate = get_template_directory() . '/front-page.php';
-        if ( file_exists( $front_candidate ) ) {
-            status_header( 200 );
-            return $front_candidate;
-        }
-    }
-
-    // 1. Check static template routes (contact, privacy, terms)
+    // 1. Check static template routes (contact, developers, privacy, terms)
     $static = get_query_var( 'brilliant_static' );
     if ( $static ) {
         $allowed = array_values( brilliant_xyz_static_routes() );
         if ( in_array( $static, $allowed, true ) ) {
             $candidate = get_template_directory() . '/templates-static/' . basename( $static );
+            if ( file_exists( $candidate ) ) {
+                status_header( 200 );
+                return $candidate;
+            }
+        }
+    }
+    foreach ( brilliant_xyz_static_routes() as $route => $static_tpl ) {
+        if ( $req_path === $route || $req_path === $route . '/' ) {
+            $candidate = get_template_directory() . '/templates-static/' . basename( $static_tpl );
             if ( file_exists( $candidate ) ) {
                 status_header( 200 );
                 return $candidate;
@@ -160,10 +160,25 @@ function brilliant_xyz_template_include( $template ) {
         }
     }
 
-    // 3. Check Blog & Announcements views (/blogs/...)
+    // 3. Check Single Blog Post
+    if ( 
+        $view === 'single' || 
+        ( is_single() && get_post_type() === 'post' ) ||
+        ( preg_match( '#^blogs/(announcements/)?[^/]+$#i', $req_path ) && ! preg_match( '#^blogs(/(announcements)?)?/?$#i', $req_path ) && ! preg_match( '#^blogs/announcements/(tagged|page)#i', $req_path ) )
+    ) {
+        $single_candidate = get_template_directory() . '/templates/single-blog.php';
+        if ( file_exists( $single_candidate ) ) {
+            status_header( 200 );
+            return $single_candidate;
+        }
+    }
+
+    // 4. Check Blog & Announcements Archive views (/blogs/, /blogs/announcements/, tagged, page, categories)
     if ( 
         $view === 'archive' || 
-        preg_match( '#^blogs#i', $req_path ) ||
+        preg_match( '#^blogs(/announcements)?/?$#i', $req_path ) ||
+        preg_match( '#^blogs/announcements/(tagged|page)/#i', $req_path ) ||
+        preg_match( '#^blogs/tagged/#i', $req_path ) ||
         is_category() || 
         ( is_archive() && ! is_post_type_archive( 'product' ) )
     ) {
@@ -174,12 +189,12 @@ function brilliant_xyz_template_include( $template ) {
         }
     }
 
-    // 4. Single Blog Post
-    if ( $view === 'single' || ( is_single() && get_post_type() === 'post' ) ) {
-        $single_candidate = get_template_directory() . '/templates/single-blog.php';
-        if ( file_exists( $single_candidate ) ) {
+    // 5. Front Page / Home Page (only when request path is truly root or is_front_page with empty path)
+    if ( empty( $req_path ) || ( is_front_page() && empty( $req_path ) ) ) {
+        $front_candidate = get_template_directory() . '/front-page.php';
+        if ( file_exists( $front_candidate ) ) {
             status_header( 200 );
-            return $single_candidate;
+            return $front_candidate;
         }
     }
 
@@ -187,12 +202,12 @@ function brilliant_xyz_template_include( $template ) {
 }
 add_filter( 'template_include', 'brilliant_xyz_template_include', 99 );
 
-// Ensure rewrite rules are flushed for new product URLs
+// Ensure rewrite rules are flushed for new URLs
 function brilliant_xyz_flush_rules_if_needed() {
-    if ( ! get_option( 'bl_product_rewrites_flushed_v2' ) ) {
+    if ( ! get_option( 'bl_product_rewrites_flushed_v4' ) ) {
         brilliant_xyz_add_rewrite_rules();
         flush_rewrite_rules();
-        update_option( 'bl_product_rewrites_flushed_v2', 1 );
+        update_option( 'bl_product_rewrites_flushed_v4', 1 );
     }
 }
 add_action( 'init', 'brilliant_xyz_flush_rules_if_needed', 30 );
@@ -206,3 +221,50 @@ add_filter( 'excerpt_length', 'brilliant_custom_excerpt_length', 999 );
 // Prevent WordPress from adding default emoji scripts
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+/**
+ * Handle AJAX for phone consultation leads
+ */
+function bl_ajax_phone_consultation() {
+    $phone        = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
+    $product_name = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : 'Sản phẩm Brilliant';
+    $product_url  = isset( $_POST['product_url'] ) ? esc_url_raw( $_POST['product_url'] ) : '';
+
+    if ( empty( $phone ) ) {
+        wp_send_json_error( array( 'message' => 'Vui lòng nhập số điện thoại.' ) );
+    }
+
+    // Save lead into options list (keeps last 100 leads)
+    $leads = get_option( 'bl_phone_consultation_leads', array() );
+    if ( ! is_array( $leads ) ) {
+        $leads = array();
+    }
+    array_unshift( $leads, array(
+        'phone'        => $phone,
+        'product_name' => $product_name,
+        'product_url'  => $product_url,
+        'created_at'   => current_time( 'mysql' ),
+        'ip'           => isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( $_SERVER['REMOTE_ADDR'] ) : '',
+    ) );
+    if ( count( $leads ) > 100 ) {
+        $leads = array_slice( $leads, 0, 100 );
+    }
+    update_option( 'bl_phone_consultation_leads', $leads );
+
+    // Send email notification to admin
+    $admin_email = get_option( 'admin_email' );
+    $subject     = '[Tư Vấn Sản Phẩm] Yêu cầu gọi lại từ khách hàng: ' . $phone;
+    $body        = "Khách hàng yêu cầu tư vấn:\n\n";
+    $body       .= "- Số điện thoại: " . $phone . "\n";
+    $body       .= "- Sản phẩm: " . $product_name . "\n";
+    $body       .= "- Link: " . $product_url . "\n";
+    $body       .= "- Thời gian: " . current_time( 'd/m/Y H:i:s' ) . "\n";
+    @wp_mail( $admin_email, $subject, $body );
+
+    wp_send_json_success( array(
+        'message' => 'Cảm ơn bạn! Chuyên viên tư vấn sẽ liên hệ ngay qua số ' . esc_html( $phone ) . '.',
+    ) );
+}
+add_action( 'wp_ajax_bl_submit_phone_consultation', 'bl_ajax_phone_consultation' );
+add_action( 'wp_ajax_nopriv_bl_submit_phone_consultation', 'bl_ajax_phone_consultation' );
+

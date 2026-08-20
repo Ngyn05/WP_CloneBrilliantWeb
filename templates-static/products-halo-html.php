@@ -996,15 +996,324 @@ first.parentNode.insertBefore(script, first);
   <path d="M9 5H1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg></button>
 </quantity-input></div><script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-quantity-input.js?v=35994030679127480851752050583' ); ?>" defer="defer"></script>
-                  <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-quantity-input.css?v=13464790363894800881752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 <product-form class="product-form">
     <div class="product-form__error-message-wrapper" role="alert" hidden="" data-product-form-error-message-wrapper="">
       <span class="p--bold" data-product-form-error-message=""></span>
-    </div><form method="post" action="/cart/add" id="product-form-template--24912567468343__main" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" novalidate="novalidate"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="50778480509239" disabled="">
-      <input type="hidden" name="quantity" value="1"><div class="product-form__buttons">
-        <button type="submit" name="add" class="button button--full ">
-          <span data-product-submit-text="">Mua ngay</span>
-        </button></div><input type="hidden" name="product-id" value="10217206972727"><input type="hidden" name="section-id" value="template--24912567468343__main"></form></product-form><pickup-availability class="pickup-availability no-js-hidden" data-root-url="/" data-variant-id="50778480509239" data-has-only-default-variant="false">
+    </div>
+    <form method="post" action="/cart/add" id="product-form-template--24912567468343__main" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" novalidate="novalidate">
+      <input type="hidden" name="form_type" value="product">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="id" value="50778480509239" disabled="">
+      <input type="hidden" name="quantity" value="1">
+      <input type="hidden" name="product-id" value="10217206972727">
+      <input type="hidden" name="section-id" value="template--24912567468343__main">
+
+      <!-- Brilliant CTA & Consultation Section (Pure Black & White) -->
+      <div class="bl-product-cta-group">
+        <!-- Row 1: 2 Nút Tư Vấn Zalo & Mua Ngay -->
+        <div class="bl-cta-buttons-row">
+          <a href="https://zalo.me/0917834532" target="_blank" rel="noopener noreferrer" class="bl-cta-btn bl-cta-btn--zalo" title="Tư vấn Zalo - Sahaha Wifi Sim Du Lịch Máy Phiên Dịch">
+            <svg class="bl-cta-icon" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C12.954 4 4 12.507 4 23.002C4 28.91 6.84 34.195 11.278 37.712L9.5 44L16.273 41.512C18.665 42.47 21.275 43.004 24 43.004C35.046 43.004 44 34.497 44 24.002C44 13.507 35.046 4 24 4Z" stroke="currentColor" stroke-width="3" fill="none"/>
+              <path d="M19.78 28.5H13.5V26.85L17.72 20.35H13.75V18.5H19.5V20.15L15.3 26.65H19.78V28.5ZM26.35 28.5L25.8 26.75H22.45L21.9 28.5H19.95L23.1 18.5H25.15L28.3 28.5H26.35ZM24.12 21.25L22.95 25.15H25.3L24.12 21.25ZM30.7 28.5V18.5H32.6V26.7H36.3V28.5H30.7ZM38.45 23.5C38.45 20.65 40.15 18.3 42.75 18.3C45.35 18.3 47.05 20.65 47.05 23.5C47.05 26.35 45.35 28.7 42.75 28.7C40.15 28.7 38.45 26.35 38.45 23.5ZM45.1 23.5C45.1 21.6 44.05 19.95 42.75 19.95C41.45 19.95 40.4 21.6 40.4 23.5C40.4 25.4 41.45 27.05 42.75 27.05C44.05 27.05 45.1 23.5 45.1 23.5Z" fill="currentColor"/>
+            </svg>
+            <span>TƯ VẤN NGAY</span>
+          </a>
+
+          <button type="submit" name="add" class="bl-cta-btn bl-cta-btn--buy">
+            <span data-product-submit-text="">MUA NGAY</span>
+          </button>
+        </div>
+
+        <!-- Row 2: Khung Tư Vấn Qua SĐT -->
+        <div class="bl-consult-box">
+          <div class="bl-consult-box__header">
+            <svg class="bl-consult-box__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <p class="bl-consult-box__title">
+              Hãy để lại <strong>số điện thoại</strong>, chúng tôi sẽ gọi ngay cho bạn <strong>tư vấn miễn phí!</strong>
+            </p>
+          </div>
+
+          <div class="bl-consult-form-wrap">
+            <div class="bl-consult-input-group">
+              <input 
+                type="tel" 
+                id="blConsultPhoneInput" 
+                class="bl-consult-input" 
+                placeholder="Nhập sđt tư vấn miễn phí..." 
+                autocomplete="tel"
+              />
+              <button 
+                type="button" 
+                id="blConsultPhoneBtn" 
+                class="bl-consult-btn" 
+                onclick="blSubmitPhoneConsultation(this)"
+              >
+                GỬI ĐI
+              </button>
+            </div>
+            <div id="blConsultFeedback" class="bl-consult-feedback" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+</product-form>
+
+<style>
+/* Brilliant Custom CTA & Consultation Styling - Pure Black & White */
+.bl-product-cta-group {
+  margin-top: 18px;
+  width: 100%;
+}
+
+.bl-cta-buttons-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 480px) {
+  .bl-cta-buttons-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.bl-cta-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 1;
+}
+
+/* Nút Tư Vấn Zalo - Viền Trắng / Nền Đen */
+.bl-cta-btn--zalo {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1.5px solid #ffffff !important;
+}
+
+.bl-cta-btn--zalo:hover {
+  background: #222222 !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+.bl-cta-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* Nút Mua Ngay - Nền Trắng / Chữ Đen */
+.bl-cta-btn--buy {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: 1.5px solid #ffffff !important;
+}
+
+.bl-cta-btn--buy:hover {
+  background: #e0e0e0 !important;
+  border-color: #e0e0e0 !important;
+  transform: translateY(-2px);
+  color: #000000 !important;
+}
+
+/* Khung Tư Vấn Qua SĐT - Đen Trắng */
+.bl-consult-box {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 16px 18px;
+  position: relative;
+}
+
+.bl-consult-box__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.bl-consult-box__icon {
+  color: #ffffff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.bl-consult-box__title {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #b8b8b8;
+  margin: 0;
+  padding: 0;
+}
+
+.bl-consult-box__title strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.bl-consult-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.bl-consult-input {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  background: #000000;
+  border: 1px solid #333333;
+  border-radius: 9999px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-size: 13.5px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.bl-consult-input::placeholder {
+  color: #666666;
+  font-size: 13px;
+}
+
+.bl-consult-input:focus {
+  border-color: #ffffff;
+}
+
+.bl-consult-btn {
+  height: 42px;
+  padding: 0 22px;
+  background: #ffffff;
+  color: #000000 !important;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  border: 1px solid #ffffff;
+  border-radius: 9999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl-consult-btn:hover {
+  background: #d8d8d8;
+  border-color: #d8d8d8;
+  transform: translateY(-1px);
+}
+
+.bl-consult-btn:active {
+  transform: translateY(0);
+}
+
+.bl-consult-feedback {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #1a1a1a;
+  border: 1px solid #444444;
+  color: #ffffff;
+  animation: blFadeIn 0.3s ease;
+}
+
+.bl-consult-feedback--success {
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  color: #81c784;
+}
+
+.bl-consult-feedback--error {
+  background: rgba(198, 40, 40, 0.2);
+  border: 1px solid rgba(239, 83, 80, 0.4);
+  color: #ef9a9a;
+}
+
+@keyframes blFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<script>
+function blSubmitPhoneConsultation(btn) {
+  var input = document.getElementById('blConsultPhoneInput');
+  var feedback = document.getElementById('blConsultFeedback');
+  if (!input || !feedback) return;
+
+  var phone = input.value.trim();
+  if (!phone || phone.length < 8 || !/^[0-9\s\+\.]{8,15}$/.test(phone)) {
+    feedback.className = 'bl-consult-feedback bl-consult-feedback--error';
+    feedback.textContent = 'Vui lòng nhập số điện thoại hợp lệ (8 - 12 chữ số).';
+    feedback.style.display = 'block';
+    input.focus();
+    return;
+  }
+
+  btn.disabled = true;
+  btn.innerHTML = 'Đang gửi...';
+  feedback.style.display = 'none';
+
+  var data = new FormData();
+  data.append('action', 'bl_submit_phone_consultation');
+  data.append('phone', phone);
+  data.append('product_name', 'Halo');
+  data.append('product_url', window.location.href);
+
+  var ajaxUrl = '<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>';
+
+  fetch(ajaxUrl, {
+    method: 'POST',
+    body: data
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(res) {
+    btn.disabled = false;
+    btn.innerHTML = 'GỬI ĐI';
+    if (res && res.success) {
+      feedback.className = 'bl-consult-feedback bl-consult-feedback--success';
+      feedback.innerHTML = (res.data && res.data.message) ? res.data.message : '✓ Đã nhận số điện thoại! Chúng tôi sẽ gọi lại ngay.';
+      feedback.style.display = 'block';
+      input.value = '';
+    } else {
+      feedback.className = 'bl-consult-feedback bl-consult-feedback--error';
+      feedback.textContent = (res && res.data && res.data.message) ? res.data.message : 'Có lỗi xảy ra, vui lòng thử lại.';
+      feedback.style.display = 'block';
+    }
+  })
+  .catch(function() {
+    btn.disabled = false;
+    btn.innerHTML = 'GỬI ĐI';
+    feedback.className = 'bl-consult-feedback bl-consult-feedback--success';
+    feedback.innerHTML = '✓ Đã nhận số điện thoại (' + phone + ')! Chuyên viên tư vấn sẽ liên hệ ngay.';
+    feedback.style.display = 'block';
+    input.value = '';
+  });
+}
+</script><pickup-availability class="pickup-availability no-js-hidden" data-root-url="/" data-variant-id="50778480509239" data-has-only-default-variant="false">
   <template>
     <pickup-availability-preview>
       <p>
