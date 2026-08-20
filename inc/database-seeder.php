@@ -50,7 +50,7 @@ function bl_seed_database_posts() {
         }
     }
 
-    // 2. Clean, human-readable article contents for WordPress WYSIWYG editor
+    // 2. High Definition Featured Images and Articles
     $posts_data = array(
         array(
             'slug'        => 'road-to-halo-part-6',
@@ -181,7 +181,7 @@ function bl_seed_database_posts() {
             'category'    => 'brilliant-labs-team',
             'author_name' => 'Sam Khorshid',
             'excerpt'     => '🎨 Quá trình nghiên cứu phần cứng Halo đòi hỏi sự định hướng rõ ràng, chắt lọc tinh tế, mục tiêu mạch lạc và thiết kế tỉ mỉ ở mọi tầng công nghệ...',
-            'image'       => 'site-assets/cdn/shop/articles/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp',
+            'image'       => 'site-assets/cdn/shop/articles/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e-3.webp',
             'content'     => '<h3>🎨 Quá trình nghiên cứu phần cứng <strong>Halo</strong> đòi hỏi sự định hướng rõ ràng, chắt lọc tinh tế, mục tiêu mạch lạc và thiết kế tỉ mỉ ở mọi tầng công nghệ.</h3>
 
 <p><img src="' . esc_url( $theme_uri . '/site-assets/s/files/1/0722/5190/0215/files/Falo_Shines.gif?v=1756151572' ) . '" alt=""></p>
@@ -214,7 +214,7 @@ function bl_seed_database_posts() {
             'category'    => 'brilliant-labs-team',
             'author_name' => 'Sam Khorshid',
             'excerpt'     => 'Noa dành cho Halo đã có một bước tiến vượt bậc! 🥳🛠 Chúng tôi có tầm nhìn rõ ràng về trải nghiệm phần mềm lý tưởng cùng đàm thoại đa phương thức...',
-            'image'       => 'site-assets/cdn/shop/articles/IMG_7016.jpg',
+            'image'       => 'site-assets/cdn/shop/articles/IMG_7016-11.jpg',
             'content'     => '<h3 style="text-align: center;"><strong>Noa</strong> dành cho <strong>Halo</strong> đã có một bước tiến vượt bậc! 🥳🛠</h3>
 
 <h4 style="text-align: center;">Chúng tôi có một tầm nhìn rất rõ ràng về trải nghiệm phần mềm lý tưởng. Song hành cùng những tiến bộ trong công nghệ giọng nói AI, chúng tôi bắt đầu xây dựng giao diện đàm thoại đa phương thức với độ trễ siêu thấp, mang lại cảm giác đối thoại tự nhiên như người với người.</h4>
@@ -333,48 +333,30 @@ function bl_seed_database_posts() {
     require_once( ABSPATH . 'wp-admin/includes/file.php' );
     require_once( ABSPATH . 'wp-admin/includes/media.php' );
 
-    // Check if we need to clean and update existing posts
-    $force_update = ! get_option( 'bl_database_cleaned_v2' );
+    // Force update flag for HD images
+    $force_hd_update = ! get_option( 'bl_database_hd_images_v3' );
 
     foreach ( $posts_data as $p ) {
         $existing_post = get_page_by_path( $p['slug'], OBJECT, 'post' );
 
         if ( $existing_post ) {
-            if ( $force_update ) {
-                wp_update_post( array(
-                    'ID'           => $existing_post->ID,
-                    'post_title'   => $p['title'],
-                    'post_content' => $p['content'],
-                    'post_excerpt' => $p['excerpt'],
-                ) );
-
-                if ( isset( $cat_ids[ $p['category'] ] ) ) {
-                    wp_set_post_categories( $existing_post->ID, array( $cat_ids[ $p['category'] ] ) );
-                }
-
-                if ( ! empty( $p['author_name'] ) ) {
-                    update_post_meta( $existing_post->ID, '_bl_author_name', $p['author_name'] );
-                }
-
-                // Check featured image
-                if ( ! has_post_thumbnail( $existing_post->ID ) ) {
-                    $local_image_path = $theme_dir . '/' . $p['image'];
-                    if ( file_exists( $local_image_path ) ) {
-                        $filename = basename( $local_image_path );
-                        $upload_file = wp_upload_bits( $filename, null, file_get_contents( $local_image_path ) );
-                        if ( ! $upload_file['error'] ) {
-                            $wp_filetype = wp_check_filetype( $filename, null );
-                            $attachment = array(
-                                'post_mime_type' => $wp_filetype['type'],
-                                'post_title'     => sanitize_file_name( $filename ),
-                                'post_content'   => '',
-                                'post_status'    => 'inherit',
-                            );
-                            $attach_id = wp_insert_attachment( $attachment, $upload_file['file'], $existing_post->ID );
-                            $attach_data = wp_generate_attachment_metadata( $attach_id, $upload_file['file'] );
-                            wp_update_attachment_metadata( $attach_id, $attach_data );
-                            set_post_thumbnail( $existing_post->ID, $attach_id );
-                        }
+            if ( $force_hd_update ) {
+                $local_image_path = $theme_dir . '/' . $p['image'];
+                if ( file_exists( $local_image_path ) ) {
+                    $filename = basename( $local_image_path );
+                    $upload_file = wp_upload_bits( $filename, null, file_get_contents( $local_image_path ) );
+                    if ( ! $upload_file['error'] ) {
+                        $wp_filetype = wp_check_filetype( $filename, null );
+                        $attachment = array(
+                            'post_mime_type' => $wp_filetype['type'],
+                            'post_title'     => sanitize_file_name( $filename ),
+                            'post_content'   => '',
+                            'post_status'    => 'inherit',
+                        );
+                        $attach_id = wp_insert_attachment( $attachment, $upload_file['file'], $existing_post->ID );
+                        $attach_data = wp_generate_attachment_metadata( $attach_id, $upload_file['file'] );
+                        wp_update_attachment_metadata( $attach_id, $attach_data );
+                        set_post_thumbnail( $existing_post->ID, $attach_id );
                     }
                 }
             }
@@ -429,6 +411,7 @@ function bl_seed_database_posts() {
         }
     }
 
+    update_option( 'bl_database_hd_images_v3', 1 );
     update_option( 'bl_database_cleaned_v2', 1 );
     update_option( 'bl_database_seeded_v1', 1 );
 }
