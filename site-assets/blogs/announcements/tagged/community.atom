@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://brilliant.xyz/blogs/announcements.atom</id>
+  <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements"/>
+  <link rel="self" type="application/atom+xml" href="https://brilliant.xyz/blogs/announcements/tagged/community.atom"/>
+  <title>Brilliant Labs - Announcements</title>
+  <updated>2025-10-11T11:47:36+08:00</updated>
+  <author>
+    <name>Brilliant Labs</name>
+  </author>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4</id>
+    <published>2025-08-13T14:00:00+08:00</published>
+    <updated>2025-08-14T04:59:24+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4"/>
+    <title>Road to Halo | Part 1 of 4</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <summary type="html">
+      <![CDATA[<p>The response to<span> </span><strong><span>Halo</span></strong><span> </span>has been tremendous❤️</p>
+<p>And now,<span> </span><strong>some backstory… </strong></p><p><a class="read-more" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4">More</a></p>]]>
+    </summary>
+    <content type="html">
+      <![CDATA[<h2>
+<strong>Building<span> </span></strong><strong><span>Halo</span></strong><strong><span> </span>has been a journey. ⚒️</strong>
+</h2>
+<h4>We learned a lot of hard lessons from developing and manufacturing<span> </span><strong>Frame</strong><span> </span>and knew we needed to bake that learning into<span> </span><strong><span>Halo</span></strong>.</h4>
+<h2>But first we turned inward:</h2>
+<h4>after deep reflection on our culture and how we work, painful but necessary changes were made to the team and supply chain to refine how we operate.</h4>
+<h2><strong><img alt="" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992"><meta charset="utf-8"> <span>Halo </span>is the fruit of this deeper realignment.</strong></h2>
+<h4>Like<span> </span><strong>Monocle</strong><span> </span>before it,<span> </span><strong>Frame</strong><span> </span>allowed us to deepen our roots in the open source community — those with bold ideas who will lead the revolution in intelligent computing. The greatest joy has been speaking to developers around the world building challenging, meaningful applications on our platform. </h4>
+<h2><strong>This is our ‘why’ 🙌🏼</strong></h2>
+<h3>BUT a longstanding open question remains: aside from displaying functional widgets that hail from the mobile era, what is the deeper reason of existence for this new device category in our lives?</h3>
+<h1>
+<strong>With<span> </span></strong><strong><span>Halo</span></strong><strong>, we start to share our thoughts on that essential question…</strong>
+</h1>
+<p><img alt="" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_6586.webp?v=1753472675"></p>
+<p> </p>]]>
+    </content>
+  </entry>
+</feed>

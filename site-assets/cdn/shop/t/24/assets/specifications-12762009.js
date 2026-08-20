@@ -1,0 +1,1 @@
+import{g as r}from"./index-329fb091.js";import{S as i}from"./ScrollTrigger-78a65e54.js";import"./CSSPlugin-f50ba96c.js";r.registerPlugin(i);r.from(".specification-item",{scrollTrigger:{trigger:".specifications-container",toggleActions:"restart pause restart pause"},opacity:0,y:100,stagger:.1,scale:1.05,duration:.8});

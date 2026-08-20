@@ -1,0 +1,2 @@
+.press-img-container{overflow:hidden;background:#fff;white-space:nowrap;position:relative}.press-img-container:hover .inline-images{animation-play-state:paused}@keyframes slide{0%{transform:translate(-0%)}to{transform:translate(-100%)}}.inline-images{display:inline-block;animation:10s slide infinite linear}.inline-images a{margin:0 30px}.inline-images a:hover{cursor:pointer}.press-container p{padding-left:50px;padding-bottom:40px}.press-container img{border-radius:0}
+/*# sourceMappingURL=/cdn/shop/t/24/assets/section-press-items.css.map?v=180064749476445111791752050581 */

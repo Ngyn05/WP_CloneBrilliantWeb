@@ -1,0 +1,102 @@
+[
+  {
+    "source": "blogs/announcements/citizenones-frame-projects-#L01f6e0#Ufe0f.html",
+    "route": "/blogs/announcements/citizenones-frame-projects/",
+    "template": "blogs-announcements-citizenones-frame-projects--l01f6e0-ufe0f-html.php"
+  },
+  {
+    "source": "blogs/announcements/hackathon-august-3rd-2024.html",
+    "route": "/blogs/announcements/hackathon-august-3rd-2024/",
+    "template": "blogs-announcements-hackathon-august-3rd-2024-html.php"
+  },
+  {
+    "source": "blogs/announcements/road-to-halo-part-1-of-4.html",
+    "route": "/blogs/announcements/road-to-halo-part-1-of-4/",
+    "template": "blogs-announcements-road-to-halo-part-1-of-4-html.php"
+  },
+  {
+    "source": "blogs/announcements/road-to-halo-part-2-of-4.html",
+    "route": "/blogs/announcements/road-to-halo-part-2-of-4/",
+    "template": "blogs-announcements-road-to-halo-part-2-of-4-html.php"
+  },
+  {
+    "source": "blogs/announcements/road-to-halo-part-3-of-4.html",
+    "route": "/blogs/announcements/road-to-halo-part-3-of-4/",
+    "template": "blogs-announcements-road-to-halo-part-3-of-4-html.php"
+  },
+  {
+    "source": "blogs/announcements/road-to-halo-part-4.html",
+    "route": "/blogs/announcements/road-to-halo-part-4/",
+    "template": "blogs-announcements-road-to-halo-part-4-html.php"
+  },
+  {
+    "source": "blogs/announcements/road-to-halo-part-5.html",
+    "route": "/blogs/announcements/road-to-halo-part-5/",
+    "template": "blogs-announcements-road-to-halo-part-5-html.php"
+  },
+  {
+    "source": "blogs/announcements/road-to-halo-part-6.html",
+    "route": "/blogs/announcements/road-to-halo-part-6/",
+    "template": "blogs-announcements-road-to-halo-part-6-html.php"
+  },
+  {
+    "source": "blogs/announcements/tagged/brilliant-labs-team.html",
+    "route": "/blogs/announcements/tagged/brilliant-labs-team/",
+    "template": "blogs-announcements-tagged-brilliant-labs-team-html.php"
+  },
+  {
+    "source": "blogs/announcements/tagged/community.html",
+    "route": "/blogs/announcements/tagged/community/",
+    "template": "blogs-announcements-tagged-community-html.php"
+  },
+  {
+    "source": "blogs/announcements/tagged/industry-updates.html",
+    "route": "/blogs/announcements/tagged/industry-updates/",
+    "template": "blogs-announcements-tagged-industry-updates-html.php"
+  },
+  {
+    "source": "blogs/announcements-1.html",
+    "route": "/blogs/announcements-1/",
+    "template": "blogs-announcements-1-html.php"
+  },
+  {
+    "source": "blogs/announcements-2.html",
+    "route": "/blogs/announcements-2/",
+    "template": "blogs-announcements-2-html.php"
+  },
+  {
+    "source": "blogs/announcements.html",
+    "route": "/blogs/announcements/",
+    "template": "blogs-announcements-html.php"
+  },
+  {
+    "source": "index.htm",
+    "route": "/",
+    "template": "index-htm.php"
+  },
+  {
+    "source": "pages/contact.html",
+    "route": "/contact/",
+    "template": "pages-contact-html.php"
+  },
+  {
+    "source": "pages/developers.html",
+    "route": "/developers/",
+    "template": "pages-developers-html.php"
+  },
+  {
+    "source": "pages/privacy-policy.html",
+    "route": "/privacy-policy/",
+    "template": "pages-privacy-policy-html.php"
+  },
+  {
+    "source": "pages/terms-conditions.html",
+    "route": "/terms-conditions/",
+    "template": "pages-terms-conditions-html.php"
+  },
+  {
+    "source": "products/halo.html",
+    "route": "/products/halo/",
+    "template": "products-halo-html.php"
+  }
+]

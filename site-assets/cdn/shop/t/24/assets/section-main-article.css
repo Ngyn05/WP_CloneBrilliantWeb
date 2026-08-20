@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+  .article {
+    padding-top: 32px;
+  }
+}
+
+.article__back {
+  display: flex;
+  align-items: center;
+  margin: 28px 0 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .article__back {
+    margin: 72px 0 0;
+  }
+}
+
+.article__back .icon {
+  width: 32px;
+  height: auto;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+  .article__back .icon {
+    width: 42px;
+    margin-right: 16px;
+  }
+}

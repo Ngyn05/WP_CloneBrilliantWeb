@@ -1,0 +1,2252 @@
+Uri: https://brilliant.xyz/
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\index.htm
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements.atom
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements.atom
+Content Type: application/atom+xml
+
+Uri: https://brilliant.xyz/blogs/announcements/citizenones-frame-projects-🛠️
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\citizenones-frame-projects-🛠️.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/hackathon-august-3rd-2024
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\hackathon-august-3rd-2024.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\road-to-halo-part-1-of-4.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/road-to-halo-part-2-of-4
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\road-to-halo-part-2-of-4.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/road-to-halo-part-3-of-4
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\road-to-halo-part-3-of-4.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/road-to-halo-part-4
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\road-to-halo-part-4.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/road-to-halo-part-5
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\road-to-halo-part-5.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/road-to-halo-part-6
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\road-to-halo-part-6.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/tagged/brilliant-labs-team
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\tagged\brilliant-labs-team.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/tagged/brilliant-labs-team.atom
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\tagged\brilliant-labs-team.atom
+Content Type: application/atom+xml
+
+Uri: https://brilliant.xyz/blogs/announcements/tagged/community
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\tagged\community.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/tagged/community.atom
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\tagged\community.atom
+Content Type: application/atom+xml
+
+Uri: https://brilliant.xyz/blogs/announcements/tagged/industry-updates
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\tagged\industry-updates.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements/tagged/industry-updates.atom
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements\tagged\industry-updates.atom
+Content Type: application/atom+xml
+
+Uri: https://brilliant.xyz/blogs/announcements?page=1
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements-2.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/blogs/announcements?page=2
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\blogs\announcements-1.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_i4.37d8c4e02dc4f8e8b559f47082eb24a5c48c2908.woff2
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_i4.37d8c4e02dc4f8e8b559f47082eb24a5c48c2908.woff2
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_i4.839d35d75c605237591e73815270f86ab696602c.woff
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_i4.839d35d75c605237591e73815270f86ab696602c.woff
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_i7.3b65e9d326e7379bd5f15bcb927c5d533d950ff6.woff
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_i7.3b65e9d326e7379bd5f15bcb927c5d533d950ff6.woff
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_i7.3dc798c6f261b8341dd97dd5c78d97d457c63517.woff2
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_i7.3dc798c6f261b8341dd97dd5c78d97d457c63517.woff2
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_n4.bd6b9c34fdb81d7646836be8065ce3c80a2cc984.woff
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_n4.bd6b9c34fdb81d7646836be8065ce3c80a2cc984.woff
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_n7.651b020b3543640c100112be6f1c1b8e816c7f13.woff2
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_n7.651b020b3543640c100112be6f1c1b8e816c7f13.woff2
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/fonts/archivo/archivo_n7.7e9106d320e6594976a7dcb57957f3e712e83c96.woff
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\fonts\archivo\archivo_n7.7e9106d320e6594976a7dcb57957f3e712e83c96.woff
+Content Type: font/woff2
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714-1.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714-6.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714-2.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714-3.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714-4.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714-5.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828-1.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828-2.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828-3.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828-4.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828-5.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/articles/frameshot1.webp?v=1732103247&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\frameshot1-1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/frameshot1.webp?v=1732103247&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\frameshot1-2.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/frameshot1.webp?v=1732103247&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\frameshot1-3.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/frameshot1.webp?v=1732103247&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\frameshot1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/frameshot1.webp?v=1732103247&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\frameshot1-4.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/frameshot1.webp?v=1732103247&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\frameshot1-5.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-11.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=2376
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-12.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=2592
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-13.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=2808
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-14.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=3024
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-15.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/Frame_hackathon_v001.jpg?v=1728988033&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\Frame_hackathon_v001-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae-1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae-2.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae-3.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae-4.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-6.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-7.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-2.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-3.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-4.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_2978_1.webp?v=1760152981&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_2978_1-5.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-11.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7016.jpg?v=1755644717&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7016-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp?v=1756165881&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e-1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp?v=1756165881&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e-2.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp?v=1756165881&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e-3.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/articles/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp?v=1756165881&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\articles\IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890.png?v=1728890009&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\86344_3d387334-32e3-4fb2-875c-2de37fce4890-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890.png?v=1728890009&width=690
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\86344_3d387334-32e3-4fb2-875c-2de37fce4890.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/9_to_5_Mac_Logo.svg?v=1707500728&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\9_to_5_Mac_Logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/9_to_5_Mac_Logo.svg?v=1707500728&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\9_to_5_Mac_Logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/9_to_5_Mac_Logo.svg?v=1707500728&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\9_to_5_Mac_Logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/9_to_5_Mac_Logo.svg?v=1707500728&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\9_to_5_Mac_Logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/adafruit_logo.svg?v=1703337507&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\adafruit_logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/adafruit_logo.svg?v=1703337507&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\adafruit_logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/adafruit_logo.svg?v=1703337507&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\adafruit_logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/adafruit_logo.svg?v=1703337507&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\adafruit_logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Artboard_1.jpg?crop=center&height=180&v=1707403926&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Artboard_1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Artboard_1.jpg?crop=center&height=32&v=1707403926&width=32
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Artboard_1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/avb33750d2192a3d27d91.png?v=1728384140&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\avb33750d2192a3d27d91.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Axios_Logo.svg?v=1707500728&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Axios_Logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Axios_Logo.svg?v=1707500728&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Axios_Logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Axios_Logo.svg?v=1707500728&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Axios_Logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Axios_Logo.svg?v=1707500728&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Axios_Logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/babel.png?v=1769348954&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\babel-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bluetooth.svg?v=1727250176&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bluetooth.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/boxing.png?v=1757190120&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\boxing-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272&width=440
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/bulgogi.png?v=1757362979&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\bulgogi-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/camera.svg?v=1727250176&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\camera.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/charger.svg?v=1727250176&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\charger.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/cpu.svg?v=1727250176&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\cpu.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/date.png?v=1757190261&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\date-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\dbfff3411f286662ed71acec9f0b4fd9.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/designboom_logo.svg?v=1703337507&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\designboom_logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/designboom_logo.svg?v=1703337507&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\designboom_logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/designboom_logo.svg?v=1703337507&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\designboom_logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/designboom_logo.svg?v=1703337507&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\designboom_logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Forbes_logo.svg?v=1706601375&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Forbes_logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Forbes_logo.svg?v=1706601375&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Forbes_logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Forbes_logo.svg?v=1706601375&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Forbes_logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Forbes_logo.svg?v=1706601375&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Forbes_logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/FrameLite_Back_v005.248.png?v=1753645843&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\FrameLite_Back_v005.248-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/FrameLite_Back_v005.248.png?v=1753645843&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\FrameLite_Back_v005.248.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/garde3n.png?v=1757190368&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\garde3n-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/github.svg?v=1728041129&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\github-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/github.svg?v=1728041129&width=690
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\github.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/hackaday_logo.svg?v=1703337507&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\hackaday_logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/hackaday_logo.svg?v=1703337507&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\hackaday_logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/hackaday_logo.svg?v=1703337507&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\hackaday_logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/hackaday_logo.svg?v=1703337507&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\hackaday_logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png?v=1758846333&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png?v=1758846333&width=690
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-10.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-11.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_1-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-10.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-11.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_3b.png?v=1753738731&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_3b-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_4b.png?v=1753738731&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_4b-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_4b.png?v=1753738731&width=400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_4b.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-10.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-11.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_6b.png?v=1753738731&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_6b-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_8.png?v=1753738731&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_8-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Halo_8.png?v=1753738731&width=400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Halo_8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/ieee_spectrum_logo.svg?v=1703337507&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ieee_spectrum_logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/ieee_spectrum_logo.svg?v=1703337507&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ieee_spectrum_logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/ieee_spectrum_logo.svg?v=1703337507&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ieee_spectrum_logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/ieee_spectrum_logo.svg?v=1703337507&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ieee_spectrum_logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/image_1.webp?v=1753972968&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\image_1-1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/image_1.webp?v=1753972968&width=690
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\image_1.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-11.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=2376
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-12.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=2592
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-13.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=2808
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-14.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=3024
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-15.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1253.jpg?v=1753934758&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1253-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-11.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1348.jpg?v=1753932704&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1348-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1350.jpg?v=1753934758&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1350-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1838.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1891.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1892.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1943.webp?v=1753758188&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1943-1.webp
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_1943.webp?v=1753758188&width=400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_1943.webp
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3170.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3174.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3176.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3177.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-11.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=2376
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-12.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=2592
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-13.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3255.jpg?v=1753934758&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3255-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_3272.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6457.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6585.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6586.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6587.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6589.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6767.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6907.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6908.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_7010.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_7013.webp
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\IMG_7016.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/lens.svg?v=1728041438&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\lens.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/New_Bloomberg_Logo.svg?v=1706601375&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\New_Bloomberg_Logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/New_Bloomberg_Logo.svg?v=1706601375&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\New_Bloomberg_Logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/New_Bloomberg_Logo.svg?v=1706601375&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\New_Bloomberg_Logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/New_Bloomberg_Logo.svg?v=1706601375&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\New_Bloomberg_Logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/NoaWebsite.png?v=1753928860&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\NoaWebsite-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/NoaWebsite.png?v=1753928860&width=690
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\NoaWebsite.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/open-source.svg?v=1728383268&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\open-source.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif?v=1761109353&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2-1.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/files/SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif?v=1761109353&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2-2.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/files/SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif?v=1761109353&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2-3.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/files/SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif?v=1761109353&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/files/SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif?v=1761109353&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2-4.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/files/SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2.gif?v=1761109353&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\SamAvatarSM_d5f7ddc3-6487-4721-b334-3434f28d1fb2-5.gif
+Content Type: image/gif
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.09.48.png?v=1728472211&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.09.48-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.37.01.png?v=1728473834&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.37.01-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc.jpg?v=1729500422&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.50.04_521f06c4-b990-4a94-b733-f236bfae26bc-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.51.52.png?v=1728474765&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.51.52-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.53.33.png?v=1728474920&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.53.33-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-9.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-09_at_19.56.21.png?v=1728475038&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-09_at_19.56.21-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.22.44.png?v=1728609773&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.22.44-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.22.44.png?v=1728609773&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.22.44-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.22.44.png?v=1728609773&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.22.44-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.22.44.png?v=1728609773&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.22.44.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.22.44.png?v=1728609773&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.22.44-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.22.44.png?v=1728609773&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.22.44-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.27.22.png?v=1728610050&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.27.22-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.32.48.png?v=1728610375&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.32.48-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.32.48.png?v=1728610375&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.32.48-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.32.48.png?v=1728610375&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.32.48-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.32.48.png?v=1728610375&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.32.48.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.32.48.png?v=1728610375&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.32.48-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/Screenshot_2024-10-11_at_09.32.48.png?v=1728610375&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Screenshot_2024-10-11_at_09.32.48-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/sensor.svg?v=1727250176&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\sensor.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/software.svg?v=1727250176&width=48
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\software.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/techcrunch-vector-logo.svg?v=1706601564&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\techcrunch-vector-logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/techcrunch-vector-logo.svg?v=1706601564&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\techcrunch-vector-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/techcrunch-vector-logo.svg?v=1706601564&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\techcrunch-vector-logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/techcrunch-vector-logo.svg?v=1706601564&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\techcrunch-vector-logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/The_Verge_Logo.svg?v=1707501238&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\The_Verge_Logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/The_Verge_Logo.svg?v=1707501238&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\The_Verge_Logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/The_Verge_Logo.svg?v=1707501238&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\The_Verge_Logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/The_Verge_Logo.svg?v=1707501238&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\The_Verge_Logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-1.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-6.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-7.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-8.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=1728
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-9.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-2.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=1944
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-10.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=2160
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-11.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=2376
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-12.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=2592
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-13.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=2808
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-14.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=3024
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-15.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-3.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-4.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Timeline_5_01_00_09_09.jpg?v=1753216643&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Timeline_5_01_00_09_09-5.jpg
+Content Type: image/jpeg
+
+Uri: https://brilliant.xyz/cdn/shop/files/Venture_Beat_Logo.svg?v=1707500727&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Venture_Beat_Logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Venture_Beat_Logo.svg?v=1707500727&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Venture_Beat_Logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Venture_Beat_Logo.svg?v=1707500727&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Venture_Beat_Logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/Venture_Beat_Logo.svg?v=1707500727&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\Venture_Beat_Logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/video-tutorials-on-laptop-screen.svg?v=1728891006&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\video-tutorials-on-laptop-screen-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/video-tutorials-on-laptop-screen.svg?v=1728891006&width=690
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\video-tutorials-on-laptop-screen.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/vrscout_logo.svg?v=1703337508&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\vrscout_logo-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/vrscout_logo.svg?v=1703337508&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\vrscout_logo.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/vrscout_logo.svg?v=1703337508&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\vrscout_logo-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/vrscout_logo.svg?v=1703337508&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\vrscout_logo-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=100
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-1.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=1080
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-6.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=1296
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-7.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=1512
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-8.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=180
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-2.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=360
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-3.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=50
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=540
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-4.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/wife.png?v=1757190597&width=720
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\wife-5.png
+Content Type: image/png
+
+Uri: https://brilliant.xyz/cdn/shop/files/ZDNet_logo_2022.svg?v=1707500913&width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ZDNet_logo_2022-3.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/ZDNet_logo_2022.svg?v=1707500913&width=1400
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ZDNet_logo_2022.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/ZDNet_logo_2022.svg?v=1707500913&width=352
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ZDNet_logo_2022-1.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/files/ZDNet_logo_2022.svg?v=1707500913&width=832
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\files\ZDNet_logo_2022-2.svg
+Content Type: image/svg+xml
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/all-329fb091.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\all-329fb091.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/App-9edaec28.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\App-9edaec28.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/app-shopify-product-reviews.css?v=81532200181581557651752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\app-shopify-product-reviews.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/client-af107ef4.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\client-af107ef4.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/clsx-b94d6ed7.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\clsx-b94d6ed7.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-accordion.css?v=26510281912245942681752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-accordion.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-article-card.css?v=138369773923246243871752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-article-card.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-featured-video-card.css?v=106538093764685120111752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-featured-video-card.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-features-highlight.css?v=697922753782993931753610036
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-features-highlight.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-image-slider.css?v=2071699667074442571752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-image-slider.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-multiblock.css?v=52716211481695956391752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-multiblock.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-nav.css?v=4077965322590212321752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-nav.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-newsletter-signup.css?v=20343014070640556181752050584
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-newsletter-signup.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-pagination.css?v=36509695587630536881752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-pagination.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-pickup-availability.css?v=75512530717060730791752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-pickup-availability.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-pickup-availability.js?v=67969039094888464171752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-pickup-availability.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-popup.css?v=69181603626553399281752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-popup.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-popup.js?v=29007869830681131751752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-popup.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-predictive-search.css?v=53081171318693203941752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-predictive-search.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-predictive-search.js?v=28073421474938485831752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-predictive-search.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-product-form.css?v=40255773047806904151752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-product-form.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-product-form.js?v=166868895670164337431752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-product-form.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-product-media.css?v=108553969740725666241752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-product-media.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-product-media.js?v=96786342942459698841752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-product-media.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-product-price.css?v=54116176018763529501752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-product-price.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-product-rating.css?v=146575650222427282611752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-product-rating.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-quantity-input.css?v=13464790363894800881752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-quantity-input.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-quantity-input.js?v=35994030679127480851752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-quantity-input.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-search-bar.css?v=80783752267642238901752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-search-bar.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-share-button.css?v=182338979076698292461752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-share-button.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-share-button.js?v=180515111507322284621752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-share-button.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-specifications.css?v=140430574115959899961752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-specifications.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-swiper.css?v=91568107542848236241752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-swiper.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-toggle-menu.css?v=84185020570966557971752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-toggle-menu.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-variant-picker.css?v=12680836462725495071752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-variant-picker.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-variant-picker.js?v=22140331653829441641752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-variant-picker.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-video.css?v=143258516030285971091752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-video.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/component-video.js?v=49218978051593286841752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\component-video.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/CSSPlugin-f50ba96c.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\CSSPlugin-f50ba96c.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/Frame_v1-9d4b5ea0.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\Frame_v1-9d4b5ea0.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/Frame_v2_new-1c650cb4.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\Frame_v2_new-1c650cb4.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/frame_v2_new-27f8e5ee.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\frame_v2_new-27f8e5ee.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/gallery-a958234d.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\gallery-a958234d.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/glasses_v3-1ee755d8.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\glasses_v3-1ee755d8.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/Gltf-db723e10.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\Gltf-db723e10.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/image-slider-4ed993c7.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\image-slider-4ed993c7.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/index-2ffbf897.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\index-2ffbf897.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/index-329fb091.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\index-329fb091.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/index-8780e212.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\index-8780e212.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/jsx-runtime-9bc08dc0.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\jsx-runtime-9bc08dc0.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/MeshTransmissionMaterial-7f3862e5.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\MeshTransmissionMaterial-7f3862e5.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/multiblock-82eef3ad.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\multiblock-82eef3ad.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/press-items-c78af322.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\press-items-c78af322.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/ScrollTrigger-78a65e54.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\ScrollTrigger-78a65e54.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-content-blocks.css?v=34385401049689031271752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-content-blocks.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-featured-videos.css?v=155562086629565823551752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-featured-videos.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-featured-videos.js?v=166030343122462640341752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-featured-videos.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-footer.css?v=53302352461997329811752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-footer.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-footer.js?v=25646550262897395881752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-footer.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-header.css?v=45315814464739439521752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-header.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-header.js?v=112500857217972521971752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-header.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-hero.css?v=178019169756046932181752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-hero.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-main-article.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-main-blog.css?v=97860431182083279661752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-main-blog.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-main-product.css?v=98236388799335382391752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-main-product.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-newsletter-popup.css?v=159900463505053981121752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-newsletter-popup.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-newsletter-popup.js?v=12555555418272072611752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-newsletter-popup.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-press-items.css?v=180064749476445111791752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-press-items.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-video-hero.css?v=173916478750458781721752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-video-hero.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/section-video-hero.js?v=98676998026007298191752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\section-video-hero.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/simplebar.min.css?v=21558511491353777691752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\simplebar.min.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/simplebar.min.js?v=9344250348948749101752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\simplebar.min.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/specifications-12762009.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\specifications-12762009.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/text-fill-9af41706.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\text-fill-9af41706.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/theme-4ed993c7.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\theme-4ed993c7.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/theme-f516ecd7.css
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\theme-f516ecd7.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/theme.css?v=180686215979939108301752050580
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\theme.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/theme.js?v=42167515228863085771752050581
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\theme.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/toggle-button-76010bff.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\toggle-button-76010bff.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/vendor.css?v=62675651013478167521752050583
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\vendor.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shop/t/24/assets/vendor.js?v=36535082300241826051752050579
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shop\t\24\assets\vendor.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.8.3.min.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shopifycloud\perf-kit\shopify-perf-kit-3.8.3.min.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shopifycloud\portable-wallets\latest\accelerated-checkout-backwards-compat.css
+Content Type: text/css
+
+Uri: https://brilliant.xyz/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shopifycloud\shop-js\modules\v2\loader.init-shop-cart-sync.en.esm.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shopifycloud\storefront\assets\shopify_pay\storefront-bf1cdb70.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shopifycloud\storefront\assets\storefront\load_feature-1bd60354.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/cdn/shopifycloud/storefront/assets/themes_support/option_selection-b017cd28.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\cdn\shopifycloud\storefront\assets\themes_support\option_selection-b017cd28.js
+Content Type: text/javascript
+
+Uri: https://brilliant.xyz/checkouts/internal/preloads.js?locale=en-VN&default_configuration_id=805404983
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\checkouts\internal\preloads.js
+Content Type: application/javascript
+
+Uri: https://brilliant.xyz/pages/contact
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\pages\contact.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/pages/developers
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\pages\developers.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/pages/privacy-policy
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\pages\privacy-policy.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/pages/terms-conditions
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\pages\terms-conditions.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/products/halo
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\products\halo.html
+Content Type: text/html
+
+Uri: https://brilliant.xyz/products/halo.oembed
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\products\halo.oembed
+Content Type: application/json+oembed
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/boxingF.png?v=1756152836
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\boxingF.png
+Content Type: image/png
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/Falo_Shines.gif?v=1756151572
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\Falo_Shines.gif
+Content Type: image/gif
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\frameshot3_480x480.webp
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/garden_1024x1024.png?v=1755545742
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\garden_1024x1024.png
+Content Type: image/png
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\image_480x480.png
+Content Type: image/png
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_3252_fde61162-01dd-4052-9c82-2f6d1bb05aa6_600x600.jpg?v=1753934700
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\IMG_3252_fde61162-01dd-4052-9c82-2f6d1bb05aa6_600x600.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_6586.webp?v=1753472675
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\IMG_6586.webp
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/Noa_b7a5850a-1ab2-4d95-99dd-9c6ce6330354_1024x1024.png?v=1753743650
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\Noa_b7a5850a-1ab2-4d95-99dd-9c6ce6330354_1024x1024.png
+Content Type: image/png
+
+Uri: https://cdn.shopify.com/s/files/1/0722/5190/0215/files/Timeline_1_04ee2694-5933-4fef-b6b7-cfb4c7536ba0.gif?v=1756079310
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\s\files\1\0722\5190\0215\files\Timeline_1_04ee2694-5933-4fef-b6b7-cfb4c7536ba0.gif
+Content Type: image/gif
+
+Uri: https://cdn.shopify.com/shopify-email/4yfqszwt7bhdwefsgj89uap1dta4.jpg?width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\4yfqszwt7bhdwefsgj89uap1dta4.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopify-email/ctpp9yslx1a9cleus5rq43zvltf6.jpg?width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\ctpp9yslx1a9cleus5rq43zvltf6.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopify-email/ff5s5i9xhatawhrx1x6l3qvsv6pw.gif?width=1200&height=1200&crop=center_legacy
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\ff5s5i9xhatawhrx1x6l3qvsv6pw.gif
+Content Type: image/gif
+
+Uri: https://cdn.shopify.com/shopify-email/fxlphgh05oomlqgwcfk1svexsrku.jpg?width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\fxlphgh05oomlqgwcfk1svexsrku.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopify-email/h75503ckilfydnxl60iw1aoc929z.gif?width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\h75503ckilfydnxl60iw1aoc929z.gif
+Content Type: image/gif
+
+Uri: https://cdn.shopify.com/shopify-email/kuj8r53kkamiye2xh50rqj71fanq.jpg?width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\kuj8r53kkamiye2xh50rqj71fanq.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopify-email/n4dlm2g3ja922fullcxgxrmjnefl.jpg?width=1200&height=1200&crop=center_legacy
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\n4dlm2g3ja922fullcxgxrmjnefl.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopify-email/r7nzqrgjq5tlbzy6nslynkmuuxys.jpg?width=1200
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\r7nzqrgjq5tlbzy6nslynkmuuxys.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopify-email/vkz6o8k6xli31ernmbqawyvy9p8h.jpg?width=1200&height=1200&crop=center_legacy
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopify-email\vkz6o8k6xli31ernmbqawyvy9p8h.jpg
+Content Type: image/jpeg
+
+Uri: https://cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-5059b83f.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\shopifycloud\storefront\assets\storefront\origin_trials-5059b83f.js
+Content Type: text/javascript
+
+Uri: https://cdn.shopify.com/storefront/standard-actions.js
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\storefront\standard-actions.js
+Content Type: text/javascript
+
+Uri: https://cdn.shopify.com/videos/c/o/v/80e265df87b7400997f0d02022f698c8.mp4
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\videos\c\o\v\80e265df87b7400997f0d02022f698c8.mp4
+Content Type: video/mp4
+
+Uri: https://shop.app/checkouts/internal/preloads.js?locale=en-VN&default_configuration_id=805404983&shop_id=72251900215
+File Name: C:\Users\hnguy\Desktop\brilliant.xyz\checkouts\internal\preloads-1.js
+Content Type: application/javascript
+

@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://brilliant.xyz/blogs/announcements.atom</id>
+  <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements"/>
+  <link rel="self" type="application/atom+xml" href="https://brilliant.xyz/blogs/announcements.atom"/>
+  <title>Brilliant Labs - Announcements</title>
+  <updated>2025-10-11T11:47:36+08:00</updated>
+  <author>
+    <name>Brilliant Labs</name>
+  </author>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-6</id>
+    <published>2025-10-11T11:47:36+08:00</published>
+    <updated>2025-10-11T11:48:25+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-6"/>
+    <title>Road to Halo | Part 6</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <content type="html">
+      <![CDATA[<!-- SCOPED: only affects this post -->
+<style>
+  .bl-post table, .bl-post tr, .bl-post td {
+    border:0 !important;
+    outline:0 !important;
+    border-collapse:collapse !important;
+    border-spacing:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+  .bl-post .email-container { width:600px; margin:0 auto !important; }
+  .bl-post p, .bl-post strong, .bl-post span {
+    font:inherit;
+  }
+  .bl-post p {
+    margin:12px 0 !important;
+    line-height:1.5em !important;
+    text-align:center !important;
+  }
+  .bl-post .image {
+    display:block !important;
+    margin:16px auto !important;
+    max-width:100% !important;
+    height:auto !important;
+    border:0 !important;
+  }
+  .bl-post .image--round { border-radius:8px !important; }
+  .bl-post .section { margin:24px auto !important; text-align:center !important; }
+  @media (max-width:640px){ .bl-post .email-container{width:100%!important;} }
+</style>
+<div class="bl-post">
+<!-- “This will change everything” headline -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center">
+<h3><span>This will change everything.</span></h3>
+<h3><span>📺💾📼📸📟📀🎮🖥️💻📱⌚️… 😎</span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Paradigm shift paragraph -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center">
+<h5>
+<span>These are the early days of a shift in computing: from reactive device experiences that feel unnatural to our form — to proactive, collaborative experiences that respond to how we see and hear the world. </span><strong><span>It will change everything.</span></strong>
+</h5>
+<h5>
+<span>🤘🏼But it will be business as usual unless the DNA of this revolution in intelligent computing is open source — </span><strong><span>hardware, firmware, and software.</span></strong>
+</h5>
+<h5><span>😳👹⛓️💥The current paradigm has shown the risks of the alternative: five companies run the modern world. Is that the future we envision?</span></h5>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Round video thumbnail -->
+<table role="presentation" class="email-container" width="600" align="center" style="height: 560px;">
+<tbody>
+<tr style="height: 560px;">
+<td style="height: 560px;">
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center"><a rel="noopener" href="https://www.youtube.com/watch?v=dKL9atC5-7w" target="_blank"> <img alt="Halo video" height="480" width="480" class="image image--round" src="https://cdn.shopify.com/shopify-email/n4dlm2g3ja922fullcxgxrmjnefl.jpg?width=1200&amp;height=1200&amp;crop=center_legacy"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Open source movement -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center">
+<h5>👾Until recently, open source was viewed as a fringe movement—baked into the heart of foundational technologies we use every day, yet underappreciated for their impact.</h5>
+<h5>🥳But everything has changed. Generative AI’s embrace of open source has sparked a decentralized wave of innovation unlike anything we’ve seen before.</h5>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Halo UI Demo -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center">
+<p><em>Halo-UI Demo👇</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Halo UI video -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center"><a rel="noopener" href="https://www.youtube.com/watch?v=vB-DhO46psw" target="_blank"> <img alt="Halo UI video" height="270" width="480" class="image" src="https://cdn.shopify.com/shopify-email/ctpp9yslx1a9cleus5rq43zvltf6.jpg?width=1200"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Closing reflection -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center">
+<h5>🤖As models move closer to the edge—embodied, personal, and ever-present—the impetus is on the hardware to embrace openness so humanity remains in the driver’s seat of this new era. The ultimate agent is the human being, but that cannot be taken for granted.</h5>
+<h5>🫵🏼🦾This openness is vital not only for unleashing creativity but also for ensuring the explainability of these complex intelligent systems—from silicon to software.</h5>
+<h4>✌🏼🚀We are living in a watershed moment, on the cusp of world-spanning transformation, and it will take all of us to ensure it leads to collective wellbeing.</h4>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Footer image -->
+<table role="presentation" class="email-container" width="600" align="center">
+<tbody>
+<tr>
+<td>
+<table role="presentation" class="email-container section" width="600" align="center">
+<tbody>
+<tr>
+<td align="center"><a rel="noopener" href="https://www.brilliant.xyz/" target="_blank"> <img alt="Brilliant Labs" height="345" width="480" class="image" src="https://cdn.shopify.com/shopify-email/r7nzqrgjq5tlbzy6nslynkmuuxys.jpg?width=1200"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-5</id>
+    <published>2025-10-11T11:47:15+08:00</published>
+    <updated>2025-10-11T11:48:42+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-5"/>
+    <title>Road to Halo | Part 5</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <content type="html">
+      <![CDATA[<!-- SCOPED: styles only affect this block -->
+<style>
+  .bl-post table, .bl-post tr, .bl-post td {
+    border:0 !important;
+    outline:0 !important;
+    border-collapse:collapse !important;
+    border-spacing:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+  .bl-post .email-container { width:600px; margin:0 auto !important; }
+  .bl-post p, .bl-post strong, .bl-post span {
+    font: inherit;
+  }
+  .bl-post p {
+    margin:12px 0 !important;
+    line-height:1.5em !important;
+    text-align:center !important;
+  }
+  .bl-post .image {
+    display:block !important;
+    margin:16px auto !important;
+    max-width:100% !important;
+    height:auto !important;
+    border:0 !important;
+  }
+  .bl-post .image--round { border-radius:8px !important; }
+  .bl-post .section { margin:24px auto !important; text-align:center !important; }
+  /* Optional: tighter spacing for stacked short lines */
+  .bl-post .tight p { margin:8px 0 !important; }
+  /* Mobile: ensure 100% width */
+  @media (max-width: 640px) {
+    .bl-post .email-container { width:100% !important; }
+  }
+</style>
+<div class="bl-post">
+<!-- Headline -->
+<table align="center" width="600" class="email-container" role="presentation" style="height: 81.4688px;">
+<tbody>
+<tr style="height: 81.4688px;">
+<td style="height: 81.4688px;">
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td align="center" class="column-container-left column-container-right">
+<h3><strong><span>🧠Memory matters</span></strong></h3>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Hero GIF -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- Memory pitch -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td>
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td align="center" class="column-container-left column-container-right tight">
+<h5><strong><span>“I don’t remember his name.”</span></strong></h5>
+<h5><strong><span>“What did we talk about?”</span></strong></h5>
+<h5><strong><span>“Where did I last see him?”</span></strong></h5>
+<h5><strong><span>“What am I capable of?”</span></strong></h5>
+<h5><strong><span>“What do I believe?”</span></strong></h5>
+<h5><strong><span>“Who am I?”</span></strong></h5>
+<h5><strong><span>🧠Memory matters — a lot.</span></strong></h5>
+<h6><span>It reinforces our evolving sense of identity, it is essential for productivity, and it keeps us feeling connected with others.👩❤️👨</span></h6>
+<h6><span>It binds our subjective recollection of life with a shared sense of time. The things we experience, recall, and share with others. Memory is a quintessential part of being human.</span></h6>
+<h6>
+<span>😅</span><strong><span> But my memory sucks!</span></strong><span> I often forget the details of a conversation, order of events, or, embarrassingly, someone’s name. It’s not just that my memory has gaps but it has a penchant for hallucination!</span>
+</h6>
+<h5><strong><span>And I know I’m not alone.😎</span></strong></h5>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Square video thumbnail -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td>
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td class="column-container-left column-container-right" align="center"><a href="https://www.youtube.com/watch?v=dKL9atC5-7w" rel="noopener" target="_blank"> <img src="https://cdn.shopify.com/shopify-email/vkz6o8k6xli31ernmbqawyvy9p8h.jpg?width=1200&amp;height=1200&amp;crop=center_legacy" class="image image--round" width="480" height="480" alt="Halo video"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Noa explanation -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td>
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td align="center" class="column-container-left column-container-right">
+<h5>
+<span>So we built </span><strong><span>Noa:</span></strong><span> a private AI agent with memory.</span>
+</h5>
+<h6>
+<strong><span>Noa</span></strong><span> lives in </span><strong><span>Halo</span></strong><span>, our new open source AI glasses, which means it can SEE and HEAR all-day long, like you do.</span>
+</h6>
+<h6>
+<span>🕸️Under the hood, </span><strong><span>Noa’s</span></strong><span> memory data is flexibly multilingual and built in such a way that a reasoning model or AI agent can traverse relationships between data to unearth deep, non-obvious insights.</span>
+</h6>
+<h6><span>This is new for all of us and begins to unlock opportunities for therapists, life coaches, nutritionists, teachers, and many others engaged in guided intervention to nudge, empower, and heal in new ways.🔒</span></h6>
+<h5><em>memory demo below 👇</em></h5>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Memory demo video -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td>
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td class="column-container-left column-container-right" align="center"><a href="https://youtu.be/AeMtn_-vPqU" rel="noopener" target="_blank"> <img src="https://cdn.shopify.com/shopify-email/4yfqszwt7bhdwefsgj89uap1dta4.jpg?width=1200" class="image" width="480" height="270" alt="Memory demo video"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Privacy promise -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td>
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td align="center" class="column-container-left column-container-right">
+<h6 style="text-align: center;">
+<span>And, crucially, we’ve gone a step further: </span><strong><span>Noa’s</span></strong><span> memories are machine encoded and stored privately on encrypted servers with</span>
+</h6>
+<h5 style="text-align: center;"><strong><span>**no rich media retained**</span></strong></h5>
+<h6 style="text-align: center;">
+<span>So you can feel secure using </span><strong><span>Noa</span></strong><span> for recall years in the future.❤️</span>
+</h6>
+<h6 style="text-align: center;">
+<span>In true </span><strong>Brilliant Labs</strong><span> fashion, we built this because we believed it should exist.</span>
+</h6>
+<h5 style="text-align: center;">
+<span>It’s the start of a journey </span><strong><span>— for all of us.</span></strong>
+</h5>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Footer image -->
+<table align="center" width="600" class="email-container" role="presentation">
+<tbody>
+<tr>
+<td>
+<table align="center" width="600" class="email-container section" role="presentation">
+<tbody>
+<tr>
+<td class="column-container-left column-container-right" align="center"><a href="https://www.brilliant.xyz/" rel="noopener" target="_blank"> <img src="https://cdn.shopify.com/shopify-email/fxlphgh05oomlqgwcfk1svexsrku.jpg?width=1200" class="image" width="480" height="221" alt="Brilliant Labs"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-4</id>
+    <published>2025-10-11T11:22:48+08:00</published>
+    <updated>2025-10-11T11:23:01+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-4"/>
+    <title>Road to Halo | Part 4</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <content type="html">
+      <![CDATA[<!-- SCOPED: styles only apply inside .bl-post -->
+<style>
+  .bl-post table, .bl-post tr, .bl-post td {
+    border:0 !important;
+    outline:0 !important;
+    border-collapse:collapse !important;
+    border-spacing:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+  .bl-post h3, .bl-post h4, .bl-post h5, .bl-post p {
+    margin:12px 0 !important;
+    padding:0 !important;
+    text-align:center !important;
+    line-height:1.5em !important;
+  }
+  .bl-post img {
+    border:0 !important;
+    display:block !important;
+    margin:16px auto !important;
+    max-width:100% !important;
+    height:auto !important;
+  }
+  .bl-post .section {
+    text-align:center !important;
+    margin:24px auto !important;
+  }
+</style>
+<div class="bl-post">
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" role="presentation" style="margin:0 auto; border:0;">
+    <tbody><tr><td>
+      <!-- Title (no logo block in content) -->
+      <div class="section">
+        <h3><strong>Road to Halo | Part 4</strong></h3>
+        <h4><strong>💪🏼 Halo overcomes the false trade-off of privacy and open source.</strong></h4>
+      </div>
+      <!-- Hero GIF -->
+      <div class="section">
+        <a href="https://brilliant.xyz/products/halo" target="_blank">
+          <img src="https://cdn.shopify.com/shopify-email/h75503ckilfydnxl60iw1aoc929z.gif?width=1200" width="644" height="435" alt="Halo">
+        </a>
+      </div>
+      <!-- Intro Text -->
+      <div class="section">
+        <h5><strong>🤗 We believe the next era of personal computing must be open while respecting your privacy. It must enable tremendous creativity while engendering trust.</strong></h5>
+        <h5><strong>🤘🏼 This makes the bar for innovation really high.</strong></h5>
+      </div>
+      <!-- Video 1 -->
+      <div class="section">
+        <a href="https://www.youtube.com/watch?v=dKL9atC5-7w" target="_blank">
+          <img src="https://cdn.shopify.com/shopify-email/ff5s5i9xhatawhrx1x6l3qvsv6pw.gif?width=1200&amp;height=1200&amp;crop=center_legacy" width="480" height="480" alt="Halo video">
+        </a>
+      </div>
+      <!-- Core Message -->
+      <div class="section">
+        <h5><strong>It entails relinquishing control and embracing collaboration with the community — and resisting the urge to treat user data like baseball cards to collect and sell.</strong></h5>
+        <h5><strong>It means deep coherence across team culture, business model, system design, and brand.</strong></h5>
+        <h5><strong>👀 End-to-end encryption and user consent are now table stakes. Halo goes beyond and does not record or store any rich media it captures —</strong></h5>
+        <h5><strong>**We challenge every smart-glasses maker to do the same.**</strong></h5>
+      </div>
+      <!-- Video 2 -->
+      <div class="section">
+        <a href="https://youtu.be/sLGvx0Vpr0U" target="_blank">
+          <img src="https://cdn.shopify.com/shopify-email/kuj8r53kkamiye2xh50rqj71fanq.jpg?width=1200" width="480" height="270" alt="YouTube video">
+        </a>
+      </div>
+      <!-- Closing -->
+      <div class="section">
+        <h5><strong>This is why we built Halo with Noa — your private AI agent.</strong></h5>
+        <h5><strong>Brilliant Labs exists to help usher in the next era of personal computing — with privacy and openness at the heart.</strong></h5>
+      </div>
+    </td></tr></tbody>
+  </table>
+</div>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-3-of-4</id>
+    <published>2025-08-26T07:50:56+08:00</published>
+    <updated>2025-08-26T07:51:21+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-3-of-4"/>
+    <title>Road to Halo | Part 3 of 4</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <content type="html">
+      <![CDATA[<h3>🎨Our work on <strong><span>Halo’s</span></strong> hardware required intentionality and restraint, clarity of purpose, and intensive design across every level of the stack. </h3>
+<p><img src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/Falo_Shines.gif?v=1756151572" alt=""></p>
+<h4>🙄You may have noticed that nearly every other pair of smart glasses coming to market is following a predictable path. </h4>
+<h4>
+<strong>But we are thinking different: </strong>these devices are not for social media capture or watching YouTube videos. Instead, they should exist to perform all-day AI inference for deep personalization and memory enhancement while still looking like a beautiful pair of glasses.</h4>
+<h3><strong><img src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/Timeline_1_04ee2694-5933-4fef-b6b7-cfb4c7536ba0.gif?v=1756079310" alt=""><meta charset="utf-8"></strong></h3>
+<h3>🎯<strong>So with this clarity of intention we set about designing </strong><strong><span>Halo’s </span></strong><strong>hardware system. </strong>
+</h3>
+<h4>While keeping a <strong>full color display</strong> and <strong>camera</strong>, we introduced an additional <strong>microphone</strong> and <strong>two speakers</strong> — all wired into a low-power <strong>AI processor</strong>.</h4>
+<h4>By eschewing bulky or expensive optics, over-powered processors, WiFi, and hefty image sensors geared more for social media capture than focused AI inference, we accomplished a hardware design made for <strong>all-day wearability, memory capture, and multimodal agent interactions. </strong>
+</h4>
+<h4>(check out an example below 👇)</h4>
+<p><a href="https://www.youtube.com/watch?v=z-Z2WrB5jhA&amp;list=PLfbaC5GRVJJg_b3o0gwZkGLVv_db7kbfW"><img src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/boxingF.png?v=1756152836" alt=""></a></p>
+<h3><a href="https://www.youtube.com/watch?v=z-Z2WrB5jhA&amp;list=PLfbaC5GRVJJg_b3o0gwZkGLVv_db7kbfW"></a></h3>
+<h4>
+<strong>⛩️</strong>These architectural decisions allowed us to enrich the customer experience and broaden the value proposition to developers while lowering the price point and multiplying battery life — all within the constraints of <strong><span>Halo’s</span></strong> deceptively inevitable industrial design. </h4>
+<h4>🧑🏼🎨We believe these devices need to feel beautiful and unobtrusive while enabling tremendous creativity and intelligence. </h4>
+<h3>😇<strong><span>Halo</span></strong> is a milestone for us as we double down on the open source movement ushering in the next age of intelligent computing.</h3>
+<p><br></p>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-2-of-4</id>
+    <published>2025-08-20T07:00:38+08:00</published>
+    <updated>2025-08-20T07:05:17+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-2-of-4"/>
+    <title>Road to Halo | Part 2 of 4</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <content type="html">
+      <![CDATA[<h3 style="text-align: center;">
+<strong><span>Noa</span></strong> for <strong><span>Halo</span></strong> has taken a tremendous leap! 🥳🛠<meta charset="utf-8">
+</h3>
+<h4 style="text-align: center;"></h4>
+<h4 style="text-align: center;">We had a clear sense of what the right software experience should feel like. In line with advancements in AI speech technology, we set out to build a low-latency, multimodal conversational interface that felt like natural dialogue.</h4>
+<div style="text-align: center;"><img style="margin-right: 20px; margin-bottom: 16px; margin-left: 20px; float: none;" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/Noa_b7a5850a-1ab2-4d95-99dd-9c6ce6330354_1024x1024.png?v=1753743650" width="286" height="103"></div>
+<h4 style="text-align: center;">
+<strong><span>a trusted friend who respects your privacy</span></strong><span> — </span><span>with on-device inference on the horizon</span>
+</h4>
+<h5>🧠👀But there is one more thing which has been on our mind for a while: <strong>**MEMORY** </strong>— a pillar of the human experience and a growing requirement for intelligent technologies. </h5>
+<h5><strong>(Click Image Below for Demo👇)</strong></h5>
+<p> </p>
+<div style="text-align: center;"><a href="https://youtu.be/dKL9atC5-7w" title="Memory Demo edit fun"><img src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_3252_fde61162-01dd-4052-9c82-2f6d1bb05aa6_600x600.jpg?v=1753934700" style="margin-bottom: 16px; float: none;"></a></div>
+<p> </p>
+<h5>Unlike prevailing memory solutions which are oriented toward written text, we felt we could make a contribution to this space by designing <strong><span>Noa’s</span></strong> memory to learn from the challenging contours of daily life — what you see, hear, and say — while discerning useful signal from the abundance of noise. </h5>
+<h5>🤯The prospect of a <strong>private, trusted </strong>agent<strong> </strong>reasoning over years of the life you live opens previously unimaginable possibilities. </h5>
+<h5><strong>(Click Image Below for Demo 2👇)</strong></h5>
+<p> </p>
+<div style="text-align: center;"><a href="https://youtu.be/QVe9kLore_I" title="Demo Noa in the Garden"><img src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/garden_1024x1024.png?v=1755545742" style="margin-bottom: 16px; float: none;"></a></div>
+<h5>UI/UX on <strong><span>Halo</span></strong> and in the mobile app is set for a dramatic twist: back to our childhood of retro vibes coinciding with the emergence of personal computing, arcade games, and the early internet.<strong><br></strong>
+</h5>
+<h3 style="text-align: center;"><strong>Stay tuned 😎</strong></h3>
+<p><br></p>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4</id>
+    <published>2025-08-13T14:00:00+08:00</published>
+    <updated>2025-08-14T04:59:24+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4"/>
+    <title>Road to Halo | Part 1 of 4</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <summary type="html">
+      <![CDATA[<p>The response to<span> </span><strong><span>Halo</span></strong><span> </span>has been tremendous❤️</p>
+<p>And now,<span> </span><strong>some backstory… </strong></p><p><a class="read-more" href="https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4">More</a></p>]]>
+    </summary>
+    <content type="html">
+      <![CDATA[<h2>
+<strong>Building<span> </span></strong><strong><span>Halo</span></strong><strong><span> </span>has been a journey. ⚒️</strong>
+</h2>
+<h4>We learned a lot of hard lessons from developing and manufacturing<span> </span><strong>Frame</strong><span> </span>and knew we needed to bake that learning into<span> </span><strong><span>Halo</span></strong>.</h4>
+<h2>But first we turned inward:</h2>
+<h4>after deep reflection on our culture and how we work, painful but necessary changes were made to the team and supply chain to refine how we operate.</h4>
+<h2><strong><img alt="" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992"><meta charset="utf-8"> <span>Halo </span>is the fruit of this deeper realignment.</strong></h2>
+<h4>Like<span> </span><strong>Monocle</strong><span> </span>before it,<span> </span><strong>Frame</strong><span> </span>allowed us to deepen our roots in the open source community — those with bold ideas who will lead the revolution in intelligent computing. The greatest joy has been speaking to developers around the world building challenging, meaningful applications on our platform. </h4>
+<h2><strong>This is our ‘why’ 🙌🏼</strong></h2>
+<h3>BUT a longstanding open question remains: aside from displaying functional widgets that hail from the mobile era, what is the deeper reason of existence for this new device category in our lives?</h3>
+<h1>
+<strong>With<span> </span></strong><strong><span>Halo</span></strong><strong>, we start to share our thoughts on that essential question…</strong>
+</h1>
+<p><img alt="" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/IMG_6586.webp?v=1753472675"></p>
+<p> </p>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/citizenones-frame-projects-%F0%9F%9B%A0%EF%B8%8F</id>
+    <published>2024-11-21T19:17:43+08:00</published>
+    <updated>2024-11-21T19:17:43+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/citizenones-frame-projects-%F0%9F%9B%A0%EF%B8%8F"/>
+    <title>CitizenOne&apos;s Frame Projects</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <content type="html">
+      <![CDATA[<h2></h2>
+<h2>AR Live Location Pin Demo</h2>
+<p><img src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224"></p>
+<p>Overlays AR location / navigation pins representing multiple points of interest (POIs) into the field of view. Uses Frame's onboard magnetometer and accelerometer data streamed to the phone to calculate and update the bearing to each POI.<br data-mce-fragment="1"><br data-mce-fragment="1">Currently uses hard-coded sample latitude/longitude coordinates for the current user position and two sample POIs for the purposes of the demo. (Using the phone's GPS for the current user location, and a mapping service to search for and get coordinates of points of interest - or a friend's live location - is left as an exercise.)</p>
+<h3>
+<a href="https://github.com/CitizenOneX/frame_locator_pin" data-mce-href="https://github.com/CitizenOneX/frame_locator_pin" target="_blank"><strong>Code</strong></a> <a href="https://discord.com/channels/963222352534048818/1105456402216009758/threads/1305481513457946624">Project</a>
+</h3>
+<h3><strong></strong></h3>
+<h2><strong>Generative AI on Frame</strong></h2>
+<p><strong><img alt="" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676"></strong></p>
+<p><meta charset="utf-8"><span>Prompt the free</span><span>*</span><span>, web</span><span>-based Pollinations</span><span>.ai image generation model to generate an image and send it straight to Frame</span><span>! Click on the image in the app to save</span><span>/share your masterpiece</span><span>! </span></p>
+<h3>
+<a href="%20https://github.com/CitizenOneX/frame_pollinations" data-mce-href="%20https://github.com/CitizenOneX/frame_pollinations"><strong>Code</strong></a> <a href="https://discord.com/channels/963222352534048818/1105456402216009758/threads/1306806920425902122">Project</a>
+</h3>
+<h3><strong></strong></h3>
+<h3><strong>Frame Sprite Viewer</strong></h3>
+<p><img alt="" src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804"></p>
+<p>Sprite image viewer for Frame. Supports PNGs and JPGs. It quantizes colors down to 16 bit and scale images so they fit in memory and display correctly on Frame. </p>
+<h3><strong><a href="https://github.com/CitizenOneX/frame_progressive_sprite_viewer/releases" data-mce-href="https://github.com/CitizenOneX/frame_progressive_sprite_viewer/releases">Code</a> <a href="https://discord.com/channels/963222352534048818/1105456402216009758/threads/1285622884768809020">Project</a></strong></h3>]]>
+    </content>
+  </entry>
+  <entry>
+    <id>https://brilliant.xyz/blogs/announcements/hackathon-august-3rd-2024</id>
+    <published>2024-10-10T18:30:00+08:00</published>
+    <updated>2024-10-21T18:05:55+08:00</updated>
+    <link rel="alternate" type="text/html" href="https://brilliant.xyz/blogs/announcements/hackathon-august-3rd-2024"/>
+    <title>Hackathon - August 3rd 2024</title>
+    <author>
+      <name>Sam Khorshid</name>
+    </author>
+    <summary type="html">
+      <![CDATA[<meta charset="utf-8"><span data-mce-fragment="1">We hosted a hackathon with Niantic, <meta charset="utf-8">the creators of Pokémon Go!</span><p><a class="read-more" href="https://brilliant.xyz/blogs/announcements/hackathon-august-3rd-2024">More</a></p>]]>
+    </summary>
+    <content type="html">
+      <![CDATA[<meta charset="utf-8">
+<p class="p1" data-mce-fragment="1">We had the pleasure of hosting a hackathon with Niantic, the creators of Pokémon Go!</p>
+<p class="p1" data-mce-fragment="1">Over 50 developers from across the country—and even around the world—joined us to build applications at the intersection of AI and AR on Frame.</p>
+<p class="p1" data-mce-fragment="1">Check out videos from the event below!</p>
+<p class="p1" data-mce-fragment="1"><a href="https://www.youtube.com/playlist?list=PLfbaC5GRVJJhwY0RtwPr9oa6gCkPJfi5Q" target="_blank" title="Hackathon - August 3rd 2024" rel="noopener noreferrer">Hackathon - August 3rd 2024 Playlist!</a></p>]]>
+    </content>
+  </entry>
+</feed>

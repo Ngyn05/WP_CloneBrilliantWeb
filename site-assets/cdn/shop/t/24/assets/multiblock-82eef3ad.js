@@ -1,0 +1,1 @@
+import{g as r}from"./all-329fb091.js";import{S as i}from"./ScrollTrigger-78a65e54.js";import"./CSSPlugin-f50ba96c.js";r.registerPlugin(i);r.from(".multiblock-grid > div",{scrollTrigger:{trigger:".multiblock-grid",toggleActions:"restart pause restart pause"},opacity:0,y:40,stagger:.4,scale:1.2,filter:"blur(20px)"});
