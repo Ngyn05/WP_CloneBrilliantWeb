@@ -45,12 +45,12 @@ function brilliant_xyz_add_rewrite_rules() {
     // 2. Blog category tags: /blogs/announcements/tagged/{tag}/
     add_rewrite_rule(
         '^blogs/announcements/tagged/([^/]+)/?$',
-        'index.php?category_name=$matches[1]&brilliant_view=archive',
+        'index.php?category_name=$matches[1]&brilliant_category=$matches[1]&brilliant_view=archive',
         'top'
     );
     add_rewrite_rule(
         '^blogs/tagged/([^/]+)/?$',
-        'index.php?category_name=$matches[1]&brilliant_view=archive',
+        'index.php?category_name=$matches[1]&brilliant_category=$matches[1]&brilliant_view=archive',
         'top'
     );
 
@@ -90,6 +90,7 @@ add_action( 'init', 'brilliant_xyz_add_rewrite_rules' );
 function brilliant_xyz_query_vars( $vars ) {
     $vars[] = 'brilliant_static';
     $vars[] = 'brilliant_view';
+    $vars[] = 'brilliant_category';
     return $vars;
 }
 add_filter( 'query_vars', 'brilliant_xyz_query_vars' );

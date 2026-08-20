@@ -6,11 +6,20 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : ( ( get_query_var( 'page' ) ) ? get_query_var( 'page' ) : 1 );
 
-// Determine active category from query var or current term
-$current_cat = get_query_var( 'category_name' );
+// Determine active category from query var, term, or request URI
+$current_cat = get_query_var( 'brilliant_category' );
+if ( empty( $current_cat ) ) {
+    $current_cat = get_query_var( 'category_name' );
+}
 if ( empty( $current_cat ) && is_category() ) {
     $cat_obj = get_queried_object();
     $current_cat = $cat_obj ? $cat_obj->slug : '';
+}
+if ( empty( $current_cat ) && preg_match( '#/tagged/([^/?]+)#i', $_SERVER['REQUEST_URI'], $matches ) ) {
+    $current_cat = urldecode( $matches[1] );
+}
+if ( $current_cat === 'cộng đồng' || $current_cat === 'cong-dong' ) {
+    $current_cat = 'community';
 }
 
 // Arguments for query
