@@ -26,41 +26,104 @@ add_action( 'admin_head', 'bl_output_global_favicons', 1 );
 add_action( 'login_head', 'bl_output_global_favicons', 1 );
 
 /**
- * 1. Canonical URL Generator Fallback
- * Tự động tạo thẻ <link rel="canonical"> chuẩn xác cho từng trang/bài viết/URL
- * Tự động nhường quyền cho Yoast SEO hoặc plugin SEO khác nếu được kích hoạt
+ * 1. Canonical URL Helper & Generator
+ * Tự động xác định canonical URL chuẩn xác cho từng trang tĩnh, bài viết, sản phẩm
+ */
+function bl_get_accurate_canonical_url() {
+    $req_uri  = $_SERVER['REQUEST_URI'] ?? '/';
+    $req_path = trim( (string) parse_url( $req_uri, PHP_URL_PATH ), '/' );
+
+    // Trang chủ
+    if ( empty( $req_path ) || is_front_page() ) {
+        return home_url( '/' );
+    }
+
+    // Các trang tĩnh đặc thù
+    $static_routes = array(
+        'contact'          => '/contact/',
+        'developers'       => '/developers/',
+        'privacy-policy'   => '/privacy-policy/',
+        'terms-conditions' => '/terms-conditions/',
+    );
+    if ( isset( $static_routes[ $req_path ] ) ) {
+        return home_url( $static_routes[ $req_path ] );
+    }
+
+    // Blog archive chính
+    if ( $req_path === 'blogs' || $req_path === 'blogs/announcements' ) {
+        return home_url( '/blogs/announcements/' );
+    }
+
+    // Trang chi tiết bài viết/sản phẩm/trang nội dung
+    if ( is_singular() ) {
+        $canonical = get_permalink();
+        if ( ! empty( $canonical ) && ! is_wp_error( $canonical ) ) {
+            return $canonical;
+        }
+    } elseif ( is_category() || is_tag() || is_tax() ) {
+        $term_link = get_term_link( get_queried_object() );
+        if ( ! empty( $term_link ) && ! is_wp_error( $term_link ) ) {
+            return $term_link;
+        }
+    } elseif ( is_post_type_archive() ) {
+        $archive_link = get_post_type_archive_link( get_query_var( 'post_type' ) );
+        if ( ! empty( $archive_link ) && ! is_wp_error( $archive_link ) ) {
+            return $archive_link;
+        }
+    } elseif ( is_archive() ) {
+        if ( is_author() ) {
+            return get_author_posts_url( get_query_var( 'author' ) );
+        } elseif ( is_year() ) {
+            return get_year_link( get_query_var( 'year' ) );
+        } elseif ( is_month() ) {
+            return get_month_link( get_query_var( 'year' ), get_query_var( 'monthnum' ) );
+        } elseif ( is_day() ) {
+            return get_day_link( get_query_var( 'year' ), get_query_var( 'monthnum' ), get_query_var( 'day' ) );
+        }
+    }
+
+    // Fallback đường dẫn chuẩn từ REQUEST_URI (bỏ qua query string)
+    $clean_path = strtok( $req_uri, '?' );
+    return home_url( user_trailingslashit( $clean_path ) );
+}
+
+/**
+ * Filter Canonical cho Yoast SEO, Rank Math, All in One SEO & WordPress Core
+ */
+function bl_filter_canonical_url( $canonical ) {
+    $req_uri  = $_SERVER['REQUEST_URI'] ?? '/';
+    $req_path = trim( (string) parse_url( $req_uri, PHP_URL_PATH ), '/' );
+
+    // Trang chủ
+    if ( empty( $req_path ) || is_front_page() ) {
+        return home_url( '/' );
+    }
+
+    $static_routes = array( 'contact', 'developers', 'privacy-policy', 'terms-conditions' );
+    if ( in_array( $req_path, $static_routes, true ) ) {
+        return home_url( '/' . $req_path . '/' );
+    }
+
+    if ( empty( $canonical ) || is_wp_error( $canonical ) ) {
+        return bl_get_accurate_canonical_url();
+    }
+
+    return $canonical;
+}
+add_filter( 'wpseo_canonical', 'bl_filter_canonical_url', 99 );
+add_filter( 'rank_math/frontend/canonical', 'bl_filter_canonical_url', 99 );
+add_filter( 'aioseo_canonical_url', 'bl_filter_canonical_url', 99 );
+add_filter( 'get_canonical_url', 'bl_filter_canonical_url', 99, 2 );
+
+/**
+ * Tự động tạo thẻ <link rel="canonical"> fallback nếu không dùng SEO Plugin
  */
 function bl_output_dynamic_rel_canonical() {
     if ( defined( 'WPSEO_VERSION' ) || defined( 'RANK_MATH_VERSION' ) || defined( 'AIOSEO_VERSION' ) ) {
         return;
     }
 
-    $canonical_url = '';
-
-    if ( is_front_page() || is_home() ) {
-        $canonical_url = home_url( '/' );
-    } elseif ( is_singular() ) {
-        $canonical_url = get_permalink();
-    } elseif ( is_category() || is_tag() || is_tax() ) {
-        $canonical_url = get_term_link( get_queried_object() );
-    } elseif ( is_post_type_archive() ) {
-        $canonical_url = get_post_type_archive_link( get_query_var( 'post_type' ) );
-    } elseif ( is_archive() ) {
-        if ( is_author() ) {
-            $canonical_url = get_author_posts_url( get_query_var( 'author' ) );
-        } elseif ( is_year() ) {
-            $canonical_url = get_year_link( get_query_var( 'year' ) );
-        } elseif ( is_month() ) {
-            $canonical_url = get_month_link( get_query_var( 'year' ), get_query_var( 'monthnum' ) );
-        } elseif ( is_day() ) {
-            $canonical_url = get_day_link( get_query_var( 'year' ), get_query_var( 'monthnum' ), get_query_var( 'day' ) );
-        }
-    }
-
-    if ( empty( $canonical_url ) || is_wp_error( $canonical_url ) ) {
-        $req_uri = $_SERVER['REQUEST_URI'] ?? '/';
-        $canonical_url = home_url( strtok( $req_uri, '?' ) );
-    }
+    $canonical_url = bl_get_accurate_canonical_url();
 
     if ( ! empty( $canonical_url ) && ! is_wp_error( $canonical_url ) ) {
         echo '<link rel="canonical" href="' . esc_url( $canonical_url ) . '" />' . "\n";

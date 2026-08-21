@@ -146,23 +146,45 @@ function brilliant_xyz_template_include( $template ) {
     // 1. Check static template routes (contact, developers, privacy, terms)
     $static = get_query_var( 'brilliant_static' );
     $view   = get_query_var( 'brilliant_view' );
+    $static_routes = brilliant_xyz_static_routes();
+
+    $matched_slug = null;
+    $matched_tpl  = null;
+
     if ( $static ) {
-        $allowed = array_values( brilliant_xyz_static_routes() );
-        if ( in_array( $static, $allowed, true ) ) {
-            $candidate = get_template_directory() . '/templates-static/' . basename( $static );
-            if ( file_exists( $candidate ) ) {
-                status_header( 200 );
-                return $candidate;
+        foreach ( $static_routes as $slug => $tpl ) {
+            if ( $static === $tpl ) {
+                $matched_slug = $slug;
+                $matched_tpl  = $tpl;
+                break;
             }
         }
     }
-    foreach ( brilliant_xyz_static_routes() as $route => $static_tpl ) {
-        if ( $req_path === $route || $req_path === $route . '/' ) {
-            $candidate = get_template_directory() . '/templates-static/' . basename( $static_tpl );
-            if ( file_exists( $candidate ) ) {
-                status_header( 200 );
-                return $candidate;
+
+    if ( ! $matched_slug && isset( $static_routes[ $req_path ] ) ) {
+        $matched_slug = $req_path;
+        $matched_tpl  = $static_routes[ $req_path ];
+    }
+
+    if ( $matched_slug && $matched_tpl ) {
+        $candidate = get_template_directory() . '/templates-static/' . basename( $matched_tpl );
+        if ( file_exists( $candidate ) ) {
+            global $wp_query, $post;
+            $page_obj = get_page_by_path( $matched_slug, OBJECT, 'page' );
+            if ( $page_obj ) {
+                if ( isset( $wp_query ) ) {
+                    $wp_query->queried_object    = $page_obj;
+                    $wp_query->queried_object_id = $page_obj->ID;
+                    $wp_query->is_page           = true;
+                    $wp_query->is_singular       = true;
+                    $wp_query->is_home           = false;
+                    $wp_query->is_archive        = false;
+                }
+                $GLOBALS['post'] = $page_obj;
+                setup_postdata( $page_obj );
             }
+            status_header( 200 );
+            return $candidate;
         }
     }
 

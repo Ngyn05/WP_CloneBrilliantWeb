@@ -44,6 +44,17 @@ function bl_seo_direct_init_interceptor() {
     $uri  = $_SERVER['REQUEST_URI'] ?? '';
     $path = trim( parse_url( $uri, PHP_URL_PATH ), '/' );
 
+    if ( $path === 'favicon.ico' ) {
+        $favicon_path = get_template_directory() . '/favicon.ico';
+        if ( file_exists( $favicon_path ) ) {
+            header( 'Content-Type: image/x-icon' );
+            header( 'Content-Length: ' . filesize( $favicon_path ) );
+            header( 'Cache-Control: public, max-age=604800' );
+            readfile( $favicon_path );
+            exit;
+        }
+    }
+
     if ( $path === 'robots.txt' ) {
         header( 'Content-Type: text/plain; charset=utf-8' );
         echo bl_seo_custom_robots_txt( '', true );
@@ -497,6 +508,7 @@ function bl_seo_output_xsl_stylesheet() {
  * 4. Robots.txt Configuration
  */
 function bl_seo_custom_robots_txt( $output, $public ) {
+    $sitemap_url   = home_url( '/sitemap.xml' );
     $sitemap_index = home_url( '/sitemap_index.xml' );
 
     $robots = "User-agent: *\n";
@@ -507,6 +519,7 @@ function bl_seo_custom_robots_txt( $output, $public ) {
     $robots .= "Disallow: /checkout/\n";
     $robots .= "Disallow: /?s=\n";
     $robots .= "Disallow: /search\n\n";
+    $robots .= "Sitemap: {$sitemap_url}\n";
     $robots .= "Sitemap: {$sitemap_index}\n";
 
     return $robots;
