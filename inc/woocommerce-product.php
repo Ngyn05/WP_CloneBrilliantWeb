@@ -270,12 +270,12 @@ function bl_get_default_product_layout_content() {
 </div>
 
 <div class="container gallery-container" style="padding-top: 30px; padding-bottom: 40px;">
-  <div class="tw-grid md:tw-grid-cols-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-    <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 40px; display: flex; align-items: center;">
-      <h3 style="font-size: 28px; color: #ffffff; margin: 0;">Kích thước Halo</h3>
-    </div>
+  <div class="tw-grid md:tw-grid-cols-2" style="display: grid; gap: 24px;">
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 30px; display: flex; align-items: center; justify-content: center;">
       <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png' ) . '" alt="" style="max-width: 100%; height: auto; border-radius: 8px;" />
+    </div>
+    <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 40px; display: flex; align-items: center;">
+      <h3 style="font-size: 28px; color: #ffffff; margin: 0;">Kích thước Halo</h3>
     </div>
   </div>
 </div>
@@ -388,6 +388,11 @@ add_action( 'save_post', 'bl_save_product_metaboxes', 10, 2 );
 
 // 8. Render Header Buy Button with Compact Hover Submenu
 function bl_render_header_buy_button( $is_mobile = false ) {
+    // Tránh trùng lặp nút: nút ĐẶT HÀNG NGAY đã có cố định ở góc trên bên phải
+    if ( $is_mobile ) {
+        return;
+    }
+
     $all_products = get_posts( array(
         'post_type'      => 'product',
         'post_status'    => 'publish',
@@ -397,15 +402,9 @@ function bl_render_header_buy_button( $is_mobile = false ) {
     ) );
     ?>
     <div class="bl-nav-buy-wrap">
-        <?php if ( $is_mobile ) : ?>
-            <a class="tw-z-[10] tw-flex tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-white tw-px-4 tw-py-2 tw-text-xs tw-font-bold tw-uppercase tw-text-white hover:tw-bg-white/[0.7] hover:tw-text-black md:tw-px-11 md:tw-py-4 md:tw-text-sm" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" data-buy-button="ĐẶT HÀNG ngay">
-                ĐẶT HÀNG ngay
-            </a>
-        <?php else : ?>
-            <a class="tw-z-[10] tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-pink tw-px-4 tw-py-2 tw-text-xs tw-font-bold tw-uppercase tw-text-white hover:tw-bg-pink hover:tw-text-white hover:tw-opacity-100 md:tw-px-11 md:tw-py-4 md:tw-text-sm tw-flex" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" data-buy-button="ĐẶT HÀNG ngay">
-                ĐẶT HÀNG ngay
-            </a>
-        <?php endif; ?>
+        <a class="tw-z-[10] tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-pink tw-px-4 tw-py-2 tw-text-xs tw-font-bold tw-uppercase tw-text-white hover:tw-bg-pink hover:tw-text-white hover:tw-opacity-100 md:tw-px-11 md:tw-py-4 md:tw-text-sm tw-flex" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" data-buy-button="ĐẶT HÀNG ngay">
+            ĐẶT HÀNG ngay
+        </a>
 
         <!-- Compact Submenu on Hover -->
         <div class="bl-sub-dropdown">
@@ -437,5 +436,47 @@ function bl_render_header_buy_button( $is_mobile = false ) {
             </div>
         </div>
     </div>
+    <script>
+    (function() {
+        document.addEventListener('click', function(e) {
+            var buyBtn = e.target.closest('[data-buy-button]');
+            var subItem = e.target.closest('.bl-sub-item');
+            var wrap = buyBtn ? buyBtn.closest('.bl-nav-buy-wrap') : document.querySelector('.bl-nav-buy-wrap');
+            var dropdown = wrap ? wrap.querySelector('.bl-sub-dropdown') : null;
+
+            // Khi chạm vào sản phẩm trong danh sách dropdown -> Chuyển ngay đến sản phẩm đó
+            if (subItem) {
+                if (wrap) wrap.classList.remove('is-open');
+                if (dropdown) dropdown.classList.remove('is-open');
+                var href = subItem.getAttribute('href');
+                if (href) {
+                    window.location.href = href;
+                }
+                return;
+            }
+
+            // Khi chạm vào nút ĐẶT HÀNG NGAY trên mobile
+            if (buyBtn && wrap && dropdown) {
+                var isTouchOrMobile = (window.innerWidth <= 991) || window.matchMedia('(hover: none)').matches;
+                if (isTouchOrMobile) {
+                    var isOpen = dropdown.classList.contains('is-open') || wrap.classList.contains('is-open');
+                    if (!isOpen) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        wrap.classList.add('is-open');
+                        dropdown.classList.add('is-open');
+                        return;
+                    }
+                }
+            }
+
+            // Khi chạm ra ngoài menu -> Đóng dropdown
+            if (wrap && !e.target.closest('.bl-nav-buy-wrap')) {
+                wrap.classList.remove('is-open');
+                if (dropdown) dropdown.classList.remove('is-open');
+            }
+        });
+    })();
+    </script>
     <?php
 }

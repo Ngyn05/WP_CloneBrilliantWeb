@@ -46,13 +46,15 @@ $stock_info = function_exists( 'bl_get_product_stock_info' )
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?><link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
+    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=3' ); ?>">
-    ">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">">">">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
+
+  
 
     
 
@@ -80,7 +82,7 @@ $stock_info = function_exists( 'bl_get_product_stock_info' )
 <meta name="twitter:title" content="Halo">
 <meta name="twitter:description" content="Giới thiệu Halo! Mã nguồn mở AI glasses for the curious, creative, and forward thinking.  Halo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life. With Miniapps, Halo lets you build new experiences using natural language and shar">
 <script>
-  window.shopUrl = 'https://brilliant.xyz';
+  
   window.moneyFormat = "${{amount}}";
 
   window.routes = {
@@ -298,13 +300,13 @@ $stock_info = function_exists( 'bl_get_product_stock_info' )
             opacity: initial !important;
           }
         </style>
-      </noscript><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin=""><link rel="preload" as="font" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2' ); ?>" type="font/woff2" crossorigin=""><link rel="preload" as="font" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2' ); ?>" type="font/woff2" crossorigin=""><script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/vendor.js?v=36535082300241826051752050579' ); ?>" defer="defer"></script>
+      </noscript><link rel="preload" as="font" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2' ); ?>" type="font/woff2" crossorigin=""><link rel="preload" as="font" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/fonts/archivo/archivo_n4.dc8d917cc69af0a65ae04d01fd8eeab28a3573c9.woff2' ); ?>" type="font/woff2" crossorigin=""><script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/vendor.js?v=36535082300241826051752050579' ); ?>" defer="defer"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme.js?v=42167515228863085771752050581' ); ?>" defer="defer"></script>
 
     <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/72251900215/digital_wallets/dialog">
-<meta name="shopify-checkout-api-token" content="c671072bced9ec6f92aee2c19648f979">
-<link rel="alternate" type="application/json+oembed" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/products/halo.oembed' ); ?>">
-<script async="async" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/checkouts/internal/preloads.js?locale=en-VN&default_configuration_id=805404983' ); ?>"></script>
+
+<link rel="alternate" type="application/json+oembed" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/products/halo.oembed' ); ?>
+
 <link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
 <script async="async" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/checkouts/internal/preloads-1.js?locale=en-VN&default_configuration_id=805404983&shop_id=72251900215' ); ?>" crossorigin="anonymous"></script>
 <script id="apple-pay-shop-capabilities" type="application/json">{"shopId":72251900215,"countryCode":"HK","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/72251900215","merchantName":"Brilliant Labs","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex"],"total":{"type":"pending","label":"Brilliant Labs","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
@@ -338,7 +340,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   window.Shopify.SignInWithShop.eligible = true;
 </script>
 <script id="shop-js-analytics" type="application/json">{"pageType":"product"}</script>
-<script defer="defer" async="" type="module" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js' ); ?>"></script>
+<script defer="defer" async="" type="module" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js' ); ?></script>
 <script type="module">
   await import("//brilliant.xyz/cdn/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
 
@@ -373,9 +375,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 })();</script>
 <script id="__st">var __st={"a":72251900215,"offset":28800,"reqid":"858cfed9-6613-4493-9b83-772bd0a55fc6-1787126603","pageurl":"brilliant.xyz\/products\/halo","u":"be34fdd690c1","p":"product","rtyp":"product","rid":10217206972727};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Điều khoản'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js' ); ?>" crossorigin="anonymous"></script>
-<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//brilliant.xyz/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script crossorigin="anonymous" defer="defer" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812' ); ?>"></script>
+<script crossorigin="anonymous" defer="defer" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shopifycloud/storefront/assets/shopify_pay/storefront-bf1cdb70.js?v=20250812' ); ?></script>
 <script id="shopify-origin-trials" async="async" integrity="sha256-mqQjA+yhr1DtPsW5MhDIq3zDu+LghfjNT49r/ttG3eY=" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/shopifycloud/storefront/assets/storefront/origin_trials-5059b83f.js' ); ?>" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
 <script>
   window.Shopify = window.Shopify || {};
@@ -425,191 +427,12 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <script>window.is_hulkpo_installed=true</script>
 
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 72251900215,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "product"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
-<script>
-  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
-</script>
-<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,r=/bytedance/i;function o(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var r=0,o=e.split(";");r<o.length;r++){var d=o[r],t=d.indexOf("=");if(-1!==t){var n=d.slice(0,t).trim();if(n){var i=void 0;try{i=decodeURIComponent(n)}catch(e){i=n}if("_shopify_s"===i){var a=d.slice(t+1).trim();try{return decodeURIComponent(a)}catch(e){return a}}}}}return}catch(e){return}}function d(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}return function(t,n,i,a){var s,c,u,l,f=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},p=(c=(s={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,u=s.legacy,(l=navigator.userAgent).match(e)?"bot":l.match(c)?"modern":l.match(u)?"legacy":l.match(r)?"bot":"unknown"),h=function(e){var r=e.version,t=e.browserTarget,n=e.surface,i=e.shopId,a=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var c,u=e.status,l=e.errorMsg;if(!a)return d("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{var f=(new Date).getTime();c=JSON.stringify({metadata:{event_sent_at_ms:f},events:[{schema_id:"web_pixels_manager_load/3.2",payload:{version:r,bundle_target:t,page_url:s,status:u,surface:n,error_msg:l,shop_id:i,visit_token:o()},metadata:{event_created_at_ms:f}}]})}catch(e){return!1}var p,h=!1;try{"function"==typeof window.navigator.sendBeacon&&-1===(p=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===p.indexOf("iPad; CPU OS 12_")&&-1===p.indexOf("iPod touch; CPU iPhone OS 12_")&&(h=window.navigator.sendBeacon.bind(window.navigator)(a,c))}catch(e){h=!1}if(h)return!0;try{var m=new XMLHttpRequest;return m.open("POST",a,!0),m.setRequestHeader("Content-Type","text/plain"),m.send(c),!0}catch(e){return d("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:i,browserTarget:p,surface:t.surface,shopId:t.shopId,monorailEndpoint:t.monorailEndpoint});if(Boolean(null==(y=null==(m=window.Shopify)?void 0:m.analytics)?void 0:y.replayQueue))h.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var m,y;h.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var g=window.Shopify;g.analytics=g.analytics||{};var v=g.analytics;v.replayQueue=[],v.publish=function(e,r,o){return v.replayQueue.push([e,r,o]),!0};try{self.performance.mark("wpm:start")}catch(e){}var w,b="modern"===p?"modern":"legacy",P=(null!=a?a:{modern:"",legacy:""})[b],S=[(w={baseUrl:n,hashVersion:i,buildTarget:b}).baseUrl,"/wpm","/b",w.hashVersion,"modern"===w.buildTarget?"m":"l",".js"].join("");try{f.browserTarget=p,O(function(){try{O(_)}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}),h.emit({status:"loading"})}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}function C(){if(!function(){var e,r;return Boolean(null==(r=null==(e=window.Shopify)?void 0:e.analytics)?void 0:r.initialized)}()){var e=window.webPixelsManager.init(t)||void 0;if(e){var r=window.Shopify.analytics;r.replayQueue.forEach(function(r){var o=r[0],d=r[1],t=r[2];e.publishCustomEvent(o,d,t)}),r.replayQueue=[],r.publish=e.publishCustomEvent,r.visitor=e.visitor,r.initialized=!0}}}function _(){return h.emit({status:"failed",errorMsg:"".concat(S," has failed to load")})}function O(e){var r;!function(e){var r=e.src,o=e.async,d=void 0===o||o,t=e.onload,n=e.onerror,i=e.sri,a=e.scriptDataAttributes,s=void 0===a?{}:a,c=document.createElement("script"),u=document.querySelector("head"),l=document.querySelector("body");if(c.async=d,c.src=r,i&&(c.integrity=i,c.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{c.dataset[f]=s[f]}catch(e){}if(t&&c.addEventListener("load",t),n&&c.addEventListener("error",n),u)u.appendChild(c);else{if(!l)throw new Error("Did not find a head or body element to append the script");l.appendChild(c)}}({src:S,async:!0,onload:C,onerror:e,sri:(r=P,"string"==typeof r&&/^sha384-[A-Za-z0-9+/=]+$/.test(r)?P:""),scriptDataAttributes:f})}function U(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 72251900215,storefrontBaseUrl: "https://brilliant.xyz",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://brilliant.xyz/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["d5bdd5d0","873d0e44","656605ce"],webPixelsConfigList: [{"id":"2587525431","configuration":"{\"pixelCode\":\"D0GM8L3C77UA6FH9BJ80\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"22e92c2ad45662f435e4801458fb78cc","type":"APP","apiClientId":4383523,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"1226834231","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\"],\\\"target_country\\\":\\\"ZZ\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/1Tn1CMCrya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/_LTdCLSrya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"remove_from_cart\\\",\\\"action_label\\\":\\\"G-3XM1GJSWD2\\\"},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/UaLoCL2rya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/kaxdCLGrya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"add_shipping_info\\\",\\\"action_label\\\":\\\"G-3XM1GJSWD2\\\"},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/xIp7CLqrya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"view_item_list\\\",\\\"action_label\\\":\\\"G-3XM1GJSWD2\\\"},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/H2dLCMOrya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-3XM1GJSWD2\\\",\\\"AW-17464241377\\\/3ki0CLerya8cEOHZzIdB\\\"]},{\\\"type\\\":\\\"view_cart\\\",\\\"action_label\\\":\\\"G-3XM1GJSWD2\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"9120410995b7c9c6f4f039573265c0ea","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"234815799","configuration":"{\"pixel_id\":\"801251724728178\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"abff2a8add143ccb04deb20f0ebd74a9","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"170852663","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"14","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"x-pixel"},{"id":"227213623","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"reddit"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Brilliant Labs","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"brilliant-labs-9526.myshopify.com","countryCode":"HK","storefrontUrl":"https:\/\/brilliant.xyz"},"customer":null,"cart":null,"checkout":null,"productVariants":[{"price":{"amount":399.0,"currencyCode":"USD"},"product":{"title":"Halo","vendor":"Brilliant Labs","id":"10217206972727","untranslatedTitle":"Halo","url":"\/products\/halo","type":""},"id":"50778480509239","image":{"src":"\/\/brilliant.xyz\/cdn\/shop\/files\/Halo_1.png?v=1753738731"},"sku":"BLHALOBLK","title":"Đen","untranslatedTitle":"Đen"}],"products":[{"id":"10217206972727","handle":"halo","isCollective":null,"title":"Halo","type":null,"untranslatedTitle":"Halo","url":"\/products\/halo","vendor":"Brilliant Labs","remoteShopId":null,"variants":[{"id":"50778480509239","image":{"src":"\/\/brilliant.xyz\/cdn\/shop\/files\/Halo_1.png?v=1753738731"},"price":{"amount":399.0,"currencyCode":"USD"},"sku":"BLHALOBLK","title":"Đen","untranslatedTitle":"Đen"}]}],"purchasingCompany":null},},"https://brilliant.xyz/cdn","5f5c0921we198f819p6efddfcfm66c0f9a3",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"179256688951","themePublished":"true","eventMetadataId":"c39e547d-5609-4bce-8c58-5146b1ee95e0","pageType":"product","resourceId":"10217206972727","shopId":"72251900215","storefrontBaseUrl":"https:\/\/brilliant.xyz","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"d5bdd5d0\", \"873d0e44\", \"656605ce\"]","isMerchantRequest":"false","hashVersion":"5f5c0921we198f819p6efddfcfm66c0f9a3","publish":"custom","events":"[[\"page_viewed\",{}],[\"product_viewed\",{\"productVariant\":{\"price\":{\"amount\":399.0,\"currencyCode\":\"USD\"},\"product\":{\"title\":\"Halo\",\"vendor\":\"Brilliant Labs\",\"id\":\"10217206972727\",\"untranslatedTitle\":\"Halo\",\"url\":\"\/products\/halo\",\"type\":\"\"},\"id\":\"50778480509239\",\"image\":{\"src\":\"\/\/brilliant.xyz\/cdn\/shop\/files\/Halo_1.png?v=1753738731\"},\"sku\":\"BLHALOBLK\",\"title\":\"Đen\",\"untranslatedTitle\":\"Đen\"}}]]"});})();</script><script>
-  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-  window.ShopifyAnalytics.meta.currency = 'USD';
-  var meta = {"product":{"id":10217206972727,"gid":"gid:\/\/shopify\/Product\/10217206972727","vendor":"Brilliant Labs","type":"","handle":"halo","variants":[{"id":50778480509239,"price":39900,"name":"Halo - Đen","public_title":"Đen","sku":"BLHALOBLK"}],"remote":false},"page":{"pageType":"product","resourceType":"product","resourceId":10217206972727,"requestId":"858cfed9-6613-4493-9b83-772bd0a55fc6-1787126603"}};
-  for (var attr in meta) {
-    window.ShopifyAnalytics.meta[attr] = meta[attr];
-  }
-</script>
-<script class="analytics">
-  (function () {
-    var customDocumentWrite = function(content) {
-      var jquery = null;
 
-      if (window.jQuery) {
-        jquery = window.jQuery;
-      } else if (window.Checkout && window.Checkout.$) {
-        jquery = window.Checkout.$;
-      }
 
-      if (jquery) {
-        jquery('body').append(content);
-      }
-    };
 
-    var hasLoggedConversion = function(token) {
-      if (token) {
-        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
-      }
-      return false;
-    }
 
-    var setCookieIfConversion = function(token) {
-      if (token) {
-        var twoMonthsFromNow = new Date(Date.now());
-        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
 
-        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
-      }
-    }
 
-    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
-    if (trekkie.integrations) {
-      return;
-    }
-    trekkie.methods = [
-      'identify',
-      'page',
-      'ready',
-      'track',
-      'trackForm',
-      'trackLink'
-    ];
-    trekkie.factory = function(method) {
-      return function() {
-        var args = Array.prototype.slice.call(arguments);
-        args.unshift(method);
-        trekkie.push(args);
-        if (window.__TREKKIE_SHIM_QUEUE && (method == 'track' || method == 'page')) {
-          try {
-            window.__TREKKIE_SHIM_QUEUE.push({
-              from: 'trekkie-stub',
-              method: method,
-              args: args.slice(1)
-            });
-          } catch (e) {
-            // no-op
-          }
-        }
-        return trekkie;
-      };
-    };
-    for (var i = 0; i < trekkie.methods.length; i++) {
-      var key = trekkie.methods[i];
-      trekkie[key] = trekkie.factory(key);
-    }
-    trekkie.load = function(config) {
-      trekkie.config = config || {};
-      trekkie.config.initialDocumentCookie = document.cookie;
-      var first = document.getElementsByTagName('script')[0];
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.onerror = function(e) {
-  var scriptFallback = document.createElement('script');
-  scriptFallback.type = 'text/javascript';
-  scriptFallback.onerror = function(error) {
-          var Monorail = {
-      produce: function produce(monorailDomain, schemaId, payload) {
-        var currentMs = new Date().getTime();
-        var event = {
-          schema_id: schemaId,
-          payload: payload,
-          metadata: {
-            event_created_at_ms: currentMs,
-            event_sent_at_ms: currentMs
-          }
-        };
-        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
-      },
-      sendRequest: function sendRequest(endpointUrl, payload) {
-        // Try the sendBeacon API
-        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
-          var blobData = new window.Blob([payload], {
-            type: 'text/plain'
-          });
-
-          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
-            return true;
-          } // sendBeacon was not successful
-
-        } // XHR beacon
-
-        var xhr = new XMLHttpRequest();
-
-        try {
-          xhr.open('POST', endpointUrl);
-          xhr.setRequestHeader('Content-Type', 'text/plain');
-          xhr.send(payload);
-        } catch (e) {
-          console.log(e);
-        }
-
-        return false;
-      },
-      isIos12: function isIos12() {
-        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
-      }
-    };
-    Monorail.produce('monorail-edge.shopifysvc.com',
-      'trekkie_storefront_load_errors/1.1',
-      {shop_id: 72251900215,
-      theme_id: 179256688951,
-      app_name: "storefront",
-      context_url: window.location.href,
-      source_url: "//brilliant.xyz/cdn/s/trekkie.storefront.7bcd7bb8195e24c65a61d69d69eb32392ed0d53f.min.js"});
-
-  };
-  scriptFallback.async = true;
-  scriptFallback.src = '//brilliant.xyz/cdn/s/trekkie.storefront.7bcd7bb8195e24c65a61d69d69eb32392ed0d53f.min.js';
-  first.parentNode.insertBefore(scriptFallback, first);
-};
-script.async = true;
-script.src = '//brilliant.xyz/cdn/s/trekkie.storefront.7bcd7bb8195e24c65a61d69d69eb32392ed0d53f.min.js';
-first.parentNode.insertBefore(script, first);
-
-    };
-    trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":72251900215,"isMerchantRequest":null,"themeId":179256688951,"themeCityHash":"5630027833518771883","contentLanguage":"en","currency":"USD","eventMetadataId":"c39e547d-5609-4bce-8c58-5146b1ee95e0"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["f43e7f5e","b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
-    );
-
-    var loaded = false;
-    trekkie.ready(function() {
-      if (loaded) return;
-      loaded = true;
-
-      window.ShopifyAnalytics.lib = window.trekkie;
-
-      var originalDocumentWrite = document.write;
-      document.write = customDocumentWrite;
-      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-      document.write = originalDocumentWrite;
-
-      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-      var token = match? match[1]: undefined;
-      if (!hasLoggedConversion(token)) {
-        setCookieIfConversion(token);
-        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"USD","variantId":50778480509239,"productId":10217206972727,"productGid":"gid:\/\/shopify\/Product\/10217206972727","name":"Halo - Đen","price":"399.00","sku":"BLHALOBLK","brand":"Brilliant Labs","variant":"Đen","category":"","nonInteraction":true,"remote":false},undefined,undefined,{"shopifyEmitted":true});
-      window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"USD","variantId":50778480509239,"productId":10217206972727,"productGid":"gid:\/\/shopify\/Product\/10217206972727","name":"Halo - Đen","price":"399.00","sku":"BLHALOBLK","brand":"Brilliant Labs","variant":"Đen","category":"","nonInteraction":true,"remote":false,"referer":"https:\/\/brilliant.xyz\/products\/halo"});
-      }
-    });
-
-    window.ShopifyAnalytics.lib.page(null,{"pageType":"product","resourceType":"product","resourceId":10217206972727,"requestId":"858cfed9-6613-4493-9b83-772bd0a55fc6-1787126603","shopifyEmitted":true});
-
-    var eventsListenerScript = document.createElement('script');
-    eventsListenerScript.async = true;
-    eventsListenerScript.src = "//brilliant.xyz/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
-    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-})();</script>
-<script defer="" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.8.3.min.js' ); ?>" data-application="storefront-renderer" data-shop-id="72251900215" data-render-region="gcp-asia-southeast1" data-page-type="product" data-theme-instance-id="179256688951" data-theme-name="Creator" data-theme-version="3.2.2" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-shs-beacon-endpoint="https://brilliant.xyz/api/collect"></script>
-<meta name="shopify-y" content="73fc1827-5d90-47f3-8105-258e76211c0c">
 <?php wp_head(); ?>
 </head>
 
@@ -684,7 +507,7 @@ first.parentNode.insertBefore(script, first);
             Nhà phát triển
           </span>
         </a>
-      </li></ul><div><?php if ( function_exists( "bl_render_header_buy_button" ) ) { bl_render_header_buy_button(true); } ?></div>
+      </li></ul>
   </div>
 </div>
 </div>
@@ -949,7 +772,7 @@ first.parentNode.insertBefore(script, first);
     Khuyến mãi
   </span>
 
-  <div class="bl-stock-status-badge <?php echo esc_attr( $stock_info['badge_cls'] ); ?>">
+  <div class="bl-stock-status-badge <?php echo esc_attr( $stock_info['badge_cls'] ); ?>
     <span class="bl-stock-dot" style="background-color: <?php echo esc_attr( $stock_info['dot_color'] ); ?>;"></span>
     <span class="bl-stock-text"><?php echo esc_html( $stock_info['text'] ); ?></span>
   </div>
@@ -1035,8 +858,8 @@ first.parentNode.insertBefore(script, first);
         <div class="bl-cta-buttons-row">
           <a href="https://zalo.me/0917834532" target="_blank" rel="noopener noreferrer" class="bl-cta-btn bl-cta-btn--zalo" title="Tư vấn Zalo - Sahaha Wifi Sim Du Lịch Máy Phiên Dịch">
             <svg class="bl-cta-icon" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 4C12.954 4 4 12.507 4 23.002C4 28.91 6.84 34.195 11.278 37.712L9.5 44L16.273 41.512C18.665 42.47 21.275 43.004 24 43.004C35.046 43.004 44 34.497 44 24.002C44 13.507 35.046 4 24 4Z" stroke="currentColor" stroke-width="3" fill="none"/>
-              <path d="M19.78 28.5H13.5V26.85L17.72 20.35H13.75V18.5H19.5V20.15L15.3 26.65H19.78V28.5ZM26.35 28.5L25.8 26.75H22.45L21.9 28.5H19.95L23.1 18.5H25.15L28.3 28.5H26.35ZM24.12 21.25L22.95 25.15H25.3L24.12 21.25ZM30.7 28.5V18.5H32.6V26.7H36.3V28.5H30.7ZM38.45 23.5C38.45 20.65 40.15 18.3 42.75 18.3C45.35 18.3 47.05 20.65 47.05 23.5C47.05 26.35 45.35 28.7 42.75 28.7C40.15 28.7 38.45 26.35 38.45 23.5ZM45.1 23.5C45.1 21.6 44.05 19.95 42.75 19.95C41.45 19.95 40.4 21.6 40.4 23.5C40.4 25.4 41.45 27.05 42.75 27.05C44.05 27.05 45.1 23.5 45.1 23.5Z" fill="currentColor"/>
+              <path d="M24 4C12.95 4 4 12.5 4 23c0 5.9 2.84 11.2 7.28 14.71L9.5 44l6.77-2.49C18.66 42.47 21.28 43 24 43c11.05 0 20-8.5 20-19S35.05 4 24 4z" stroke="currentColor" stroke-width="3" stroke-linejoin="round" fill="none"/>
+              <text x="24" y="27.5" font-family="'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="0.5">ZALO</text>
             </svg>
             <span>TƯ VẤN NGAY</span>
           </a>
@@ -1120,6 +943,25 @@ first.parentNode.insertBefore(script, first);
   line-height: 1;
 }
 
+variant-selects {
+  display: block;
+  margin-bottom: 22px;
+}
+.variant-picker__dropdown {
+  margin-bottom: 20px;
+}
+.variant-picker__label,
+.quantity-input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.quantity-input {
+  margin-bottom: 24px;
+}
+
 /* Nút Tư Vấn Zalo - Viền Trắng / Nền Đen */
 .bl-cta-btn--zalo {
   background: #000000 !important;
@@ -1198,43 +1040,50 @@ first.parentNode.insertBefore(script, first);
 .bl-consult-input {
   flex: 1;
   min-width: 0;
-  height: 42px;
-  background: #000000;
-  border: 1px solid #333333;
-  border-radius: 9999px;
-  padding: 0 16px;
-  color: #ffffff;
-  font-size: 13.5px;
-  outline: none;
-  transition: border-color 0.2s ease;
-  box-sizing: border-box;
+  width: 100% !important;
+  height: 52px !important;
+  min-height: 52px !important;
+  background: #181818 !important;
+  border: 1.5px solid #444444 !important;
+  border-radius: 9999px !important;
+  padding: 0 20px !important;
+  color: #ffffff !important;
+  font-size: 15px !important;
+  outline: none !important;
+  transition: all 0.2s ease !important;
+  box-sizing: border-box !important;
+  display: block !important;
 }
 
 .bl-consult-input::placeholder {
-  color: #666666;
-  font-size: 13px;
+  color: #888888 !important;
+  font-size: 14.5px !important;
 }
 
 .bl-consult-input:focus {
-  border-color: #ffffff;
+  border-color: #ffffff !important;
+  background: #202020 !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2) !important;
 }
 
 .bl-consult-btn {
-  height: 42px;
-  padding: 0 22px;
-  background: #ffffff;
+  height: 52px !important;
+  min-height: 52px !important;
+  padding: 0 28px !important;
+  background: #ffffff !important;
   color: #000000 !important;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  border: 1px solid #ffffff;
-  border-radius: 9999px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  letter-spacing: 0.5px !important;
+  border: 1.5px solid #ffffff !important;
+  border-radius: 9999px !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  transition: all 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
 }
 
 .bl-consult-btn:hover {
@@ -1771,7 +1620,7 @@ first.parentNode.insertBefore(script, first);
           <div class="bl-order-summary__info">
             <h4 class="bl-order-summary__name"><?php echo esc_html( $product_title ); ?></h4>
             <div class="bl-order-summary__unit-price">Đơn giá: <span><?php echo esc_html( $product_price ); ?></span></div>
-            <div class="bl-modal-stock-badge <?php echo esc_attr( $stock_info['badge_cls'] ); ?>">
+            <div class="bl-modal-stock-badge <?php echo esc_attr( $stock_info['badge_cls'] ); ?>
               <span class="bl-stock-dot" style="background-color: <?php echo esc_attr( $stock_info['dot_color'] ); ?>;"></span>
               <span><?php echo esc_html( $stock_info['text'] ); ?></span>
             </div>
@@ -2162,7 +2011,6 @@ function blSubmitPhoneConsultation(btn) {
             
             
           tw-relative tw-flex tw-min-h-[350px] tw-flex-col tw-justify-between tw-overflow-hidden tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[54px] tw-pt-[47px]
-        ">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248.png?v=1753645843&width=720' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248-1.png' ); ?> 352w?v=1753645843&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248.png' ); ?> 720wg?v=1753645843&amp;width=720 720w" width="720" height="405" class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0 tw-object-cover">
 <p class="tw-relative tw-text-[16px] tw-text-white"></p>
         <div class="tw-relative tw-flex tw-flex-col tw-justify-between tw-gap-10">
@@ -2439,13 +2287,35 @@ function blSubmitPhoneConsultation(btn) {
 
 <style>
   .press-parent-container {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 60px;
   }
 
   .press-container {
-    background-color: #ffffff;
-    color: #101010;
+    background-color: #ffffff !important;
+    color: #101010 !important;
+  }
+
+  .press-container p {
+    color: #000000 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    .press-parent-container {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+    .press-container p {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+      font-size: 28px !important;
+      line-height: 1.35 !important;
+    }
   }
 </style>
 

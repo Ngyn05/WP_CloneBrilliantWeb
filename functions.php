@@ -144,6 +144,7 @@ function brilliant_xyz_template_include( $template ) {
 
     // 1. Check static template routes (contact, developers, privacy, terms)
     $static = get_query_var( 'brilliant_static' );
+    $view   = get_query_var( 'brilliant_view' );
     if ( $static ) {
         $allowed = array_values( brilliant_xyz_static_routes() );
         if ( in_array( $static, $allowed, true ) ) {
@@ -208,7 +209,7 @@ function brilliant_xyz_template_include( $template ) {
 
     // 4. Check Blog & Announcements Archive views (/blogs/, /blogs/announcements/, tagged, page, categories)
     if ( 
-        $view === 'archive' || 
+        ( ! empty( $view ) && $view === 'archive' ) || 
         preg_match( '#^blogs(/announcements)?/?$#i', $req_path ) ||
         preg_match( '#^blogs/announcements/(tagged|page)/#i', $req_path ) ||
         preg_match( '#^blogs/tagged/#i', $req_path ) ||
@@ -256,9 +257,18 @@ function brilliant_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'brilliant_custom_excerpt_length', 999 );
 
-// Prevent WordPress from adding default emoji scripts
+// Prevent WordPress from adding default emoji scripts and jquery-migrate noise
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! is_admin() && isset( $scripts->registered['jquery'] ) ) {
+        $script = $scripts->registered['jquery'];
+        if ( $script->deps ) {
+            $script->deps = array_diff( $script->deps, array( 'jquery-migrate' ) );
+        }
+    }
+} );
 
 /**
  * Filter sender name for outgoing emails

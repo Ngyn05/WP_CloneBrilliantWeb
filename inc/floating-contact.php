@@ -55,9 +55,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
       <!-- Option 2: Zalo Chat -->
       <a href="https://zalo.me/0917834532" target="_blank" rel="noopener noreferrer" class="bl-popup-item bl-popup-item--zalo" title="Chat qua Zalo tư vấn">
         <div class="bl-popup-item__icon bl-popup-item__icon--zalo">
-          <svg width="24" height="24" viewBox="0 0 48 48" fill="currentColor">
-            <path d="M24 4C12.954 4 4 12.507 4 23.002C4 28.91 6.84 34.195 11.278 37.712L9.5 44L16.273 41.512C18.665 42.47 21.275 43.004 24 43.004C35.046 43.004 44 34.497 44 24.002C44 13.507 35.046 4 24 4Z" stroke="currentColor" stroke-width="2" fill="none"/>
-            <path d="M19.78 28.5H13.5V26.85L17.72 20.35H13.75V18.5H19.5V20.15L15.3 26.65H19.78V28.5ZM26.35 28.5L25.8 26.75H22.45L21.9 28.5H19.95L23.1 18.5H25.15L28.3 28.5H26.35ZM24.12 21.25L22.95 25.15H25.3L24.12 21.25ZM30.7 28.5V18.5H32.6V26.7H36.3V28.5H30.7ZM38.45 23.5C38.45 20.65 40.15 18.3 42.75 18.3C45.35 18.3 47.05 20.65 47.05 23.5C47.05 26.35 45.35 28.7 42.75 28.7C40.15 28.7 38.45 26.35 38.45 23.5ZM45.1 23.5C45.1 21.6 44.05 19.95 42.75 19.95C41.45 19.95 40.4 21.6 40.4 23.5C40.4 25.4 41.45 27.05 42.75 27.05C44.05 27.05 45.1 23.5 45.1 23.5Z"/>
+          <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C12.95 4 4 12.5 4 23c0 5.9 2.84 11.2 7.28 14.71L9.5 44l6.77-2.49C18.66 42.47 21.28 43 24 43c11.05 0 20-8.5 20-19S35.05 4 24 4z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+            <text x="24" y="27.5" font-family="'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="900" text-anchor="middle" fill="currentColor" letter-spacing="0.5">ZALO</text>
           </svg>
         </div>
         <div class="bl-popup-item__content">

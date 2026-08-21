@@ -3,4 +3,4 @@ class Footer extends HTMLElement{constructor(){super(),this.countrySelect=this.q
         ${selectedText}
       </option>
     `,this.countrySelectWrapper.appendChild(placeholderSelect),this.countrySelect.style.width=`${placeholderSelect.offsetWidth}px`,this.languageSelect&&(this.languageSelect.style.width=`${placeholderSelect.offsetWidth}px`),placeholderSelect.remove()}}customElements.define("site-footer",Footer);
-//# sourceMappingURL=/cdn/shop/t/24/assets/section-footer.js.map?v=25646550262897395881752050581
+
