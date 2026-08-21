@@ -10,6 +10,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * 0. Global Favicon Generator
+ * Xuất đầy đủ các thẻ Favicon chuẩn kích cỡ cho mọi trang, mọi thiết bị và trình duyệt
+ */
+function bl_output_global_favicons() {
+    $theme_uri = get_template_directory_uri();
+    echo '<link rel="icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=4' ) . '" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=4' ) . '" />' . "\n";
+    echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-32x32.png?v=4' ) . '" />' . "\n";
+    echo '<link rel="icon" type="image/png" sizes="16x16" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-16x16.png?v=4' ) . '" />' . "\n";
+    echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=4' ) . '" />' . "\n";
+}
+add_action( 'wp_head', 'bl_output_global_favicons', 1 );
+add_action( 'admin_head', 'bl_output_global_favicons', 1 );
+add_action( 'login_head', 'bl_output_global_favicons', 1 );
+
+/**
  * 1. Canonical URL Generator Fallback
  * Tự động tạo thẻ <link rel="canonical"> chuẩn xác cho từng trang/bài viết/URL
  * Tự động nhường quyền cho Yoast SEO hoặc plugin SEO khác nếu được kích hoạt
