@@ -10,6 +10,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function bl_output_dynamic_json_ld_schema() {
+    // Nếu Yoast SEO đang kích hoạt, để Yoast SEO quản lý toàn bộ Schema tự động
+    if ( defined( 'WPSEO_VERSION' ) ) {
+        return;
+    }
+
     $home_url   = home_url( '/' );
     $site_name  = 'Brilliant Việt Nam';
     $theme_uri  = get_template_directory_uri();
