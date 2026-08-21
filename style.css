@@ -7,6 +7,50 @@ Version: 1.0.0
 Text Domain: brilliant-xyz
 */
 
+/* ==========================================================================
+   Fix Double Scrollbars (Khắc phục triệt để lỗi 2 thanh cuộn)
+   ========================================================================== */
+html {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    height: auto !important;
+    scrollbar-gutter: stable;
+}
+
+body {
+    overflow: visible !important;
+    overflow-x: clip !important;
+    overflow-y: visible !important;
+    height: auto !important;
+    min-height: 100vh !important;
+}
+
+#site-content,
+main,
+.site-content,
+.shopify-section,
+#MainContent {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+/* Luôn đảm bảo khoảng cách thông thoáng trước Footer */
+site-footer,
+.site-footer,
+.bl-unified-site-footer,
+.shopify-section-group-footer-group {
+    margin-top: 80px !important;
+}
+
+@media (max-width: 767px) {
+    site-footer,
+    .site-footer,
+    .bl-unified-site-footer,
+    .shopify-section-group-footer-group {
+        margin-top: 48px !important;
+    }
+}
+
 /* Ensure header container does not clip the dropdown menu */
 site-header,
 .site-header,
