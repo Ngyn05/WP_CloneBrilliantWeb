@@ -27,9 +27,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
     <title>
       Nhà phát triển
- &ndash; Brilliant Labs</title>
+ &ndash; Brilliant Việt Nam</title>
 
-<meta property="og:site_name" content="Brilliant Labs">
+<meta property="og:site_name" content="Brilliant Việt Nam">
 <meta property="og:url" content="https://brilliant.xyz/pages/developers">
 <meta property="og:title" content="Nhà phát triển">
 <meta property="og:type" content="website">
@@ -591,7 +591,7 @@ first.parentNode.insertBefore(script, first);
 <site-header class="container header header--mobile-top header--desktop-top header--mobile-transparent header--desktop-transparent header--full-width" role="region" aria-label="Header" data-header-mobile-transparency="" data-header-desktop-transparency="">
   <div class="row row--no-gutters row--align-center tw-flex tw-justify-between  ">
     <div class="tw-flex tw-justify-between lg:tw-flex-1 ">
-      <a class="tw-hidden tw-justify-center lg:tw-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
+      <a class="tw-hidden tw-justify-center lg:tw-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Việt Nam"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"></a>
 
       
         <button class="header__menu-toggle tw-h-auto d-lg-none" type="button" aria-label="Menu" data-menu-toggle=""><span> <svg class="icon icon-menu" aria-hidden="true" focusable="false" role="presentation" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -666,7 +666,7 @@ first.parentNode.insertBefore(script, first);
             </span>
           </a>
         </li></ul>
-</div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
+</div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Việt Nam"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"></a>
 
     
 <div class="tw-flex tw-justify-end tw-gap-2 md:tw-gap-6"><?php if ( function_exists( "bl_render_header_buy_button" ) ) { bl_render_header_buy_button(false); } ?></div></div><div class="search-bar search-bar--header" role="region" aria-label="Tìm kiếm" data-search-bar=""><predictive-search data-loading-text="Loading..."><form class="search-bar__form" action="/search" method="get" role="search">

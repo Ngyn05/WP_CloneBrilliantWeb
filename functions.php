@@ -26,6 +26,21 @@ add_action( 'wp_enqueue_scripts', 'brilliant_xyz_scripts' );
 add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 add_filter( 'use_widgets_block_editor', '__return_false' );
 
+// Chuẩn hóa tên website hiển thị trên thanh tiêu đề trình duyệt (Browser Tab Title)
+add_filter( 'document_title_parts', function( $title ) {
+    $title['site'] = 'Brilliant Việt Nam';
+    return $title;
+} );
+add_filter( 'pre_option_blogname', function() {
+    return 'Brilliant Việt Nam';
+} );
+add_filter( 'bloginfo', function( $output, $show = '' ) {
+    if ( $show === 'name' ) {
+        return 'Brilliant Việt Nam';
+    }
+    return $output;
+}, 10, 2 );
+
 // Include Inc Modules
 require_once get_template_directory() . '/inc/metaboxes.php';
 require_once get_template_directory() . '/inc/woocommerce-product.php';

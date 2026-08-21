@@ -144,7 +144,93 @@ function bl_tinymce_custom_styles( $mceInit ) {
 }
 add_filter( 'tiny_mce_before_init', 'bl_tinymce_custom_styles' );
 
-// 4. Register Custom Metabox for Product
+// 4. Stock Status Helper Function (Syncs directly with WooCommerce or Database Post Meta)
+function bl_get_product_stock_info( $product_id ) {
+    if ( ! $product_id ) {
+        return array(
+            'status'    => 'instock',
+            'text'      => 'Còn hàng',
+            'badge_cls' => 'bl-stock-badge--instock',
+            'dot_color' => '#22c55e',
+            'available' => true,
+        );
+    }
+
+    if ( function_exists( 'wc_get_product' ) ) {
+        $wc_product = wc_get_product( $product_id );
+        if ( $wc_product ) {
+            $is_in_stock = $wc_product->is_in_stock();
+            $status      = $wc_product->get_stock_status(); // 'instock', 'outofstock', 'onbackorder'
+            $qty         = $wc_product->get_stock_quantity();
+
+            if ( $status === 'outofstock' || ! $is_in_stock ) {
+                return array(
+                    'status'    => 'outofstock',
+                    'text'      => 'Hết hàng',
+                    'badge_cls' => 'bl-stock-badge--out',
+                    'dot_color' => '#ef4444',
+                    'available' => false,
+                );
+            } elseif ( $status === 'onbackorder' ) {
+                return array(
+                    'status'    => 'onbackorder',
+                    'text'      => 'Đặt trước',
+                    'badge_cls' => 'bl-stock-badge--backorder',
+                    'dot_color' => '#f59e0b',
+                    'available' => true,
+                );
+            } else {
+                $text = 'Còn hàng';
+                if ( $qty && intval( $qty ) > 0 ) {
+                    $text = 'Còn hàng (' . intval( $qty ) . ')';
+                }
+                return array(
+                    'status'    => 'instock',
+                    'text'      => $text,
+                    'badge_cls' => 'bl-stock-badge--instock',
+                    'dot_color' => '#22c55e',
+                    'available' => true,
+                );
+            }
+        }
+    }
+
+    // Direct database post meta fallback
+    $meta_stock = get_post_meta( $product_id, '_stock_status', true );
+    $meta_qty   = get_post_meta( $product_id, '_stock', true );
+
+    if ( $meta_stock === 'outofstock' ) {
+        return array(
+            'status'    => 'outofstock',
+            'text'      => 'Hết hàng',
+            'badge_cls' => 'bl-stock-badge--out',
+            'dot_color' => '#ef4444',
+            'available' => false,
+        );
+    } elseif ( $meta_stock === 'onbackorder' ) {
+        return array(
+            'status'    => 'onbackorder',
+            'text'      => 'Đặt trước',
+            'badge_cls' => 'bl-stock-badge--backorder',
+            'dot_color' => '#f59e0b',
+            'available' => true,
+        );
+    } else {
+        $text = 'Còn hàng';
+        if ( ! empty( $meta_qty ) && intval( $meta_qty ) > 0 ) {
+            $text = 'Còn hàng (' . intval( $meta_qty ) . ')';
+        }
+        return array(
+            'status'    => 'instock',
+            'text'      => $text,
+            'badge_cls' => 'bl-stock-badge--instock',
+            'dot_color' => '#22c55e',
+            'available' => true,
+        );
+    }
+}
+
+// 5. Register Custom Metabox for Product
 function bl_register_product_metaboxes( $post_type = '', $post = null ) {
     add_meta_box(
         'bl_product_body_editor',
@@ -243,7 +329,7 @@ function bl_get_default_product_layout_content() {
     <div class="accordion">
       <details style="background: #161616; border-radius: 8px; padding: 16px 20px; margin-bottom: 12px; border: 1px solid #282828;">
         <summary style="font-size: 18px; font-weight: 600; color: #ffffff; cursor: pointer;">Chính sách đổi trả là gì?</summary>
-        <div style="margin-top: 12px; color: #cccccc; line-height: 1.7;"><p>Nếu chiếc Halo của bạn bị hỏng, lỗi kỹ thuật hoặc lỗi sản xuất rõ ràng, chúng tôi rất sẵn lòng đổi mới cho bạn một sản phẩm khác. Bạn chỉ cần liên hệ với đội ngũ hỗ trợ của chúng tôi qua email hello@itsbrilliant.co để bắt đầu quy trình đổi trả.</p></div>
+        <div style="margin-top: 12px; color: #cccccc; line-height: 1.7;"><p>Nếu chiếc Halo của bạn bị hỏng, lỗi kỹ thuật hoặc lỗi sản xuất rõ ràng, chúng tôi rất sẵn lòng đổi mới cho bạn một sản phẩm khác. Bạn chỉ cần liên hệ với đội ngũ hỗ trợ của chúng tôi qua email contact@brilliantvietnam.com để bắt đầu quy trình đổi trả.</p></div>
       </details>
     </div>
   </div>

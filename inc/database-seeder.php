@@ -85,7 +85,7 @@ function bl_seed_database_posts() {
 
 <p>✌🏼🚀 <strong>Chúng ta đang sống trong một thời khắc bước ngoặt, trước thềm một sự chuyển đổi mang tầm vóc thế giới, và cần sự chung tay của tất cả chúng ta để hướng tới hạnh phúc chung của cộng đồng.</strong></p>
 
-<p style="text-align: center;"><a href="' . esc_url( home_url( '/' ) ) . '" target="_blank"><img src="' . esc_url( $theme_uri . '/site-assets/shopify-email/r7nzqrgjq5tlbzy6nslynkmuuxys.jpg?width=1200' ) . '" alt="Brilliant Labs" style="max-width: 100%; height: auto;"></a></p>',
+<p style="text-align: center;"><a href="' . esc_url( home_url( '/' ) ) . '" target="_blank"><img src="' . esc_url( $theme_uri . '/site-assets/shopify-email/r7nzqrgjq5tlbzy6nslynkmuuxys.jpg?width=1200' ) . '" alt="Brilliant Việt Nam" style="max-width: 100%; height: auto;"></a></p>',
         ),
 
         array(

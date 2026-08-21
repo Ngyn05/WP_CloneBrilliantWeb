@@ -229,7 +229,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <div class="bl-footer-copyright-row">
       <small class="bl-footer-copyright-text">
         <span>&copy; 2026</span>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Brilliant Labs.</a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Brilliant Việt Nam.</a>
       </small>
     </div>
 
@@ -644,3 +644,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 }
 </style>
+
+<?php 
+// Global Floating Contact Widget
+get_template_part( 'inc/floating-contact' ); 
+?>

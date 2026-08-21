@@ -27,6 +27,17 @@ $processor    = $product_id ? ( get_post_meta( $product_id, '_halo_processor', t
 $model_3d_url = $product_id ? ( get_post_meta( $product_id, '_halo_3d_model_url', true ) ?: ( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/glasses_v3-6a3aeba0.glb' ) ) : '';
 $lens_partner = $product_id ? ( get_post_meta( $product_id, '_halo_lens_partner_url', true ) ?: 'https://www.smartbuyglasses.com/designer-eyeglasses/Brilliant-Labs/Cut-Lens-for-Brilliant-Labs-Frame-2.html' ) : '';
 $shipping_msg = $product_id ? ( get_post_meta( $product_id, '_halo_shipping_status', true ) ?: 'Halo sẽ bắt đầu được giao hàng trong thời gian tới 🚀' ) : '';
+
+// Lấy thông tin tình trạng kho hàng từ Database / WooCommerce
+$stock_info = function_exists( 'bl_get_product_stock_info' ) 
+    ? bl_get_product_stock_info( $product_id ) 
+    : array(
+        'status'    => 'instock',
+        'text'      => 'Còn hàng',
+        'badge_cls' => 'bl-stock-badge--instock',
+        'dot_color' => '#22c55e',
+        'available' => true,
+    );
 ?>
 ﻿<!doctype html>
 <html class="no-js" lang="vi">
@@ -51,9 +62,9 @@ $shipping_msg = $product_id ? ( get_post_meta( $product_id, '_halo_shipping_stat
 
 
 
-    <title><?php echo esc_html( $product_title ); ?> &ndash; Brilliant Labs</title><meta name="description" content="Giới thiệu Halo! Mã nguồn mở AI glasses for the curious, creative, and forward thinking.  Halo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life. With Miniapps, Halo lets you build new experiences using natural language and shar">
+    <title><?php echo esc_html( $product_title ); ?> &ndash; Brilliant Việt Nam</title><meta name="description" content="Giới thiệu Halo! Mã nguồn mở AI glasses for the curious, creative, and forward thinking.  Halo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life. With Miniapps, Halo lets you build new experiences using natural language and shar">
 
-<meta property="og:site_name" content="Brilliant Labs">
+<meta property="og:site_name" content="Brilliant Việt Nam">
 <meta property="og:url" content="https://brilliant.xyz/products/halo">
 <meta property="og:title" content="Halo">
 <meta property="og:type" content="product">
@@ -618,7 +629,7 @@ first.parentNode.insertBefore(script, first);
 <site-header class="container header header--mobile-top header--desktop-top header--mobile-transparent header--desktop-transparent header--full-width" role="region" aria-label="Header" data-header-mobile-transparency="" data-header-desktop-transparency="">
   <div class="row row--no-gutters row--align-center tw-flex tw-justify-between  ">
     <div class="tw-flex tw-justify-between lg:tw-flex-1 ">
-      <a class="tw-hidden tw-justify-center lg:tw-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
+      <a class="tw-hidden tw-justify-center lg:tw-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Việt Nam"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"></a>
 
       
         <button class="header__menu-toggle tw-h-auto d-lg-none" type="button" aria-label="Menu" data-menu-toggle=""><span> <svg class="icon icon-menu" aria-hidden="true" focusable="false" role="presentation" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -693,7 +704,7 @@ first.parentNode.insertBefore(script, first);
             </span>
           </a>
         </li></ul>
-</div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
+</div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Việt Nam"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"></a>
 
     
 <div class="tw-flex tw-justify-end tw-gap-2 md:tw-gap-6"><?php if ( function_exists( "bl_render_header_buy_button" ) ) { bl_render_header_buy_button(false); } ?></div></div><div class="search-bar search-bar--header" role="region" aria-label="Tìm kiếm" data-search-bar=""><predictive-search data-loading-text="Loading..."><form class="search-bar__form" action="/search" method="get" role="search">
@@ -932,7 +943,13 @@ first.parentNode.insertBefore(script, first);
 
   <span class="product-price__badge product-price__badge--sale p--bold">
     Khuyến mãi
-  </span></div>
+  </span>
+
+  <div class="bl-stock-status-badge <?php echo esc_attr( $stock_info['badge_cls'] ); ?>">
+    <span class="bl-stock-dot" style="background-color: <?php echo esc_attr( $stock_info['dot_color'] ); ?>;"></span>
+    <span class="bl-stock-text"><?php echo esc_html( $stock_info['text'] ); ?></span>
+  </div>
+</div>
 <form method="post" action="/cart/add" id="product-form-installment-template--24912567468343__main" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="50778480509239" data-shop-pay-input="">
                     <div class="product__shop-pay"></div><input type="hidden" name="product-id" value="10217206972727"><input type="hidden" name="section-id" value="template--24912567468343__main"></form><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-product-price.css?v=54116176018763529501752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 <div class="product__description">
@@ -1247,6 +1264,70 @@ first.parentNode.insertBefore(script, first);
   background: rgba(198, 40, 40, 0.2);
   border: 1px solid rgba(239, 83, 80, 0.4);
   color: #ef9a9a;
+}
+
+/* Stock Status Indicator - Modern Monochrome with Status Dot */
+.bl-stock-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 12px;
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4ade80;
+  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+.bl-stock-status-badge.bl-stock-badge--out {
+  background: rgba(239, 68, 68, 0.08) !important;
+  border-color: rgba(239, 68, 68, 0.25) !important;
+  color: #f87171 !important;
+}
+
+.bl-stock-status-badge.bl-stock-badge--backorder {
+  background: rgba(245, 158, 11, 0.08) !important;
+  border-color: rgba(245, 158, 11, 0.25) !important;
+  color: #fbbf24 !important;
+}
+
+.bl-stock-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+  animation: blStockPulse 2s infinite ease-in-out;
+}
+
+@keyframes blStockPulse {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.bl-modal-stock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4ade80;
+  margin-top: 4px;
+}
+
+.bl-modal-stock-badge.bl-stock-badge--out {
+  color: #f87171 !important;
+}
+
+.bl-modal-stock-badge.bl-stock-badge--backorder {
+  color: #fbbf24 !important;
+}
+
 /* Quick Order Modal (Dark & White Minimalist Theme) */
 .bl-modal-overlay {
   position: fixed;
@@ -1684,8 +1765,12 @@ first.parentNode.insertBefore(script, first);
         <div class="bl-order-summary__prod">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Frame_29_f3e82d0d-ec4a-4648-8df0-7a0e163c48ba.png?v=1752050478&width=200' ); ?>" alt="Halo" class="bl-order-summary__img" />
           <div class="bl-order-summary__info">
-            <h4 class="bl-order-summary__name">Halo</h4>
-            <div class="bl-order-summary__unit-price">Đơn giá: <span>2.990.000 ₫</span></div>
+            <h4 class="bl-order-summary__name"><?php echo esc_html( $product_title ); ?></h4>
+            <div class="bl-order-summary__unit-price">Đơn giá: <span><?php echo esc_html( $product_price ); ?></span></div>
+            <div class="bl-modal-stock-badge <?php echo esc_attr( $stock_info['badge_cls'] ); ?>">
+              <span class="bl-stock-dot" style="background-color: <?php echo esc_attr( $stock_info['dot_color'] ); ?>;"></span>
+              <span><?php echo esc_html( $stock_info['text'] ); ?></span>
+            </div>
           </div>
         </div>
 
@@ -2252,7 +2337,7 @@ function blSubmitPhoneConsultation(btn) {
     </summary>
 
     <div class="accordion__content">
-      <p>Sử dụng Brilliant SDK để xây dựng ứng dụng và đối với iOS và Android, chúng tôi có sẵn Flutter SDK. Toàn bộ tài liệu kỹ thuật của chúng tôi đều có sẵn trên trang web tại đây: <a href="<?php echo esc_url( home_url( '/developers/' ) ); ?>" title="Nhà phát triển – Brilliant Labs">Nhà phát triển – Brilliant Labs</a></p>
+      <p>Sử dụng Brilliant SDK để xây dựng ứng dụng và đối với iOS và Android, chúng tôi có sẵn Flutter SDK. Toàn bộ tài liệu kỹ thuật của chúng tôi đều có sẵn trên trang web tại đây: <a href="<?php echo esc_url( home_url( '/developers/' ) ); ?>" title="Nhà phát triển – Brilliant Việt Nam">Nhà phát triển – Brilliant Việt Nam</a></p>
       
     </div>
   </details>
@@ -2312,7 +2397,7 @@ function blSubmitPhoneConsultation(btn) {
     </summary>
 
     <div class="accordion__content">
-      <p>Nếu chiếc Halo của bạn bị hỏng, lỗi kỹ thuật hoặc lỗi sản xuất rõ ràng, chúng tôi rất sẵn lòng đổi mới cho bạn một sản phẩm khác. Đối với trường hợp đổi trả ngoài các lý do trên, chúng tôi sẽ hoàn tiền đầy đủ trừ đi phí lưu kho $49 và bạn sẽ chịu chi phí vận chuyển thiết bị trả lại cho chúng tôi. Bạn chỉ cần liên hệ với đội ngũ hỗ trợ của chúng tôi qua email hello@itsbrilliant.co để bắt đầu quy trình đổi trả.</p><p></p>
+      <p>Nếu chiếc Halo của bạn bị hỏng, lỗi kỹ thuật hoặc lỗi sản xuất rõ ràng, chúng tôi rất sẵn lòng đổi mới cho bạn một sản phẩm khác. Đối với trường hợp đổi trả ngoài các lý do trên, chúng tôi sẽ hoàn tiền đầy đủ trừ đi phí lưu kho $49 và bạn sẽ chịu chi phí vận chuyển thiết bị trả lại cho chúng tôi. Bạn chỉ cần liên hệ với đội ngũ hỗ trợ của chúng tôi qua email contact@brilliantvietnam.com để bắt đầu quy trình đổi trả.</p><p></p>
       
     </div>
   </details>

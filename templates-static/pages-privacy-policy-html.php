@@ -27,9 +27,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
     <title>
       Chính sách bảo mật
- &ndash; Brilliant Labs</title><meta name="description" content="BRILLIANT LABS - PRIVACY POLICY Date Last Updated: December 5, 2025 Brilliant Labs Pte. Ltd. (UEN: 202316146G), a company incorporated under the laws of Singapore (“Brilliant,” “Company,” “we,” “us,” or “our”), respects your privacy and is committed to safeguarding any information we collect from or about you. This Pri">
+ &ndash; Brilliant Việt Nam</title><meta name="description" content="BRILLIANT LABS - PRIVACY POLICY Date Last Updated: December 5, 2025 Brilliant Labs Pte. Ltd. (UEN: 202316146G), a company incorporated under the laws of Singapore (“Brilliant,” “Company,” “we,” “us,” or “our”), respects your privacy and is committed to safeguarding any information we collect from or about you. This Pri">
 
-<meta property="og:site_name" content="Brilliant Labs">
+<meta property="og:site_name" content="Brilliant Việt Nam">
 <meta property="og:url" content="https://brilliant.xyz/pages/privacy-policy">
 <meta property="og:title" content="Chính sách bảo mật">
 <meta property="og:type" content="website">
@@ -591,7 +591,7 @@ first.parentNode.insertBefore(script, first);
 <site-header class="container header header--mobile-top header--desktop-top header--mobile-transparent header--desktop-transparent header--full-width" role="region" aria-label="Header" data-header-mobile-transparency="" data-header-desktop-transparency="">
   <div class="row row--no-gutters row--align-center tw-flex tw-justify-between  ">
     <div class="tw-flex tw-justify-between lg:tw-flex-1 ">
-      <a class="tw-hidden tw-justify-center lg:tw-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7.png?v=1752767272' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
+      <a class="tw-hidden tw-justify-center lg:tw-flex" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Việt Nam"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"></a>
 
       
         <button class="header__menu-toggle tw-h-auto d-lg-none" type="button" aria-label="Menu" data-menu-toggle=""><span> <svg class="icon icon-menu" aria-hidden="true" focusable="false" role="presentation" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -666,7 +666,7 @@ first.parentNode.insertBefore(script, first);
             </span>
           </a>
         </li></ul>
-</div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Labs"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantLabs_logo_v0120_fd00ce58-e85e-4c9b-a80e-a9c57955d1b7-1.png?v=1752767272&width=440' ); ?>" alt="Brilliant Labs" loading="lazy" width="3100" height="600"></a>
+</div><a class="tw-flex tw-justify-center lg:tw-hidden" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Brilliant Việt Nam"><img class="header__logo header__logo--desktop tw-mx-0 header__logo--standard" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo header__logo--desktop header__logo--reversed tw-mx-0" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"><img class="header__logo tw-mx-0  d-lg-none" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/BrilliantVietnam_logo_white.png?v=2' ); ?>" alt="Brilliant Việt Nam" loading="lazy" width="3100" height="600"></a>
 
     
 <div class="tw-flex tw-justify-end tw-gap-2 md:tw-gap-6"><?php if ( function_exists( "bl_render_header_buy_button" ) ) { bl_render_header_buy_button(false); } ?></div></div><div class="search-bar search-bar--header" role="region" aria-label="Tìm kiếm" data-search-bar=""><predictive-search data-loading-text="Loading..."><form class="search-bar__form" action="/search" method="get" role="search">
@@ -770,7 +770,7 @@ first.parentNode.insertBefore(script, first);
 <p class="p1">Brilliant tuân thủ các nguyên tắc bảo vệ quyền riêng tư theo luật pháp hiện hành, bao gồm Quy định chung về bảo vệ dữ liệu của Liên minh Châu Âu (EU GDPR), UK GDPR, Đạo luật quyền riêng tư của người tiêu dùng California (CCPA/CPRA) và Đạo luật bảo vệ dữ liệu cá nhân của Singapore (PDPA).</p>
 
 <p class="p1"><b>1. Thông tin quan trọng và chúng tôi là ai</b></p>
-<p class="p1">Brilliant Labs Pte. Ltd. là đơn vị kiểm soát dữ liệu (Data Controller) chịu trách nhiệm về thông tin cá nhân được thu thập qua Sản phẩm và Dịch vụ. Chúng tôi đã bổ nhiệm Cán bộ Bảo vệ Dữ liệu (DPO). Mọi câu hỏi hoặc yêu cầu thực thi quyền riêng tư, vui lòng liên hệ qua email: <a href="mailto:hello@brilliant.xyz" class="tw-text-white tw-underline">hello@brilliant.xyz</a>.</p>
+<p class="p1">Brilliant Labs Pte. Ltd. là đơn vị kiểm soát dữ liệu (Data Controller) chịu trách nhiệm về thông tin cá nhân được thu thập qua Sản phẩm và Dịch vụ. Chúng tôi đã bổ nhiệm Cán bộ Bảo vệ Dữ liệu (DPO). Mọi câu hỏi hoặc yêu cầu thực thi quyền riêng tư, vui lòng liên hệ qua email: <a href="mailto:contact@brilliantvietnam.com" class="tw-text-white tw-underline">contact@brilliantvietnam.com</a>.</p>
 <p class="p1">Sản phẩm và Dịch vụ của chúng tôi chỉ dành cho người dùng từ đủ 18 tuổi trở lên. Chúng tôi không cố ý thu thập thông tin của người chưa thành niên.</p>
 
 <p class="p1"><b>2. Dữ liệu chúng tôi thu thập về bạn</b></p>
@@ -843,7 +843,7 @@ first.parentNode.insertBefore(script, first);
 <li class="li1"><b>Quyền chỉnh sửa:</b> Yêu cầu cập nhật hoặc đính chính thông tin chưa chính xác.</li>
 <li class="li1"><b>Quyền xóa dữ liệu (Quyền được lãng quên):</b> Yêu cầu xóa dữ liệu cá nhân của bạn khỏi hệ thống.</li>
 <li class="li1"><b>Quyền phản đối hoặc hạn chế xử lý:</b> Phản đối việc xử lý dữ liệu cho mục đích tiếp thị hoặc nghiên cứu.</li>
-<li class="li1"><b>Quyền rút lại sự đồng ý:</b> Bạn có thể rút lại sự đồng ý bất kỳ lúc nào thông qua cài đặt ứng dụng hoặc gửi email tới <a href="mailto:hello@brilliant.xyz" class="tw-text-white tw-underline">hello@brilliant.xyz</a>.</li>
+<li class="li1"><b>Quyền rút lại sự đồng ý:</b> Bạn có thể rút lại sự đồng ý bất kỳ lúc nào thông qua cài đặt ứng dụng hoặc gửi email tới <a href="mailto:contact@brilliantvietnam.com" class="tw-text-white tw-underline">contact@brilliantvietnam.com</a>.</li>
 </ul>
 
 <p class="p1"><b>10. Quyền của người dùng tại Châu Âu (GDPR), California (CCPA/CPRA) và Singapore (PDPA)</b></p>
@@ -853,7 +853,11 @@ first.parentNode.insertBefore(script, first);
 <p class="p1">Đối với các khách hàng doanh nghiệp và nhà phát triển tích hợp API/SDK của Brilliant, chúng tôi cung cấp Thỏa thuận Xử lý Dữ liệu (DPA) quy định chi tiết trách nhiệm của Đơn vị Xử lý Dữ liệu (Processor) theo tiêu chuẩn bảo vệ dữ liệu toàn cầu.</p>
 
 <p class="p1">Mọi thắc mắc về quyền riêng tư và chính sách bảo mật, vui lòng liên hệ:</p>
-<p class="p1"><b>Brilliant Labs Private Limited</b><br>Địa chỉ: 68 Circular Road #02-01, 049422, Singapore<br>Email DPO: <a href="mailto:hello@brilliant.xyz" class="tw-text-white tw-underline">hello@brilliant.xyz</a></p>
+<p class="p1"><b>Công ty Brilliant Việt Nam</b><br>
+Văn phòng Hà Nội: Số 226 Đường Láng, P. Thịnh Quang, Q. Đống Đa, Hà Nội<br>
+Văn phòng TP. HCM: Số 137 Đường Hòa Hưng, P. Hòa Hưng, TP. Hồ Chí Minh<br>
+Hotline: 1900.63.8400<br>
+Email DPO &amp; Hỗ trợ: <a href="mailto:contact@brilliantvietnam.com" class="tw-text-white tw-underline">contact@brilliantvietnam.com</a></p>
     </div>
   </div>
 </div><style data-shopify="">.page--template--24820772045111__main {
