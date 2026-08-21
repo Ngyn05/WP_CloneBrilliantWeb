@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Dynamic Template for Single Post (Brilliant Labs)
  */
@@ -28,38 +28,27 @@ $permalink = get_permalink();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">">
+    <meta name="theme-color" content="#000000">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
-  
+    <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
+    <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
 
-    
+    <title><?php echo esc_html( get_the_title( $post_id ) ); ?> &ndash; Brilliant Việt Nam</title>
+    <meta name="description" content="<?php echo esc_attr( wp_strip_all_tags( get_the_excerpt( $post_id ) ?: get_the_title( $post_id ) ) ); ?>">
 
-
-  <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
-
-
-
-
-  <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
-
-
-
-    <title>
-      Hành trình đến Halo | Phần 1
- &ndash; Brilliant Việt Nam</title><meta name="description" content="Building Halo has been a journey. ⚒️ We learned a lot of hard lessons from developing and manufacturing Frame and knew we needed to bake that learning into Halo. But first we turned inward: after deep reflection on our culture and how we work, painful but necessary changes were made to the team and supply chain to refi">
-
-<meta property="og:site_name" content="Brilliant Việt Nam">
-<meta property="og:url" content="https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4">
-<meta property="og:title" content="Hành trình đến Halo | Phần 1">
-<meta property="og:type" content="article">
-<meta property="og:description" content="Building Halo has been a journey. ⚒️ We learned a lot of hard lessons from developing and manufacturing Frame and knew we needed to bake that learning into Halo. But first we turned inward: after deep reflection on our culture and how we work, painful but necessary changes were made to the team and supply chain to refi"><meta property="og:image" content="http://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764">
-  <meta property="og:image:secure_url" content="https://brilliant.xyz/cdn/shop/articles/IMG_1838_e8390610-7d22-4ae7-9456-8d14b7cb4aae.webp?v=1755118764">
-  <meta property="og:image:width" content="594">
-  <meta property="og:image:height" content="792"><meta name="twitter:site" content="@brilliantlabsar"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Hành trình đến Halo | Phần 1">
-<meta name="twitter:description" content="Building Halo has been a journey. ⚒️ We learned a lot of hard lessons from developing and manufacturing Frame and knew we needed to bake that learning into Halo. But first we turned inward: after deep reflection on our culture and how we work, painful but necessary changes were made to the team and supply chain to refi">
+    <meta property="og:site_name" content="Brilliant Việt Nam">
+    <meta property="og:url" content="<?php echo esc_url( $permalink ); ?>">
+    <meta property="og:title" content="<?php echo esc_attr( get_the_title( $post_id ) ); ?> – Brilliant Việt Nam">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="<?php echo esc_attr( wp_strip_all_tags( get_the_excerpt( $post_id ) ?: get_the_title( $post_id ) ) ); ?>">
+    <meta property="og:image" content="<?php echo esc_url( $thumb_url ); ?>">
+    <meta property="og:image:secure_url" content="<?php echo esc_url( $thumb_url ); ?>">
+    <meta name="twitter:site" content="@brilliantlabsar">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo esc_attr( get_the_title( $post_id ) ); ?> – Brilliant Việt Nam">
+    <meta name="twitter:description" content="<?php echo esc_attr( wp_strip_all_tags( get_the_excerpt( $post_id ) ?: get_the_title( $post_id ) ) ); ?>">
 <script>
   
   window.moneyFormat = "${{amount}}";
@@ -661,9 +650,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
       <span class="hero__date">
-                  08/13/2025
+                  <?php echo esc_html( get_the_date( 'd/m/Y' ) ); ?>
                 </span><h1 class="hero__heading h2">
-                  Hành trình đến Halo | Phần 1
+                  <?php the_title(); ?>
                 </h1><share-button class="share-button">
   <details class="share-button__details">
     <summary class="button" data-share-button=""><svg class="icon icon-share" aria-hidden="true" focusable="false" role="presentation" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -671,18 +660,18 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <path d="M6.5 9V2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
   <path d="M9 7H11L12 12H1L2 7H4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg><span>
-        Share
+        Chia sẻ
       </span>
     </summary>
 
     <div class="share-button__content">
       <input type="text" class="share-button__input d-none" role="status" data-share-button-message="" readonly="">
 
-      <label class="visually-hidden" for="url">
+      <label class="visually-hidden" for="url-mobile">
         Link
       </label>
 
-      <input type="text" class="share-button__input d-none" id="url" value="https://brilliant.xyz/blogs/announcements/road-to-halo-part-1-of-4" placeholder="Liên kết" onclick="this.select();" readonly="" data-share-button-url-input="">
+      <input type="text" class="share-button__input d-none" id="url-mobile" value="<?php echo esc_url( $permalink ); ?>" placeholder="Liên kết" onclick="this.select();" readonly="" data-share-button-url-input="">
 
       <button class="share-button__close d-none no-js-hidden" data-share-button-close=""><svg class="icon icon-close-small" aria-hidden="true" focusable="false" role="presentation" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M2 13.4142L13.4142 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -818,7 +807,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       <?php the_content(); ?>
     </div>
 
-    <a class="article__back h2" href="<?php echo esc_url( home_url( '/blogs/announcements/' ) ); ?><svg class="icon icon-arrow-left-thick" aria-hidden="true" focusable="false" role="presentation" width="25" height="20" viewbox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a class="article__back h2" href="<?php echo esc_url( home_url( '/blogs/announcements/' ) ); ?>"><svg class="icon icon-arrow-left-thick" aria-hidden="true" focusable="false" role="presentation" width="25" height="20" viewbox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M24.1328 9.72656C24.1328 9.36198 24.013 9.0599 23.7734 8.82031C23.5443 8.58073 23.2474 8.46094 22.8828 8.46094L7.30469 8.46094L3.46094 8.61719L3.74219 9.41406L9.00781 4.67969L11.1797 2.44531C11.2839 2.34115 11.3672 2.21094 11.4297 2.05469C11.4922 1.89844 11.5234 1.73698 11.5234 1.57031C11.5234 1.21615 11.4036 0.92448 11.1641 0.695313C10.9245 0.466146 10.6328 0.351563 10.2891 0.351563C9.95573 0.351563 9.64844 0.481771 9.36719 0.742188L1.30469 8.78906C1.01302 9.0599 0.867187 9.3724 0.867187 9.72656C0.867187 10.0807 1.01302 10.3932 1.30469 10.6641L9.36719 18.7109C9.64844 18.9714 9.95573 19.1016 10.2891 19.1016C10.6328 19.1016 10.9245 18.987 11.1641 18.7578C11.4036 18.5286 11.5234 18.237 11.5234 17.8828C11.5234 17.7161 11.4922 17.5547 11.4297 17.3984C11.3672 17.2422 11.2839 17.112 11.1797 17.0078L9.00781 14.7734L3.74219 10.0234L3.46094 10.8359L7.30469 10.9922L22.8828 10.9922C23.2474 10.9922 23.5443 10.8724 23.7734 10.6328C24.013 10.3932 24.1328 10.0911 24.1328 9.72656Z" fill="currentColor"></path>
 </svg><span>
         Quay lại Thông báo

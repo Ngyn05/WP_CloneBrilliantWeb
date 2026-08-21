@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * Dynamic Template for Single Product (WooCommerce & Brilliant Labs)
  * Powered by Unified Visual Editor (wp_editor)
@@ -109,37 +109,27 @@ if ( empty( $gallery_urls ) && $is_halo ) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">">
+    <meta name="theme-color" content="#000000">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
-  
+    <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
+    <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
 
-    
+    <title><?php echo esc_html( $product_title ); ?> &ndash; Brilliant Việt Nam</title>
+    <meta name="description" content="<?php echo esc_attr( wp_strip_all_tags( $product_excerpt ?: $product_title ) ); ?>">
 
-
-  <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
-
-
-
-
-  <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
-
-
-
-    <title><?php echo esc_html( $product_title ); ?> &ndash; Brilliant Việt Nam</title><meta name="description" content="Giới thiệu Halo! Mã nguồn mở AI glasses for the curious, creative, and forward thinking.  Halo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life. With Miniapps, Halo lets you build new experiences using natural language and shar">
-
-<meta property="og:site_name" content="Brilliant Việt Nam">
-<meta property="og:url" content="https://brilliant.xyz/products/halo">
-<meta property="og:title" content="Halo">
-<meta property="og:type" content="product">
-<meta property="og:description" content="Giới thiệu Halo! Mã nguồn mở AI glasses for the curious, creative, and forward thinking.  Halo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life. With Miniapps, Halo lets you build new experiences using natural language and shar"><meta property="og:image" content="http://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731">
-  <meta property="og:image:secure_url" content="https://brilliant.xyz/cdn/shop/files/Halo_1.png?v=1753738731">
-  <meta property="og:image:width" content="2200">
-  <meta property="og:image:height" content="2200"><meta property="og:price:amount" content="399.00">
-  <meta property="og:price:currency" content="USD"><meta name="twitter:site" content="@brilliantlabsar"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Halo">
-<meta name="twitter:description" content="Giới thiệu Halo! Mã nguồn mở AI glasses for the curious, creative, and forward thinking.  Halo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life. With Miniapps, Halo lets you build new experiences using natural language and shar">
+    <meta property="og:site_name" content="Brilliant Việt Nam">
+    <meta property="og:url" content="<?php echo esc_url( get_permalink( $product_id ) ); ?>">
+    <meta property="og:title" content="<?php echo esc_attr( $product_title ); ?> – Brilliant Việt Nam">
+    <meta property="og:type" content="product">
+    <meta property="og:description" content="<?php echo esc_attr( wp_strip_all_tags( $product_excerpt ?: $product_title ) ); ?>">
+    <meta property="og:image" content="<?php echo esc_url( $product_thumb ?: ( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png' ) ); ?>">
+    <meta property="og:image:secure_url" content="<?php echo esc_url( $product_thumb ?: ( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png' ) ); ?>">
+    <meta name="twitter:site" content="@brilliantlabsar">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo esc_attr( $product_title ); ?> – Brilliant Việt Nam">
+    <meta name="twitter:description" content="<?php echo esc_attr( wp_strip_all_tags( $product_excerpt ?: $product_title ) ); ?>">
 <script>
   
   window.moneyFormat = "${{amount}}";
