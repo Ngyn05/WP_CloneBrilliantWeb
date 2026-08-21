@@ -1,7 +1,7 @@
 <?php
 /**
- * SEO Schema Module: Dynamic JSON-LD Structured Data Generator
- * Compliant with Google Search Central & SOP Guidelines (Chapter 7)
+ * SEO Schema Module: Dynamic JSON-LD Structured Data & Dynamic Canonical Generator
+ * Compliant with Google Search Central & SOP Guidelines
  * Brilliant Labs Vietnam Theme
  */
 
@@ -9,6 +9,52 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+/**
+ * 1. Canonical URL Generator Fallback
+ * Tự động tạo thẻ <link rel="canonical"> chuẩn xác cho từng trang/bài viết/URL
+ * Tự động nhường quyền cho Yoast SEO hoặc plugin SEO khác nếu được kích hoạt
+ */
+function bl_output_dynamic_rel_canonical() {
+    if ( defined( 'WPSEO_VERSION' ) || defined( 'RANK_MATH_VERSION' ) || defined( 'AIOSEO_VERSION' ) ) {
+        return;
+    }
+
+    $canonical_url = '';
+
+    if ( is_front_page() || is_home() ) {
+        $canonical_url = home_url( '/' );
+    } elseif ( is_singular() ) {
+        $canonical_url = get_permalink();
+    } elseif ( is_category() || is_tag() || is_tax() ) {
+        $canonical_url = get_term_link( get_queried_object() );
+    } elseif ( is_post_type_archive() ) {
+        $canonical_url = get_post_type_archive_link( get_query_var( 'post_type' ) );
+    } elseif ( is_archive() ) {
+        if ( is_author() ) {
+            $canonical_url = get_author_posts_url( get_query_var( 'author' ) );
+        } elseif ( is_year() ) {
+            $canonical_url = get_year_link( get_query_var( 'year' ) );
+        } elseif ( is_month() ) {
+            $canonical_url = get_month_link( get_query_var( 'year' ), get_query_var( 'monthnum' ) );
+        } elseif ( is_day() ) {
+            $canonical_url = get_day_link( get_query_var( 'year' ), get_query_var( 'monthnum' ), get_query_var( 'day' ) );
+        }
+    }
+
+    if ( empty( $canonical_url ) || is_wp_error( $canonical_url ) ) {
+        $req_uri = $_SERVER['REQUEST_URI'] ?? '/';
+        $canonical_url = home_url( strtok( $req_uri, '?' ) );
+    }
+
+    if ( ! empty( $canonical_url ) && ! is_wp_error( $canonical_url ) ) {
+        echo '<link rel="canonical" href="' . esc_url( $canonical_url ) . '" />' . "\n";
+    }
+}
+add_action( 'wp_head', 'bl_output_dynamic_rel_canonical', 1 );
+
+/**
+ * 2. Output JSON-LD Schema (Organization, LocalBusiness, WebSite, Product, Article)
+ */
 function bl_output_dynamic_json_ld_schema() {
     // Nếu Yoast SEO đang kích hoạt, để Yoast SEO quản lý toàn bộ Schema tự động
     if ( defined( 'WPSEO_VERSION' ) ) {
@@ -22,22 +68,81 @@ function bl_output_dynamic_json_ld_schema() {
 
     $schema_graph = array();
 
-    // 1. Organization Schema
+    // 1. Organization & LocalBusiness Schema
     $org_schema = array(
-        '@type' => 'Organization',
-        '@id'   => $home_url . '#organization',
-        'name'  => $site_name,
-        'url'   => $home_url,
-        'logo'  => array(
-            '@type'  => 'ImageObject',
-            '@id'    => $home_url . '#logo',
-            'url'    => $logo_url,
-            'caption'=> $site_name,
+        '@type'               => array( 'Organization', 'LocalBusiness' ),
+        '@id'                 => $home_url . '#organization',
+        'name'                => $site_name,
+        'legalName'           => 'Brilliant Labs Vietnam',
+        'url'                 => $home_url,
+        'logo'                => array(
+            '@type'   => 'ImageObject',
+            '@id'     => $home_url . '#logo',
+            'url'     => $logo_url,
+            'caption' => $site_name,
         ),
-        'sameAs' => array(
+        'image'               => $logo_url,
+        'description'         => 'Đại diện phân phối chính thức kính thông minh AI Brilliant Halo và hệ sinh thái mã nguồn mở Brilliant Labs tại Việt Nam.',
+        'telephone'           => '+84-981-114-028',
+        'email'               => 'support@brilliantvietnam.com',
+        'priceRange'          => '$$$',
+        'currenciesAccepted'  => 'VND',
+        'paymentAccepted'     => 'Cash, Credit Card, Bank Transfer',
+        'openingHours'        => 'Mo-Sa 08:30-18:00',
+        'address'             => array(
+            '@type'           => 'PostalAddress',
+            'streetAddress'   => 'Tầng 6, Tòa nhà Khâm Thiên, 195 Khâm Thiên, Thổ Quan',
+            'addressLocality' => 'Đống Đa',
+            'addressRegion'   => 'Hà Nội',
+            'postalCode'      => '100000',
+            'addressCountry'  => 'VN',
+        ),
+        'department'          => array(
+            array(
+                '@type'         => 'LocalBusiness',
+                'name'          => 'Brilliant Việt Nam - Chi nhánh Hà Nội',
+                'telephone'     => '+84-981-114-028',
+                'address'       => array(
+                    '@type'           => 'PostalAddress',
+                    'streetAddress'   => 'Tầng 6, Tòa nhà Khâm Thiên, 195 Khâm Thiên, Thổ Quan',
+                    'addressLocality' => 'Đống Đa',
+                    'addressRegion'   => 'Hà Nội',
+                    'addressCountry'  => 'VN',
+                ),
+            ),
+            array(
+                '@type'         => 'LocalBusiness',
+                'name'          => 'Brilliant Việt Nam - Chi nhánh TP. Hồ Chí Minh',
+                'telephone'     => '+84-912-237-880',
+                'address'       => array(
+                    '@type'           => 'PostalAddress',
+                    'streetAddress'   => '247/23 Độc Lập, Phường Tân Quý',
+                    'addressLocality' => 'Quận Tân Phú',
+                    'addressRegion'   => 'TP. Hồ Chí Minh',
+                    'addressCountry'  => 'VN',
+                ),
+            ),
+        ),
+        'contactPoint'        => array(
+            array(
+                '@type'             => 'ContactPoint',
+                'telephone'         => '+84-981-114-028',
+                'contactType'       => 'customer service',
+                'areaServed'        => 'VN',
+                'availableLanguage' => array( 'Vietnamese', 'English' ),
+            ),
+            array(
+                '@type'             => 'ContactPoint',
+                'telephone'         => '+84-912-237-880',
+                'contactType'       => 'sales',
+                'areaServed'        => 'VN',
+                'availableLanguage' => array( 'Vietnamese', 'English' ),
+            ),
+        ),
+        'sameAs'              => array(
             'https://facebook.com/brilliantlabs',
             'https://twitter.com/brilliantlabsar',
-            'https://github.com/brilliantlabsAR'
+            'https://github.com/brilliantlabsAR',
         ),
     );
     $schema_graph[] = $org_schema;
@@ -88,14 +193,14 @@ function bl_output_dynamic_json_ld_schema() {
                 'name'  => $site_name,
             ),
             'offers'       => array(
-                '@type'         => 'Offer',
-                'url'           => home_url( '/products/halo/' ),
-                'priceCurrency' => 'VND',
-                'price'         => $price,
+                '@type'           => 'Offer',
+                'url'             => home_url( '/products/halo/' ),
+                'priceCurrency'   => 'VND',
+                'price'           => $price,
                 'priceValidUntil' => '2027-12-31',
-                'itemCondition' => 'https://schema.org/NewCondition',
-                'availability'  => 'https://schema.org/InStock',
-                'seller'        => array(
+                'itemCondition'   => 'https://schema.org/NewCondition',
+                'availability'    => 'https://schema.org/InStock',
+                'seller'          => array(
                     '@id' => $home_url . '#organization',
                 ),
             ),
@@ -104,7 +209,7 @@ function bl_output_dynamic_json_ld_schema() {
 
         // BreadcrumbList for Product
         $breadcrumb_schema = array(
-            '@type' => 'BreadcrumbList',
+            '@type'           => 'BreadcrumbList',
             'itemListElement' => array(
                 array(
                     '@type'    => 'ListItem',
@@ -158,7 +263,7 @@ function bl_output_dynamic_json_ld_schema() {
 
         // BreadcrumbList for Post
         $breadcrumb_schema = array(
-            '@type' => 'BreadcrumbList',
+            '@type'           => 'BreadcrumbList',
             'itemListElement' => array(
                 array(
                     '@type'    => 'ListItem',

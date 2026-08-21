@@ -50,8 +50,12 @@ function bl_seo_direct_init_interceptor() {
         exit;
     }
 
+    if ( $path === 'sitemap.xml' ) {
+        wp_safe_redirect( home_url( '/sitemap_index.xml' ), 301 );
+        exit;
+    }
+
     $map = array(
-        'sitemap.xml'          => 'index',
         'sitemap_index.xml'    => 'index',
         'post-sitemap.xml'     => 'post',
         'page-sitemap.xml'     => 'page',
@@ -494,7 +498,6 @@ function bl_seo_output_xsl_stylesheet() {
  */
 function bl_seo_custom_robots_txt( $output, $public ) {
     $sitemap_index = home_url( '/sitemap_index.xml' );
-    $sitemap_main  = home_url( '/sitemap.xml' );
 
     $robots = "User-agent: *\n";
     $robots .= "Allow: /\n";
@@ -505,7 +508,6 @@ function bl_seo_custom_robots_txt( $output, $public ) {
     $robots .= "Disallow: /?s=\n";
     $robots .= "Disallow: /search\n\n";
     $robots .= "Sitemap: {$sitemap_index}\n";
-    $robots .= "Sitemap: {$sitemap_main}\n";
 
     return $robots;
 }

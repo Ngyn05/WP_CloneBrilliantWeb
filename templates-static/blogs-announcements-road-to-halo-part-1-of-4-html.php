@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /** Static interface converted from blogs/announcements/road-to-halo-part-1-of-4.html */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
@@ -8,8 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
+    <meta name="theme-color" content="">">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
@@ -401,6 +400,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </head>
 
   <body class="primary-button-style--solid secondary-button-style--outline" data-animations-enabled="">
+    <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
     <a class="skip-to-content-link visually-hidden" href="#site-content">
       Chuyển đến nội dung
     </a><!-- BEGIN sections: header-group -->
@@ -811,14 +811,14 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <h4>Chúng tôi đã rút ra nhiều bài học quý giá từ việc phát triển và sản xuất<span> </span><strong>Frame</strong><span> </span>và biết rằng mình cần đưa tất cả những kinh nghiệm đó vào<span> </span><strong><span>Halo</span></strong>.</h4>
 <h2>Nhưng trước tiên, chúng tôi nhìn lại chính mình:</h2>
 <h4>Sau quá trình suy ngẫm sâu sắc về văn hóa và cách thức làm việc, những thay đổi đau đớn nhưng cần thiết đã được thực hiện đối với đội ngũ và chuỗi cung ứng nhằm hoàn thiện phương thức vận hành.</h4>
-<h2><strong><img alt="" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992' ); ?><meta charset="utf-8"> <span>Halo </span>chính là thành quả của sự tái định hình sâu sắc này.</strong></h2>
+<h2><strong><img alt="Hinh anh nha phat trien Brilliant Labs" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992' ); ?><meta charset="utf-8"> <span>Halo </span>chính là thành quả của sự tái định hình sâu sắc này.</strong></h2>
 <h4>Giống như<span> </span><strong>Monocle</strong><span> </span>trước đó,<span> </span><strong>Frame</strong><span> </span>cho phép chúng tôi đào sâu gốc rễ trong cộng đồng mã nguồn mở — những người có ý tưởng táo bạo sẽ dẫn đầu cuộc cách mạng điện toán thông minh. Niềm vui lớn nhất là được trao đổi với các nhà phát triển trên khắp thế giới đang xây dựng những ứng dụng đầy ý nghĩa và thách thức trên nền tảng của chúng tôi. </h4>
 <h2><strong>Đây chính là lý do và động lực của chúng tôi 🙌🏼</strong></h2>
 <h3>NHƯNG một câu hỏi lớn tồn tại từ lâu vẫn còn đó: ngoài việc hiển thị các tiện ích chức năng thừa hưởng từ kỷ nguyên di động, lý do sâu xa cho sự tồn tại của danh mục thiết bị mới này trong cuộc sống chúng ta là gì?</h3>
 <h1>
 <strong>Với<span> </span></strong><strong><span>Halo</span></strong><strong>, chúng tôi bắt đầu chia sẻ những suy nghĩ của mình về câu hỏi then chốt đó…</strong>
 </h1>
-<p><img alt="" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/IMG_6586.webp?v=1753472675' ); ?></p>
+<p><img alt="Hinh anh nha phat trien Brilliant Labs" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/IMG_6586.webp?v=1753472675' ); ?></p>
 <p> </p>
     </div>
 

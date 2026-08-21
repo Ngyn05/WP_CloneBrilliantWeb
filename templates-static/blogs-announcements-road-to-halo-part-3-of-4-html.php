@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /** Static interface converted from blogs/announcements/road-to-halo-part-3-of-4.html */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
@@ -8,8 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
+    <meta name="theme-color" content="">">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
@@ -401,6 +400,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </head>
 
   <body class="primary-button-style--solid secondary-button-style--outline" data-animations-enabled="">
+    <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
     <a class="skip-to-content-link visually-hidden" href="#site-content">
       Chuyển đến nội dung
     </a><!-- BEGIN sections: header-group -->
@@ -806,18 +806,18 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--extra-narrow" data-aos="fade-up">
     <div class="rte">
       <h3>🎨 Quá trình nghiên cứu phần cứng <strong><span>Halo</span></strong> đòi hỏi sự định hướng rõ ràng, chắt lọc tinh tế, mục tiêu mạch lạc và thiết kế tỉ mỉ ở mọi tầng công nghệ. </h3>
-<p><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/Falo_Shines.gif?v=1756151572' ); ?>" alt=""></p>
+<p><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/Falo_Shines.gif?v=1756151572' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo"></p>
 <h4>🙄 Bạn có thể nhận thấy hầu hết mọi chiếc kính thông minh khác ra mắt trên thị trường đều đi theo một lối mòn dễ đoán. </h4>
 <h4>
 <strong>Nhưng chúng tôi suy nghĩ khác biệt: </strong>những thiết bị này không phải để quay video mạng xã hội hay xem YouTube. Thay vào đó, chúng tồn tại để thực hiện suy luận AI cả ngày nhằm cá nhân hóa sâu sắc và nâng cao trí nhớ, trong khi vẫn trông như một chiếc kính đeo mắt thanh lịch.</h4>
-<h3><strong><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/Timeline_1_04ee2694-5933-4fef-b6b7-cfb4c7536ba0.gif?v=1756079310' ); ?>" alt=""><meta charset="utf-8"></strong></h3>
+<h3><strong><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/Timeline_1_04ee2694-5933-4fef-b6b7-cfb4c7536ba0.gif?v=1756079310' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo"><meta charset="utf-8"></strong></h3>
 <h3>🎯<strong>Vì vậy, với sự định hướng rõ ràng đó, chúng tôi bắt tay vào thiết kế hệ thống phần cứng của </strong><strong><span>Halo</span></strong><strong>. </strong>
 </h3>
 <h4>Trong khi vẫn duy trì <strong>màn hình hiển thị đầy đủ màu sắc</strong> và <strong>camera</strong>, chúng tôi bổ sung thêm một <strong>micrô</strong> và <strong>hai loa dẫn truyền qua xương</strong> — tất cả được kết nối với <strong>bộ xử lý AI</strong> siêu tiết kiệm điện.</h4>
 <h4>Bằng cách loại bỏ hệ thống quang học cồng kềnh đắt đỏ, bộ xử lý tiêu hao quá nhiều điện năng, WiFi và cảm biến hình ảnh nặng nề (vốn chỉ phục vụ mạng xã hội thay vì suy luận AI tập trung), chúng tôi đã hoàn thành một thiết kế phần cứng tối ưu cho việc <strong>đeo cả ngày, ghi nhận ngữ cảnh và tương tác tác nhân đa phương thức. </strong>
 </h4>
 <h4>(Xem ví dụ video thực tế bên dưới 👇)</h4>
-<p><a href="https://www.youtube.com/watch?v=z-Z2WrB5jhA&list=PLfbaC5GRVJJg_b3o0gwZkGLVv_db7kbfW"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/boxingF.png?v=1756152836' ); ?>" alt=""></a></p>
+<p><a href="https://www.youtube.com/watch?v=z-Z2WrB5jhA&list=PLfbaC5GRVJJg_b3o0gwZkGLVv_db7kbfW"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/boxingF.png?v=1756152836' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo"></a></p>
 <h3><a href="https://www.youtube.com/watch?v=z-Z2WrB5jhA&list=PLfbaC5GRVJJg_b3o0gwZkGLVv_db7kbfW"></a></h3>
 <h4>
 <strong>⛩️</strong> Những quyết định kiến trúc này cho phép chúng tôi nâng cao trải nghiệm người dùng và mở rộng giá trị cho các nhà phát triển, đồng thời hạ giá thành sản phẩm và tăng gấp nhiều lần thời lượng pin — tất cả nằm trọn trong thiết kế công nghiệp tinh xảo đầy tính tất yếu của <strong><span>Halo</span></strong>. </h4>

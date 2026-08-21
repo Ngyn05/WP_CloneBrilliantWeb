@@ -9,7 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
@@ -17,34 +16,26 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
-  
-
-    
-
-
   <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
-
-
-
 
   <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
 
-
-
-    <title>
-      Liên hệ
- &ndash; Brilliant Việt Nam</title>
+    <title>Liên hệ &ndash; Brilliant Việt Nam</title>
+    <meta name="description" content="Liên hệ với Brilliant Việt Nam - Tư vấn giải pháp, trải nghiệm và đặt mua kính thông minh AI Brilliant Halo chính hãng tại Việt Nam. Hotline: 098.111.4028 / 091.223.7880">
 
 <meta property="og:site_name" content="Brilliant Việt Nam">
-<meta property="og:url" content="https://brilliant.xyz/pages/contact">
-<meta property="og:title" content="Liên hệ">
+<meta property="og:url" content="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
+<meta property="og:title" content="Liên hệ – Brilliant Việt Nam">
 <meta property="og:type" content="website">
-<meta property="og:description" content="At Brilliant Labs, we&#39;re building an open-source ecosystem to support developers and creatives reimagining the future."><meta property="og:image" content="http://brilliant.xyz/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531">
-  <meta property="og:image:secure_url" content="https://brilliant.xyz/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531">
-  <meta property="og:image:width" content="2200">
-  <meta property="og:image:height" content="2200"><meta name="twitter:site" content="@brilliantlabsar"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Liên hệ">
-<meta name="twitter:description" content="At Brilliant Labs, we&#39;re building an open-source ecosystem to support developers and creatives reimagining the future.">
+<meta property="og:description" content="Liên hệ với Brilliant Việt Nam - Tư vấn giải pháp, trải nghiệm và đặt mua kính thông minh AI Brilliant Halo chính hãng tại Việt Nam. Hotline: 098.111.4028 / 091.223.7880">
+<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
+<meta property="og:image:secure_url" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
+<meta property="og:image:width" content="2200">
+<meta property="og:image:height" content="2200">
+<meta name="twitter:site" content="@brilliantlabsar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Liên hệ – Brilliant Việt Nam">
+<meta name="twitter:description" content="Liên hệ với Brilliant Việt Nam - Tư vấn giải pháp, trải nghiệm và đặt mua kính thông minh AI Brilliant Halo chính hãng tại Việt Nam. Hotline: 098.111.4028 / 091.223.7880">
 <script>
   
   window.moneyFormat = "${{amount}}";
@@ -400,6 +391,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </head>
 
   <body class="primary-button-style--solid secondary-button-style--outline" data-animations-enabled="">
+    <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
     <a class="skip-to-content-link visually-hidden" href="#site-content">
       Chuyển đến nội dung
     </a><!-- BEGIN sections: header-group -->
@@ -703,6 +695,21 @@ Shopify.SignInWithShop.User.recognized = false;</script>
                 feedback.style.color = '#86efac';
                 feedback.innerHTML = '<strong>Thành công!</strong> ' + (data.data.message || 'Cảm ơn bạn! Đội ngũ Brilliant Việt Nam đã nhận được tin nhắn và sẽ phản hồi sớm nhất.');
                 form.reset();
+
+                // Push DataLayer & GA4 Conversion Event
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                  'event': 'contact_form_submit',
+                  'event_category': 'Engagement',
+                  'event_action': 'Submit Form',
+                  'event_label': 'Contact Page Form'
+                });
+                if (typeof gtag === 'function') {
+                  gtag('event', 'generate_lead', {
+                    'event_category': 'Contact',
+                    'event_label': 'Contact Page Form'
+                  });
+                }
               } else {
                 feedback.style.background = '#3b1219';
                 feedback.style.border = '1px solid #7f1d1d';

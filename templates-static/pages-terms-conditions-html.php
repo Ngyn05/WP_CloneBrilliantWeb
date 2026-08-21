@@ -9,7 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
@@ -17,34 +16,26 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
-  
-
-    
-
-
   <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
-
-
-
 
   <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
 
-
-
-    <title>
-      Điều khoản &amp; Điều kiện
- &ndash; Brilliant Việt Nam</title><meta name="description" content="Brilliant Labs - Điều khoản of Service Date Last Updated: December 5, 2025 Acceptance and Consent to the Điều khoản of Service Brilliant Labs Pte. Ltd. (UEN: 202316146G), a company incorporated under the laws of Singapore (“Brilliant,” “Company,” “we,” “us,” or “our”), provides its products, services, and related content through">
+    <title>Điều khoản dịch vụ &ndash; Brilliant Việt Nam</title>
+    <meta name="description" content="Điều khoản dịch vụ và chính sách sử dụng sản phẩm, thiết bị kính thông minh AI Halo và nền tảng Brilliant Labs tại Việt Nam.">
 
 <meta property="og:site_name" content="Brilliant Việt Nam">
-<meta property="og:url" content="https://brilliant.xyz/pages/terms-conditions">
-<meta property="og:title" content="Điều khoản &amp; Điều kiện">
+<meta property="og:url" content="<?php echo esc_url( home_url( '/terms-conditions/' ) ); ?>">
+<meta property="og:title" content="Điều khoản dịch vụ – Brilliant Việt Nam">
 <meta property="og:type" content="website">
-<meta property="og:description" content="Brilliant Labs - Điều khoản of Service Date Last Updated: December 5, 2025 Acceptance and Consent to the Điều khoản of Service Brilliant Labs Pte. Ltd. (UEN: 202316146G), a company incorporated under the laws of Singapore (“Brilliant,” “Company,” “we,” “us,” or “our”), provides its products, services, and related content through"><meta property="og:image" content="http://brilliant.xyz/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531">
-  <meta property="og:image:secure_url" content="https://brilliant.xyz/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531">
-  <meta property="og:image:width" content="2200">
-  <meta property="og:image:height" content="2200"><meta name="twitter:site" content="@brilliantlabsar"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Điều khoản &amp; Điều kiện">
-<meta name="twitter:description" content="Brilliant Labs - Điều khoản of Service Date Last Updated: December 5, 2025 Acceptance and Consent to the Điều khoản of Service Brilliant Labs Pte. Ltd. (UEN: 202316146G), a company incorporated under the laws of Singapore (“Brilliant,” “Company,” “we,” “us,” or “our”), provides its products, services, and related content through">
+<meta property="og:description" content="Điều khoản dịch vụ và chính sách sử dụng sản phẩm, thiết bị kính thông minh AI Halo và nền tảng Brilliant Labs tại Việt Nam.">
+<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
+<meta property="og:image:secure_url" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
+<meta property="og:image:width" content="2200">
+<meta property="og:image:height" content="2200">
+<meta name="twitter:site" content="@brilliantlabsar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Điều khoản dịch vụ – Brilliant Việt Nam">
+<meta name="twitter:description" content="Điều khoản dịch vụ và chính sách sử dụng sản phẩm, thiết bị kính thông minh AI Halo và nền tảng Brilliant Labs tại Việt Nam.">
 <script>
   
   window.moneyFormat = "${{amount}}";
@@ -400,6 +391,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </head>
 
   <body class="primary-button-style--solid secondary-button-style--outline" data-animations-enabled="">
+    <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
     <a class="skip-to-content-link visually-hidden" href="#site-content">
       Chuyển đến nội dung
     </a><!-- BEGIN sections: header-group -->

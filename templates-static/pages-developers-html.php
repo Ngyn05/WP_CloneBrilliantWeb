@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /** Static interface converted from pages/developers.html */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
@@ -9,7 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
@@ -17,34 +16,26 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
-  
-
-    
-
-
   <link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-f516ecd7.css' ); ?>" rel="stylesheet" type="text/css" media="all">
-
-
-
 
   <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
 
-
-
-    <title>
-      Nhà phát triển
- &ndash; Brilliant Việt Nam</title>
+    <title>Cộng Đồng & Tài Nguyên Nhà Phát Triển &ndash; Brilliant Việt Nam</title>
+    <meta name="description" content="Khám phá SDK, tài liệu API, mã nguồn mở và xây dựng miniapp AI cho kính thông minh Halo. Tham gia cộng đồng lập trình viên Brilliant Labs Việt Nam.">
 
 <meta property="og:site_name" content="Brilliant Việt Nam">
-<meta property="og:url" content="https://brilliant.xyz/pages/developers">
-<meta property="og:title" content="Nhà phát triển">
+<meta property="og:url" content="<?php echo esc_url( home_url( '/developers/' ) ); ?>">
+<meta property="og:title" content="Cộng Đồng & Tài Nguyên Nhà Phát Triển – Brilliant Việt Nam">
 <meta property="og:type" content="website">
-<meta property="og:description" content="At Brilliant Labs, we&#39;re building an open-source ecosystem to support developers and creatives reimagining the future."><meta property="og:image" content="http://brilliant.xyz/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531">
-  <meta property="og:image:secure_url" content="https://brilliant.xyz/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531">
-  <meta property="og:image:width" content="2200">
-  <meta property="og:image:height" content="2200"><meta name="twitter:site" content="@brilliantlabsar"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Nhà phát triển">
-<meta name="twitter:description" content="At Brilliant Labs, we&#39;re building an open-source ecosystem to support developers and creatives reimagining the future.">
+<meta property="og:description" content="Khám phá SDK, tài liệu API, mã nguồn mở và xây dựng miniapp AI cho kính thông minh Halo. Tham gia cộng đồng lập trình viên Brilliant Labs Việt Nam.">
+<meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
+<meta property="og:image:secure_url" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
+<meta property="og:image:width" content="2200">
+<meta property="og:image:height" content="2200">
+<meta name="twitter:site" content="@brilliantlabsar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cộng Đồng & Tài Nguyên Nhà Phát Triển – Brilliant Việt Nam">
+<meta name="twitter:description" content="Khám phá SDK, tài liệu API, mã nguồn mở và xây dựng miniapp AI cho kính thông minh Halo. Tham gia cộng đồng lập trình viên Brilliant Labs Việt Nam.">
 <script>
   
   window.moneyFormat = "${{amount}}";
@@ -400,6 +391,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </head>
 
   <body class="primary-button-style--solid secondary-button-style--outline" data-animations-enabled="">
+    <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
     <a class="skip-to-content-link visually-hidden" href="#site-content">
       Chuyển đến nội dung
     </a><!-- BEGIN sections: header-group -->
@@ -582,9 +574,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       <div id="shopify-section-template--24820771520823__content_blocks_GnDBKX" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-content-blocks.css?v=34385401049689031271752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 <div class="content-blocks content-blocks--template--24820771520823__content_blocks_GnDBKX color-scheme--default">
   <div class="container container--default" data-aos="fade-up">
-    <div class="row"><div class="content-block content-block--full col-12 col-md"><p class="content-block__heading h4">
-                Nhà phát triển
-              </p></div></div>
+    <div class="row"><div class="content-block content-block--full col-12 col-md"><h1 class="content-block__heading h2 tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-white tw-mb-4">
+                Cộng Đồng &amp; Tài Nguyên Nhà Phát Triển Brilliant
+              </h1></div></div>
   </div>
 </div><style data-shopify="">.content-blocks--template--24820771520823__content_blocks_GnDBKX {
     margin-top: 64px;
@@ -622,90 +614,40 @@ Shopify.SignInWithShop.User.recognized = false;</script>
           
             
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-            
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
 
@@ -722,40 +664,40 @@ Shopify.SignInWithShop.User.recognized = false;</script>
           
             
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
 
@@ -772,40 +714,90 @@ Shopify.SignInWithShop.User.recognized = false;</script>
           
             
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+            
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp?v=1753472645&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6457.webp' ); ?> 180w?v=1753472645&amp;width=180 180w" width="180" height="171" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3177.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp?v=1753934992&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6763_bc5e4d49-2b61-4ad9-99f5-addfeedb6c24.webp' ); ?> 180w?v=1753934992&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp?v=1753472625&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6908.webp' ); ?> 180w?v=1753472625&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp?v=1753472660&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/dbfff3411f286662ed71acec9f0b4fd9.webp' ); ?> 180w?v=1753472660&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp?v=1753472671&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6587.webp' ); ?> 180w?v=1753472671&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp?v=1753472696&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6907.webp' ); ?> 180w?v=1753472696&amp;width=180 180w" width="180" height="202" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3170.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp?v=1753472699&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7010.webp' ); ?> 180w?v=1753472699&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg?v=1753472582&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7016.jpg' ); ?> 180w?v=1753472582&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp?v=1753934892&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6767.webp' ); ?> 180w?v=1753934892&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg?v=1753935859&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3272.jpg' ); ?> 180w?v=1753935859&amp;width=180 180w" width="180" height="240" class="!tw-w-[180px] !tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
 
@@ -842,90 +834,40 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-          
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
-
-
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
           
             
@@ -942,40 +884,40 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
           
             
@@ -992,40 +934,90 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
 
-<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp?v=1753473183&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6585.webp' ); ?> 180w?v=1753473183&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg?v=1753935446&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3174.jpg' ); ?> 180w?v=1753935446&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp?v=1753935052&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1889_a48610c7-e8d3-45d6-98b1-cb2b6754683a.webp' ); ?> 180w?v=1753935052&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp?v=1753935015&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6939_c3efd1f1-7179-4a20-8a55-c5a13711a68f.webp' ); ?> 180w?v=1753935015&amp;width=180 180w" width="180" height="152" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp?v=1753934957&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7012_70b6ac37-42e4-4da5-95d9-649363c525af.webp' ); ?> 180w?v=1753934957&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp?v=1753472675&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6586.webp' ); ?> 180w?v=1753472675&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp?v=1753472682&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1892.webp' ); ?> 180w?v=1753472682&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg?v=1753935447&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_3176.jpg' ); ?> 180w?v=1753935447&amp;width=180 180w" width="180" height="135" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp?v=1753472583&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_7013.webp' ); ?> 180w?v=1753472583&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp?v=1753472686&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1891.webp' ); ?> 180w?v=1753472686&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp?v=1753472655&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_1838.webp' ); ?> 180w?v=1753472655&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
+
+
+<img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp?v=1753472666&width=180' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/IMG_6589.webp' ); ?> 180w?v=1753472666&amp;width=180 180w" width="180" height="240" class="tw-w-[180px] tw-h-[180px] tw-inline-block !tw-rounded-none tw-object-cover">
 
           
         </div>
@@ -1047,7 +1039,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <div class="container gallery-container" style="padding-top: 8px; padding-bottom: 8px">
   <div class="tw-grid tw-gap-8 md:tw-min-h-[325px] md:tw-grid-cols-2">
     
-    <a href="https://github.com/brilliantlabsAR/brilliant_sdk" class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col   tw-justify-end  tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 160px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/video-tutorials-on-laptop-screen.svg?v=1728891006&width=690' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/video-tutorials-on-laptop-screen-1.svg' ); ?> 352w?v=1728891006&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/video-tutorials-on-laptop-screen.svg' ); ?> 690wg?v=1728891006&amp;width=690 690w" width="690" height="690" class="tw-absolute lg:-tw-top-[120px] -tw-top-[12px] tw-w-[120px] -tw-right-[12px] lg:-tw-right-12 lg:tw-w-[380px]">
+    <a href="https://github.com/brilliantlabsAR/brilliant_sdk" class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col   tw-justify-end  tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 160px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/video-tutorials-on-laptop-screen.svg?v=1728891006&width=690' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/video-tutorials-on-laptop-screen-1.svg' ); ?> 352w?v=1728891006&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/video-tutorials-on-laptop-screen.svg' ); ?> 690wg?v=1728891006&amp;width=690 690w" width="690" height="690" class="tw-absolute lg:-tw-top-[120px] -tw-top-[12px] tw-w-[120px] -tw-right-[12px] lg:-tw-right-12 lg:tw-w-[380px]">
 </div>
         <div class="tw-relative tw-flex tw-flex-col">
           <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
@@ -1056,7 +1048,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
         </div>
       </a>
     
-    <a href="https://github.com/brilliantlabsAR/" class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col   tw-justify-end  tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 160px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/github.svg?v=1728041129&width=690' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/github-1.svg' ); ?> 352w?v=1728041129&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/github.svg' ); ?> 690wg?v=1728041129&amp;width=690 690w" width="690" height="674" class="tw-absolute lg:-tw-top-[120px] -tw-top-[12px] tw-w-[120px] -tw-right-[12px] lg:-tw-right-12 lg:tw-w-[380px]">
+    <a href="https://github.com/brilliantlabsAR/" class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col   tw-justify-end  tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden "><div style="height: 160px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/github.svg?v=1728041129&width=690' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/github-1.svg' ); ?> 352w?v=1728041129&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/github.svg' ); ?> 690wg?v=1728041129&amp;width=690 690w" width="690" height="674" class="tw-absolute lg:-tw-top-[120px] -tw-top-[12px] tw-w-[120px] -tw-right-[12px] lg:-tw-right-12 lg:tw-w-[380px]">
 </div>
         <div class="tw-relative tw-flex tw-flex-col">
           <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>
@@ -1081,7 +1073,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <div class="container gallery-container" style="padding-top: 8px; padding-bottom: 8px">
   <div class="tw-grid tw-gap-8 md:tw-min-h-[325px] md:tw-grid-cols-2">
     
-    <a href="https://docs.brilliant.xyz/" class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden lg:tw-col-span-full"><div style="height: 160px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890.png?v=1728890009&width=690' ); ?>" alt="" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890-1.png' ); ?> 352w?v=1728890009&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890.png' ); ?> 690wg?v=1728890009&amp;width=690 690w" width="690" height="690" loading="lazy" class="tw-absolute lg:-tw-top-[120px] -tw-top-[12px] tw-w-[120px] -tw-right-[12px] lg:-tw-right-12 lg:tw-w-[380px]">
+    <a href="https://docs.brilliant.xyz/" class="tw-group tw-relative tw-flex tw-min-h-[0px] tw-flex-col  tw-justify-center   tw-rounded-standard tw-bg-darkBg tw-px-[37px] tw-pb-[37px] tw-pt-[47px] tw-overflow-hidden lg:tw-col-span-full"><div style="height: 160px"><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890.png?v=1728890009&width=690' ); ?>" alt="KÃ­nh thÃ´ng minh AI Halo" srcset="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890-1.png' ); ?> 352w?v=1728890009&amp;width=352 352w, <?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/86344_3d387334-32e3-4fb2-875c-2de37fce4890.png' ); ?> 690wg?v=1728890009&amp;width=690 690w" width="690" height="690" loading="lazy" class="tw-absolute lg:-tw-top-[120px] -tw-top-[12px] tw-w-[120px] -tw-right-[12px] lg:-tw-right-12 lg:tw-w-[380px]">
 </div>
         <div class="tw-relative tw-flex tw-flex-col">
           <p class="tw-text-[16px] tw-pb-6 tw-text-white"></p>

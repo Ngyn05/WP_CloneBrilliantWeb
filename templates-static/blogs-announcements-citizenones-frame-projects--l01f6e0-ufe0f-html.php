@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /** Static interface converted from blogs/announcements/citizenones-frame-projects-#L01f6e0#Ufe0f.html */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 ?>
@@ -8,8 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url(home_url( '/' )); ?>">
+    <meta name="theme-color" content="">">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
@@ -400,6 +399,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </head>
 
   <body class="primary-button-style--solid secondary-button-style--outline" data-animations-enabled="">
+    <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
     <a class="skip-to-content-link visually-hidden" href="#site-content">
       Chuyển đến nội dung
     </a><!-- BEGIN sections: header-group -->
@@ -805,21 +805,21 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--extra-narrow" data-aos="fade-up">
     <div class="rte">
       <h2>Demo ghim vị trí trực tiếp AR (AR Live Location Pin Demo)</h2>
-<p><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224' ); ?>" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224"></p>
+<p><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224' ); ?>" alt="Kinh thong minh AI Brilliant Halo" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224"></p>
 <p>Hiển thị các ghim định vị / điều hướng AR đại diện cho các địa điểm yêu thích (POI) ngay trong tầm nhìn. Ứng dụng sử dụng cảm biến từ kế và gia tốc kế tích hợp của Frame truyền trực tiếp đến điện thoại để tính toán và cập nhật hướng nhìn đến từng điểm POI.<br data-mce-fragment="1"><br data-mce-fragment="1">Hiện tại bản demo sử dụng tọa độ mẫu kinh độ/vĩ độ cho vị trí người dùng và hai điểm POI mẫu. (Việc kết nối GPS điện thoại thực tế và dịch vụ bản đồ để tìm kiếm tọa độ hoặc vị trí trực tiếp của bạn bè được để mở như một bài tập thực hành).</p>
 <h3>
 <a href="https://github.com/CitizenOneX/frame_locator_pin" data-mce-href="https://github.com/CitizenOneX/frame_locator_pin" target="_blank"><strong>Mã nguồn</strong></a> <a href="https://discord.com/channels/963222352534048818/1105456402216009758/threads/1305481513457946624">Dự án</a>
 </h3>
 <h3><strong></strong></h3>
 <h2><strong>Generative AI trên Frame</strong></h2>
-<p><strong><img alt="" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676' ); ?>" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676"></strong></p>
+<p><strong><img alt="Kinh thong minh AI Brilliant Halo" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676' ); ?>" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot3_480x480.webp?v=1732101676"></strong></p>
 <p><meta charset="utf-8"><span>Gửi câu lệnh (prompt) đến mô hình tạo ảnh miễn phí Pollinations.ai trên nền web để tạo ảnh và hiển thị trực tiếp lên kính Frame! Chạm vào ảnh trong ứng dụng để lưu hoặc chia sẻ tác phẩm của bạn!</span></p>
 <h3>
 <a href="https://github.com/CitizenOneX/frame_pollinations" data-mce-href="https://github.com/CitizenOneX/frame_pollinations"><strong>Mã nguồn</strong></a> <a href="https://discord.com/channels/963222352534048818/1105456402216009758/threads/1306806920425902122">Dự án</a>
 </h3>
 <h3><strong></strong></h3>
 <h3><strong>Trình xem Sprite trên Frame (Frame Sprite Viewer)</strong></h3>
-<p><img alt="" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804' ); ?>" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804"></p>
+<p><img alt="Kinh thong minh AI Brilliant Halo" src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804' ); ?>" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/image_480x480.png?v=1732102804"></p>
 <p>Trình hiển thị ảnh Sprite cho kính Frame. Hỗ trợ định dạng PNG và JPG. Tự động lượng tử hóa màu sắc xuống 16-bit và căn chỉnh kích thước ảnh phù hợp với bộ nhớ để hiển thị sắc nét trên Frame.</p>
 <h3><strong><a href="https://github.com/CitizenOneX/frame_progressive_sprite_viewer/releases" data-mce-href="https://github.com/CitizenOneX/frame_progressive_sprite_viewer/releases">Mã nguồn</a> <a href="https://discord.com/channels/963222352534048818/1105456402216009758/threads/1285622884768809020">Dự án</a></strong></h3>
     </div>

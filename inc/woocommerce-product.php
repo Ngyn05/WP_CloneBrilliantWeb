@@ -249,7 +249,7 @@ function bl_get_default_product_layout_content() {
     return '<div class="container multiblock" style="padding-top: 40px; padding-bottom: 40px;">
   <div class="multiblock-grid tw-grid md:tw-grid-cols-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 30px; display: flex; align-items: center; justify-content: center;">
-      <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248.png' ) . '" alt="" style="width: 100%; height: auto; object-fit: cover;" />
+      <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/FrameLite_Back_v005.248.png' ) . '" alt="Mặt sau kính thông minh AI Halo" style="width: 100%; height: auto; object-fit: cover;" />
     </div>
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
       <p class="tw-text-[30px]" style="font-size: 24px; line-height: 1.5; color: #ffffff; margin: 0;">Bạn cần lắp tròng kính cận theo đơn thuốc cho <strong>Halo</strong>? Nhấn vào bên dưới để đặt mua trên trang đối tác</p>
@@ -261,7 +261,7 @@ function bl_get_default_product_layout_content() {
 <div class="container gallery-container" style="padding-top: 30px; padding-bottom: 40px;">
   <div class="tw-grid md:tw-grid-cols-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 30px; display: flex; align-items: center; justify-content: center;">
-      <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/image_1.webp' ) . '" alt="" style="max-width: 100%; height: auto; border-radius: 8px;" />
+      <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/image_1.webp' ) . '" alt="Hộp đựng và phụ kiện kính thông minh AI Halo" style="max-width: 100%; height: auto; border-radius: 8px;" />
     </div>
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 40px; display: flex; align-items: center;">
       <p class="tw-text-[30px]" style="font-size: 24px; line-height: 1.5; color: #ffffff; margin: 0;">Hệ thống quang học hiển thị của Halo có thể điều chỉnh từ <strong>+2 đến -6 diop</strong>, đáp ứng đa dạng các nhu cầu điều chỉnh tật khúc xạ thị lực.</p>
@@ -272,7 +272,7 @@ function bl_get_default_product_layout_content() {
 <div class="container gallery-container" style="padding-top: 30px; padding-bottom: 40px;">
   <div class="tw-grid md:tw-grid-cols-2" style="display: grid; gap: 24px;">
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 30px; display: flex; align-items: center; justify-content: center;">
-      <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png' ) . '" alt="" style="max-width: 100%; height: auto; border-radius: 8px;" />
+      <img src="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/HaloMeasure_9192bea1-1f7e-4921-9e68-7e15c3952c69.png' ) . '" alt="Kích thước và thông số kỹ thuật kính thông minh AI Halo" style="max-width: 100%; height: auto; border-radius: 8px;" />
     </div>
     <div class="tw-bg-darkBg" style="background: #161616; border-radius: 16px; padding: 40px; display: flex; align-items: center;">
       <h3 style="font-size: 28px; color: #ffffff; margin: 0;">Kích thước Halo</h3>
