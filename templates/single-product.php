@@ -110,8 +110,12 @@ if ( empty( $gallery_urls ) && $is_halo ) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1.jpg?crop=center&height=32&v=1707403926&width=32' ); ?>"><link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1-1.jpg?crop=center&height=180&v=1707403926&width=180' ); ?>">
+    <link rel="canonical" href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?><link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
+    <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=3' ); ?>">
+    ">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">">">">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
     
@@ -159,18 +163,18 @@ if ( empty( $gallery_urls ) && $is_halo ) {
   }
 
   window.cartStrings = {
-    error: `There was an error while updating your cart. Please try again.`,
-    quantityError: `You can only add [quantity] of this item to your cart.`
+    error: `Đã có lỗi xảy ra khi cập nhật giỏ hàng. Vui lòng thử lại.`,
+    quantityError: `Bạn chỉ có thể thêm tối đa [quantity] sản phẩm này vào giỏ hàng.`
   }
 
   window.variantStrings = {
     addToCart: `Mua ngay`,
-    soldOut: `Sold out`,
-    unavailable: `Unavailable`,
+    soldOut: `Hết hàng`,
+    unavailable: `Không khả dụng`,
   }
 
   window.accessibilityStrings = {
-    shareSuccess: `Link copied to clipboard`
+    shareSuccess: `Đã sao chép liên kết vào bộ nhớ tạm`
   }
 </script><style data-shopify="">@font-face {
   font-family: Archivo;
@@ -1019,15 +1023,56 @@ first.parentNode.insertBefore(script, first);
 </div>
 <form method="post" action="/cart/add" id="product-form-installment-template--24912567468343__main" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="50778480509239" data-shop-pay-input="">
                     <div class="product__shop-pay"></div><input type="hidden" name="product-id" value="10217206972727"><input type="hidden" name="section-id" value="template--24912567468343__main"></form><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/component-product-price.css?v=54116176018763529501752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
-<div class="product__description">
+<div class="product__description bl-product-description-formatted">
   <?php if ( ! empty( $product_content ) ) : ?>
-    <?php echo wp_kses_post( $product_content ); ?>
+    <?php echo apply_filters( 'the_content', $product_content ); ?>
   <?php elseif ( ! empty( $product_excerpt ) ) : ?>
     <p><?php echo esc_html( $product_excerpt ); ?></p>
   <?php else : ?>
     <p style="color: #888;">N/A</p>
   <?php endif; ?>
-</div><variant-selects class="no-js-hidden" data-url="<?php echo esc_url( get_permalink( $product_id ) ); ?>"><div class="variant-picker__dropdown  ">
+</div>
+
+<style>
+/* Product Description Typography Formatting */
+.bl-product-description-formatted {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #dddddd !important;
+  margin-top: 20px !important;
+  margin-bottom: 24px !important;
+}
+.bl-product-description-formatted h3 {
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.3 !important;
+}
+.bl-product-description-formatted h3 span span,
+.bl-product-description-formatted span[style*="242, 136, 191"],
+.bl-product-description-formatted span[style*="rgb(255, 0, 255)"] {
+  color: #f288bf !important;
+}
+.bl-product-description-formatted h5 {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin: 0 0 18px 0 !important;
+  line-height: 1.5 !important;
+}
+.bl-product-description-formatted p {
+  font-size: 14.5px !important;
+  line-height: 1.75 !important;
+  color: #cccccc !important;
+  margin-bottom: 14px !important;
+}
+.bl-product-description-formatted p strong,
+.bl-product-description-formatted p b {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+</style><variant-selects class="no-js-hidden" data-url="<?php echo esc_url( get_permalink( $product_id ) ); ?>"><div class="variant-picker__dropdown  ">
           <label class="variant-picker__label h5 font-body " for="option-template--24912567468343__main-0">
             Màu sắc
           </label>

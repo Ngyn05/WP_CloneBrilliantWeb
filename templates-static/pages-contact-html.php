@@ -9,8 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1.jpg?crop=center&height=32&v=1707403926&width=32' ); ?>"><link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1-1.jpg?crop=center&height=180&v=1707403926&width=180' ); ?>">
+    <link rel="canonical" href="<?php echo esc_url( home_url( '/contact/' ) ); ?><link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
+    <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=3' ); ?>">
+    ">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">">">">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
     
@@ -59,8 +63,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 
   window.cartStrings = {
-    error: `There was an error while updating your cart. Please try again.`,
-    quantityError: `You can only add [quantity] of this item to your cart.`
+    error: `Đã có lỗi xảy ra khi cập nhật giỏ hàng. Vui lòng thử lại.`,
+    quantityError: `Bạn chỉ có thể thêm tối đa [quantity] sản phẩm này vào giỏ hàng.`
   }
 
   window.variantStrings = {
@@ -70,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 
   window.accessibilityStrings = {
-    shareSuccess: `Link copied to clipboard`
+    shareSuccess: `Đã sao chép liên kết vào bộ nhớ tạm`
   }
 </script><style data-shopify="">@font-face {
   font-family: Archivo;
@@ -754,12 +758,23 @@ first.parentNode.insertBefore(script, first);
       <div id="shopify-section-template--24820771422519__content_blocks_RFDVTH" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-content-blocks.css?v=34385401049689031271752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 <div class="page page--template--24820772045111__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up" style="max-width: 800px; margin: 0 auto; padding: 40px 20px;">
+    <?php 
+      $page_obj = get_page_by_path( 'contact', OBJECT, 'page' );
+      $page_title   = $page_obj ? $page_obj->post_title : 'Liên hệ với chúng tôi';
+      $page_content = $page_obj ? $page_obj->post_content : '';
+    ?>
     <h1 class="page-heading tw-text-4xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-4">
-      Liên hệ với chúng tôi
+      <?php echo esc_html( $page_title ); ?>
     </h1>
+    <?php if ( ! empty( $page_content ) && strlen( trim( $page_content ) ) > 20 ) : ?>
+      <div class="tw-text-lg tw-text-[#a0a0a0] tw-mb-10 rte">
+        <?php echo apply_filters( 'the_content', $page_content ); ?>
+      </div>
+    <?php else : ?>
     <p class="tw-text-lg tw-text-[#a0a0a0] tw-mb-10">
       Chúng tôi luôn sẵn sàng lắng nghe ý kiến đóng góp, giải đáp thắc mắc và hỗ trợ đối tác &amp; cộng đồng nhà phát triển.
     </p>
+    <?php endif; ?>
 
     <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 tw-mb-12">
       <div class="tw-bg-[#161616] tw-border tw-border-[#2b2b2b] tw-rounded-2xl tw-p-6">
@@ -782,29 +797,109 @@ first.parentNode.insertBefore(script, first);
 
     <div class="tw-bg-[#161616] tw-border tw-border-[#2b2b2b] tw-rounded-2xl tw-p-8">
       <h2 class="tw-text-2xl tw-font-bold tw-text-white tw-mb-6">Gửi tin nhắn trực tiếp</h2>
-      <form class="tw-flex tw-flex-col tw-gap-5" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã gửi tin nhắn! Đội ngũ Brilliant Việt Nam sẽ phản hồi bạn sớm nhất.');">
+      <form id="bl-contact-form" class="tw-flex tw-flex-col tw-gap-5">
         <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-5">
           <div>
             <label class="tw-block tw-text-sm tw-text-[#aaaaaa] tw-mb-2">Họ và tên *</label>
-            <input type="text" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="Nguyễn Văn A">
+            <input type="text" name="name" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="Nguyễn Văn A">
           </div>
           <div>
             <label class="tw-block tw-text-sm tw-text-[#aaaaaa] tw-mb-2">Địa chỉ Email *</label>
-            <input type="email" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="email@example.com">
+            <input type="email" name="email" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="email@example.com">
           </div>
         </div>
         <div>
           <label class="tw-block tw-text-sm tw-text-[#aaaaaa] tw-mb-2">Chủ đề *</label>
-          <input type="text" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="Hỗ trợ sản phẩm / Đặt hàng / Hợp tác">
+          <input type="text" name="subject" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="Hỗ trợ sản phẩm / Đặt hàng / Hợp tác">
         </div>
         <div>
           <label class="tw-block tw-text-sm tw-text-[#aaaaaa] tw-mb-2">Nội dung tin nhắn *</label>
-          <textarea rows="5" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="Hãy cho chúng tôi biết chi tiết yêu cầu của bạn..."></textarea>
+          <textarea name="message" rows="5" required class="tw-w-full tw-bg-[#0f0f0f] tw-border tw-border-[#333333] tw-rounded-xl tw-px-4 tw-py-3 tw-text-white focus:tw-border-white focus:tw-outline-none" placeholder="Hãy cho chúng tôi biết chi tiết yêu cầu của bạn..."></textarea>
         </div>
-        <button type="submit" class="tw-mt-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-white tw-bg-white tw-px-8 tw-py-4 tw-text-sm tw-font-bold tw-uppercase tw-text-black hover:tw-bg-transparent hover:tw-text-white tw-transition-colors">
-          Gửi tin nhắn
+        
+        <div id="bl-contact-feedback" style="display:none; padding: 12px 16px; border-radius: 10px; font-size: 14px; margin-top: 4px;"></div>
+
+        <button type="submit" id="bl-contact-submit-btn" class="tw-mt-2 tw-inline-flex tw-items-center tw-justify-center tw-rounded-[40px] tw-border tw-border-white tw-bg-white tw-px-8 tw-py-4 tw-text-sm tw-font-bold tw-uppercase tw-text-black hover:tw-bg-transparent hover:tw-text-white tw-transition-colors">
+          <span>Gửi tin nhắn</span>
         </button>
       </form>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const form = document.getElementById('bl-contact-form');
+          if (!form) return;
+          
+          const submitBtn = document.getElementById('bl-contact-submit-btn');
+          const feedback = document.getElementById('bl-contact-feedback');
+
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = form.querySelector('input[name="name"]').value.trim();
+            const email = form.querySelector('input[name="email"]').value.trim();
+            const subject = form.querySelector('input[name="subject"]').value.trim();
+            const message = form.querySelector('textarea[name="message"]').value.trim();
+
+            if (!name || !email || !message) {
+              feedback.style.display = 'block';
+              feedback.style.background = '#3b1219';
+              feedback.style.border = '1px solid #7f1d1d';
+              feedback.style.color = '#fca5a5';
+              feedback.innerText = 'Vui lòng điền đầy đủ các trường thông tin bắt buộc (*).';
+              return;
+            }
+
+            // Set loading state
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+            submitBtn.innerHTML = '<span>Đang gửi tin nhắn...</span>';
+            feedback.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('action', 'bl_submit_contact_form');
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('subject', subject);
+            formData.append('message', message);
+
+            fetch('<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>', {
+              method: 'POST',
+              body: formData
+            })
+            .then(res => res.json())
+            .then(data => {
+              submitBtn.disabled = false;
+              submitBtn.style.opacity = '1';
+              submitBtn.innerHTML = '<span>Gửi tin nhắn</span>';
+
+              feedback.style.display = 'block';
+              if (data && data.success) {
+                feedback.style.background = '#112918';
+                feedback.style.border = '1px solid #14532d';
+                feedback.style.color = '#86efac';
+                feedback.innerHTML = '<strong>Thành công!</strong> ' + (data.data.message || 'Cảm ơn bạn! Đội ngũ Brilliant Việt Nam đã nhận được tin nhắn và sẽ phản hồi sớm nhất.');
+                form.reset();
+              } else {
+                feedback.style.background = '#3b1219';
+                feedback.style.border = '1px solid #7f1d1d';
+                feedback.style.color = '#fca5a5';
+                feedback.innerText = (data && data.data && data.data.message) ? data.data.message : 'Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại sau.';
+              }
+            })
+            .catch(err => {
+              submitBtn.disabled = false;
+              submitBtn.style.opacity = '1';
+              submitBtn.innerHTML = '<span>Gửi tin nhắn</span>';
+
+              feedback.style.display = 'block';
+              feedback.style.background = '#3b1219';
+              feedback.style.border = '1px solid #7f1d1d';
+              feedback.style.color = '#fca5a5';
+              feedback.innerText = 'Không thể kết nối đến máy chủ. Vui lòng thử lại.';
+            });
+          });
+        });
+      </script>
     </div>
   </div>
 </div>

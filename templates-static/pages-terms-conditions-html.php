@@ -9,8 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url( home_url( '/terms-conditions/' ) ); ?>">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1.jpg?crop=center&height=32&v=1707403926&width=32' ); ?>"><link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1-1.jpg?crop=center&height=180&v=1707403926&width=180' ); ?>">
+    <link rel="canonical" href="<?php echo esc_url( home_url( '/terms-conditions/' ) ); ?><link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
+    <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=3' ); ?>">
+    ">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">">">">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
     
@@ -59,8 +63,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 
   window.cartStrings = {
-    error: `There was an error while updating your cart. Please try again.`,
-    quantityError: `You can only add [quantity] of this item to your cart.`
+    error: `Đã có lỗi xảy ra khi cập nhật giỏ hàng. Vui lòng thử lại.`,
+    quantityError: `Bạn chỉ có thể thêm tối đa [quantity] sản phẩm này vào giỏ hàng.`
   }
 
   window.variantStrings = {
@@ -70,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 
   window.accessibilityStrings = {
-    shareSuccess: `Link copied to clipboard`
+    shareSuccess: `Đã sao chép liên kết vào bộ nhớ tạm`
   }
 </script><style data-shopify="">@font-face {
   font-family: Archivo;
@@ -752,9 +756,15 @@ first.parentNode.insertBefore(script, first);
 </div>
 <!-- END sections: header-group --><main id="site-content" class="site-content focus-none" role="main" tabindex="-1" data-site-content="">
       <div id="shopify-section-template--24820772045111__main" class="shopify-section"><div class="page page--template--24820772045111__main main-section">
-  <div class="container container--extra-narrow" data-aos="fade-up"><h1 class="page-heading">
-        Điều khoản &amp; Điều kiện
-      </h1><style>
+  <div class="container container--extra-narrow" data-aos="fade-up">
+    <?php 
+      $page_obj = get_page_by_path( 'terms-conditions', OBJECT, 'page' );
+      $page_title   = $page_obj ? $page_obj->post_title : 'Điều khoản dịch vụ';
+      $page_content = $page_obj ? $page_obj->post_content : '';
+    ?>
+    <h1 class="page-heading">
+      <?php echo esc_html( $page_title ); ?>
+    </h1><style>
       img {
         height: auto;
         width: auto;
@@ -762,7 +772,10 @@ first.parentNode.insertBefore(script, first);
         max-height: 400px;
       }
     </style>
-        <div class="rte">
+    <div class="rte">
+      <?php if ( ! empty( $page_content ) && strlen( trim( $page_content ) ) > 100 ) : ?>
+        <?php echo apply_filters( 'the_content', $page_content ); ?>
+      <?php else : ?>
       <p class="p1"><b>Brilliant Labs - Điều khoản Dịch vụ</b></p>
 <p class="p2"><i>Ngày cập nhật lần cuối: Ngày 5 tháng 12 năm 2025</i></p>
 <p class="p2"><b>Chấp thuận và Đồng ý với Điều khoản Dịch vụ</b></p>
@@ -834,7 +847,9 @@ Văn phòng Hà Nội: Số 226 Đường Láng, P. Thịnh Quang, Q. Đống Đ
 Văn phòng TP. HCM: Số 137 Đường Hòa Hưng, P. Hòa Hưng, TP. Hồ Chí Minh<br>
 Hotline hỗ trợ: 1900.63.8400<br>
 Email hỗ trợ &amp; Pháp lý: <a href="mailto:contact@brilliantvietnam.com" class="tw-text-white tw-underline">contact@brilliantvietnam.com</a></p>
+      <?php endif; ?>
     </div>
+  </div>
   </div>
 </div><style data-shopify="">.page--template--24820772045111__main {
     margin-top: 0px;

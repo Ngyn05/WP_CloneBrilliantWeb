@@ -9,8 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    <link rel="canonical" href="<?php echo esc_url( home_url( '/blogs/announcements/tagged/industry-updates/' ) ); ?>">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1.jpg?crop=center&height=32&v=1707403926&width=32' ); ?>"><link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Artboard_1-1.jpg?crop=center&height=180&v=1707403926&width=180' ); ?>">
+    <link rel="canonical" href="<?php echo esc_url( home_url( '/blogs/announcements/tagged/industry-updates/' ) ); ?><link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=3' ); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=3' ); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=3' ); ?>">
+    <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=3' ); ?>">
+    ">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">">">">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
 
     
@@ -59,8 +63,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 
   window.cartStrings = {
-    error: `There was an error while updating your cart. Please try again.`,
-    quantityError: `You can only add [quantity] of this item to your cart.`
+    error: `Đã có lỗi xảy ra khi cập nhật giỏ hàng. Vui lòng thử lại.`,
+    quantityError: `Bạn chỉ có thể thêm tối đa [quantity] sản phẩm này vào giỏ hàng.`
   }
 
   window.variantStrings = {
@@ -70,7 +74,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   }
 
   window.accessibilityStrings = {
-    shareSuccess: `Link copied to clipboard`
+    shareSuccess: `Đã sao chép liên kết vào bộ nhớ tạm`
   }
 </script><style data-shopify="">@font-face {
   font-family: Archivo;

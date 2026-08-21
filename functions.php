@@ -44,6 +44,10 @@ add_filter( 'bloginfo', function( $output, $show = '' ) {
 // Include Inc Modules
 require_once get_template_directory() . '/inc/metaboxes.php';
 require_once get_template_directory() . '/inc/woocommerce-product.php';
+require_once get_template_directory() . '/inc/database-seeder.php';
+require_once get_template_directory() . '/inc/product-seeder.php';
+require_once get_template_directory() . '/inc/page-seeder.php';
+require_once get_template_directory() . '/inc/seo-sitemap-robots.php';
 
 /**
  * Static source routes for special policy and developer pages
@@ -161,30 +165,44 @@ function brilliant_xyz_template_include( $template ) {
     }
 
     // 2. Check Product pages (/product/{slug}/, /products/{slug}/, or WooCommerce single product)
-    $view = get_query_var( 'brilliant_view' );
-    if ( 
-        $view === 'product' || 
-        is_singular( 'product' ) || 
-        ( function_exists( 'is_product' ) && is_product() ) ||
-        preg_match( '#^products?/#i', $req_path )
-    ) {
-        $product_candidate = get_template_directory() . '/templates/single-product.php';
-        if ( file_exists( $product_candidate ) ) {
-            status_header( 200 );
-            return $product_candidate;
+    if ( preg_match( '#^products?/([^/]+)/?$#i', $req_path, $matches ) ) {
+        $slug = sanitize_title( $matches[1] );
+        $product = get_page_by_path( $slug, OBJECT, 'product' );
+        
+        if ( ! $product || $product->post_status !== 'publish' ) {
+            global $wp_query;
+            if ( isset( $wp_query ) ) {
+                $wp_query->set_404();
+            }
+            status_header( 404 );
+            nocache_headers();
+            return get_template_directory() . '/404.php';
         }
+
+        $GLOBALS['post'] = $product;
+        setup_postdata( $product );
+        status_header( 200 );
+        return get_template_directory() . '/templates/single-product.php';
     }
 
     // 3. Check Single Blog Post
-    if ( 
-        $view === 'single' || 
-        ( is_single() && get_post_type() === 'post' ) ||
-        ( preg_match( '#^blogs/(announcements/)?[^/]+$#i', $req_path ) && ! preg_match( '#^blogs(/(announcements)?)?/?$#i', $req_path ) && ! preg_match( '#^blogs/announcements/(tagged|page)#i', $req_path ) )
-    ) {
-        $single_candidate = get_template_directory() . '/templates/single-blog.php';
-        if ( file_exists( $single_candidate ) ) {
+    if ( preg_match( '#^blogs/(?:announcements/)?([^/]+)/?$#i', $req_path, $matches ) ) {
+        $slug = sanitize_title( $matches[1] );
+        if ( ! in_array( $slug, array( 'announcements', 'tagged', 'page' ), true ) ) {
+            $post_obj = get_page_by_path( $slug, OBJECT, 'post' );
+            if ( ! $post_obj || $post_obj->post_status !== 'publish' ) {
+                global $wp_query;
+                if ( isset( $wp_query ) ) {
+                    $wp_query->set_404();
+                }
+                status_header( 404 );
+                nocache_headers();
+                return get_template_directory() . '/404.php';
+            }
+            $GLOBALS['post'] = $post_obj;
+            setup_postdata( $post_obj );
             status_header( 200 );
-            return $single_candidate;
+            return get_template_directory() . '/templates/single-blog.php';
         }
     }
 
@@ -204,13 +222,18 @@ function brilliant_xyz_template_include( $template ) {
         }
     }
 
-    // 5. Front Page / Home Page (only when request path is truly root or is_front_page with empty path)
+    // 5. Front Page / Home Page
     if ( empty( $req_path ) || ( is_front_page() && empty( $req_path ) ) ) {
         $front_candidate = get_template_directory() . '/front-page.php';
         if ( file_exists( $front_candidate ) ) {
             status_header( 200 );
             return $front_candidate;
         }
+    }
+
+    // 6. Default 404 check
+    if ( is_404() ) {
+        return get_template_directory() . '/404.php';
     }
 
     return $template;
@@ -572,4 +595,145 @@ function bl_ajax_quick_order() {
 }
 add_action( 'wp_ajax_bl_submit_quick_order', 'bl_ajax_quick_order' );
 add_action( 'wp_ajax_nopriv_bl_submit_quick_order', 'bl_ajax_quick_order' );
+
+/**
+ * Handle AJAX for Contact Form Submissions
+ */
+function bl_ajax_submit_contact_form() {
+    $name    = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
+    $email   = isset( $_POST['email'] ) ? sanitize_email( $_POST['email'] ) : '';
+    $subject = isset( $_POST['subject'] ) ? sanitize_text_field( $_POST['subject'] ) : '';
+    $message = isset( $_POST['message'] ) ? sanitize_textarea_field( $_POST['message'] ) : '';
+
+    if ( empty( $name ) ) {
+        wp_send_json_error( array( 'message' => 'Vui lòng nhập họ và tên của bạn.' ) );
+    }
+
+    if ( empty( $email ) || ! is_email( $email ) ) {
+        wp_send_json_error( array( 'message' => 'Vui lòng nhập địa chỉ email hợp lệ.' ) );
+    }
+
+    if ( empty( $message ) ) {
+        wp_send_json_error( array( 'message' => 'Vui lòng nhập nội dung tin nhắn.' ) );
+    }
+
+    if ( empty( $subject ) ) {
+        $subject = 'Liên hệ từ ' . $name;
+    }
+
+    // Lưu vào danh sách tin nhắn trong Database (lưu tối đa 200 tin nhắn gần nhất)
+    $submissions = get_option( 'bl_contact_submissions', array() );
+    if ( ! is_array( $submissions ) ) {
+        $submissions = array();
+    }
+
+    $entry_id = 'MSG-' . date( 'ymd' ) . '-' . rand( 1000, 9999 );
+    $entry_data = array(
+        'id'        => $entry_id,
+        'name'      => $name,
+        'email'     => $email,
+        'subject'   => $subject,
+        'message'   => $message,
+        'date'      => current_time( 'mysql' ),
+        'ip'        => sanitize_text_field( $_SERVER['REMOTE_ADDR'] ?? '' ),
+        'status'    => 'new',
+    );
+
+    array_unshift( $submissions, $entry_data );
+    if ( count( $submissions ) > 200 ) {
+        $submissions = array_slice( $submissions, 0, 200 );
+    }
+    update_option( 'bl_contact_submissions', $submissions );
+
+    // Gửi email thông báo tới Quản trị viên và contact@brilliantvietnam.com
+    $admin_email = get_option( 'admin_email' );
+    $to_emails   = array_filter( array_unique( array( $admin_email, 'contact@brilliantvietnam.com' ) ) );
+
+    $mail_subject = '[Brilliant Việt Nam] Tin nhắn liên hệ mới: ' . $subject;
+    $mail_body    = '<html><body style="font-family: Arial, sans-serif; line-height: 1.6; color: #222; background-color: #f4f4f5; padding: 20px;">';
+    $mail_body   .= '<div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">';
+    $mail_body   .= '<div style="background: #000000; color: #ffffff; padding: 20px 24px;"><h2 style="margin: 0; font-size: 18px; font-weight: 700;">Tin nhắn liên hệ mới từ Khách hàng</h2></div>';
+    $mail_body   .= '<div style="padding: 24px;">';
+    $mail_body   .= '<p style="margin: 0 0 10px;"><strong>Họ và tên:</strong> ' . esc_html( $name ) . '</p>';
+    $mail_body   .= '<p style="margin: 0 0 10px;"><strong>Địa chỉ Email:</strong> <a href="mailto:' . esc_attr( $email ) . '" style="color: #2563eb;">' . esc_html( $email ) . '</a></p>';
+    $mail_body   .= '<p style="margin: 0 0 10px;"><strong>Chủ đề:</strong> ' . esc_html( $subject ) . '</p>';
+    $mail_body   .= '<p style="margin: 0 0 16px;"><strong>Thời gian gửi:</strong> ' . current_time( 'd/m/Y H:i:s' ) . '</p>';
+    $mail_body   .= '<div style="background: #f8fafc; border-left: 4px solid #000000; border-radius: 4px; padding: 14px 18px; margin-top: 10px;">';
+    $mail_body   .= '<p style="margin: 0 0 6px; font-weight: 700; color: #1e293b;">Nội dung tin nhắn:</p>';
+    $mail_body   .= '<p style="margin: 0; color: #334155; white-space: pre-line;">' . esc_html( $message ) . '</p>';
+    $mail_body   .= '</div>';
+    $mail_body   .= '</div>';
+    $mail_body   .= '<div style="background: #f1f5f9; padding: 12px 24px; text-align: center; font-size: 12px; color: #64748b;">Hệ thống Brilliant Việt Nam &bull; Mã tin nhắn: ' . $entry_id . '</div>';
+    $mail_body   .= '</div></body></html>';
+
+    $headers = array(
+        'Content-Type: text/html; charset=UTF-8',
+        'Reply-To: ' . $name . ' <' . $email . '>',
+    );
+
+    @wp_mail( $to_emails, $mail_subject, $mail_body, $headers );
+
+    wp_send_json_success( array(
+        'id'      => $entry_id,
+        'message' => 'Cảm ơn bạn! Tin nhắn của bạn đã được gửi thành công đến Brilliant Việt Nam. Chúng tôi sẽ phản hồi trong thời gian sớm nhất.',
+    ) );
+}
+add_action( 'wp_ajax_bl_submit_contact_form', 'bl_ajax_submit_contact_form' );
+add_action( 'wp_ajax_nopriv_bl_submit_contact_form', 'bl_ajax_submit_contact_form' );
+
+/**
+ * Admin Menu for Contact Submissions
+ */
+function bl_register_contact_admin_menu() {
+    add_menu_page(
+        'Tin nhắn Liên hệ',
+        'Tin nhắn Liên hệ',
+        'manage_options',
+        'bl-contact-messages',
+        'bl_render_contact_admin_page',
+        'dashicons-email-alt2',
+        26
+    );
+}
+add_action( 'admin_menu', 'bl_register_contact_admin_menu' );
+
+function bl_render_contact_admin_page() {
+    $messages = get_option( 'bl_contact_submissions', array() );
+    ?>
+    <div class="wrap">
+        <h1 class="wp-heading-inline">Danh sách Tin nhắn Liên hệ</h1>
+        <hr class="wp-header-end">
+
+        <?php if ( empty( $messages ) ) : ?>
+            <div class="notice notice-info" style="margin-top: 20px;"><p>Hiện chưa có tin nhắn liên hệ nào.</p></div>
+        <?php else : ?>
+            <table class="wp-list-table widefat fixed striped table-view-list" style="margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th style="width: 120px;">Mã tin</th>
+                        <th style="width: 150px;">Thời gian</th>
+                        <th style="width: 150px;">Họ tên</th>
+                        <th style="width: 200px;">Email</th>
+                        <th style="width: 200px;">Chủ đề</th>
+                        <th>Nội dung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ( $messages as $msg ) : ?>
+                        <tr>
+                            <td><strong><code><?php echo esc_html( $msg['id'] ?? 'N/A' ); ?></code></strong></td>
+                            <td><?php echo esc_html( date( 'd/m/Y H:i', strtotime( $msg['date'] ?? 'now' ) ) ); ?></td>
+                            <td><strong><?php echo esc_html( $msg['name'] ?? '' ); ?></strong></td>
+                            <td><a href="mailto:<?php echo esc_attr( $msg['email'] ?? '' ); ?>"><?php echo esc_html( $msg['email'] ?? '' ); ?></a></td>
+                            <td><?php echo esc_html( $msg['subject'] ?? '' ); ?></td>
+                            <td style="white-space: pre-wrap;"><?php echo esc_html( $msg['message'] ?? '' ); ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php endif; ?>
+    </div>
+    <?php
+}
+
 
