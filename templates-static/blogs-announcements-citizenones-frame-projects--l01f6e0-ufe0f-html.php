@@ -595,7 +595,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--default">
     <div class="row"><div class="hero__content-column hero__content-column--grid hero__content-column--mobile-below_image hero__content-column--desktop-middle col-12 col-md-6 d-none d-md-flex" data-aos="fade-up">
         <div class="hero__content-wrapper">
-          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date" itemprop="dateCreated pubdate datePublished">
+          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date">
                   21/11/2024
                 </span><h1 class="hero__heading h2">
                   Các dự án Frame của CitizenOne 🕹️
@@ -649,7 +649,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   </div>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
-      <span class="hero__date" itemprop="dateCreated pubdate datePublished">
+      <span class="hero__date">
                   21/11/2024
                 </span><h1 class="hero__heading h2">
                   Các dự án Frame của CitizenOne 🕹️
@@ -801,9 +801,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   }
 </script></div><div id="shopify-section-template--24820771455287__main" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<article class="article article--template--24820771455287__main main-section" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article class="article article--template--24820771455287__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up">
-    <div class="rte" itemprop="articleBody">
+    <div class="rte">
       <h2>Demo ghim vị trí trực tiếp AR (AR Live Location Pin Demo)</h2>
 <p><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224' ); ?>" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0722/5190/0215/files/frameshot1_40065cb5-6714-4082-93a6-9d0c64393cd5_480x480.webp?v=1732101224"></p>
 <p>Hiển thị các ghim định vị / điều hướng AR đại diện cho các địa điểm yêu thích (POI) ngay trong tầm nhìn. Ứng dụng sử dụng cảm biến từ kế và gia tốc kế tích hợp của Frame truyền trực tiếp đến điện thoại để tính toán và cập nhật hướng nhìn đến từng điểm POI.<br data-mce-fragment="1"><br data-mce-fragment="1">Hiện tại bản demo sử dụng tọa độ mẫu kinh độ/vĩ độ cho vị trí người dùng và hai điểm POI mẫu. (Việc kết nối GPS điện thoại thực tế và dịch vụ bản đồ để tìm kiếm tọa độ hoặc vị trí trực tiếp của bạn bè được để mở như một bài tập thực hành).</p>
@@ -831,28 +831,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       </span>
     </a>
   </div>
-</article><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": "\nAR Live Location Pin Demo\n\nOverlays AR location \/ navigation pins representing multiple points of interest (POIs) into the field of view. Uses Frame's onboard magnetometer and accelerometer data streamed to the phone to calculate and update the bearing to each POI.Currently uses hard-coded sample latitude\/longitude coordinates for the current user position and two sample POIs for the purposes of the demo. (Using the phone's GPS for the current user location, and a mapping service to search for and get coordinates of points of interest - or a friend's live location - is left as an exercise.)\n\nCode Project\n\n\nGenerative AI on Frame\n\nPrompt the free*, web-based Pollinations.ai image generation model to generate an image and send it straight to Frame! Click on the image in the app to save\/share your masterpiece! \n\nCode Project\n\n\nFrame Sprite Viewer\n\nSprite image viewer for Frame. Supports PNGs and JPGs. It quantizes colors down to 16 bit and scale images so they fit in memory and display correctly on Frame. \nCode Project",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https:\/\/brilliant.xyz"
-    },
-    "headline": "CitizenOne's Frame Projects","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/articles\/frameshot1.webp?v=1732103247\u0026width=928"
-      ],"datePublished": "2024-11-21T19:17:43Z",
-    "dateCreated": "2024-11-20T19:47:27Z",
-    "author": {
-      "@type": "Person",
-      "name": "Sam Khorshid"
-    },
-    "publisher": {
-      "@type": "Organization","name": "Brilliant Labs"
-    }
-  }
-</script><style data-shopify="">.article--template--24820771455287__main {
+</article><style data-shopify="">.article--template--24820771455287__main {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 32px;
@@ -883,24 +862,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

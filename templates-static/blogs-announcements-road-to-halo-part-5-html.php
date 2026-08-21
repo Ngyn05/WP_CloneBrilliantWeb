@@ -596,7 +596,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--default">
     <div class="row"><div class="hero__content-column hero__content-column--grid hero__content-column--mobile-below_image hero__content-column--desktop-middle col-12 col-md-6 d-none d-md-flex" data-aos="fade-up">
         <div class="hero__content-wrapper">
-          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date" itemprop="dateCreated pubdate datePublished">
+          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date">
                   10/11/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 5
@@ -650,7 +650,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   </div>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
-      <span class="hero__date" itemprop="dateCreated pubdate datePublished">
+      <span class="hero__date">
                   10/11/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 5
@@ -802,9 +802,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   }
 </script></div><div id="shopify-section-template--24820771455287__main" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<article class="article article--template--24820771455287__main main-section" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article class="article article--template--24820771455287__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up">
-    <div class="rte" itemprop="articleBody">
+    <div class="rte">
       <!-- SCOPED: styles only affect this block -->
 <style>
   .bl-post table, .bl-post tr, .bl-post td {
@@ -1005,28 +1005,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       </span>
     </a>
   </div>
-</article><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": "\n\n\n\n\n\n\n\n\n\n\n\n🧠Memory matters\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n“I don’t remember his name.”\n“What did we talk about?”\n“Where did I last see him?”\n“What am I capable of?”\n“What do I believe?”\n“Who am I?”\n🧠Memory matters — a lot.\nIt reinforces our evolving sense of identity, it is essential for productivity, and it keeps us feeling connected with others.👩❤️👨\nIt binds our subjective recollection of life with a shared sense of time. The things we experience, recall, and share with others. Memory is a quintessential part of being human.\n\n😅 But my memory sucks! I often forget the details of a conversation, order of events, or, embarrassingly, someone’s name. It’s not just that my memory has gaps but it has a penchant for hallucination!\n\nAnd I know I’m not alone.😎\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSo we built Noa: a private AI agent with memory.\n\n\nNoa lives in Halo, our new open source AI glasses, which means it can SEE and HEAR all-day long, like you do.\n\n\n🕸️Under the hood, Noa’s memory data is flexibly multilingual and built in such a way that a reasoning model or AI agent can traverse relationships between data to unearth deep, non-obvious insights.\n\nThis is new for all of us and begins to unlock opportunities for therapists, life coaches, nutritionists, teachers, and many others engaged in guided intervention to nudge, empower, and heal in new ways.🔒\nmemory demo below 👇\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnd, crucially, we’ve gone a step further: Noa’s memories are machine encoded and stored privately on encrypted servers with\n\n**no rich media retained**\n\nSo you can feel secure using Noa for recall years in the future.❤️\n\n\nIn true Brilliant Labs fashion, we built this because we believed it should exist.\n\n\nIt’s the start of a journey — for all of us.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https:\/\/brilliant.xyz"
-    },
-    "headline": "Hành trình đến Halo | Phần 5","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/articles\/Falo_Shines_479cc62e-a8b5-4946-a612-0766aa223828.gif?v=1760154522\u0026width=720"
-      ],"datePublished": "2025-10-11T11:47:15Z",
-    "dateCreated": "2025-10-11T11:32:15Z",
-    "author": {
-      "@type": "Person",
-      "name": "Sam Khorshid"
-    },
-    "publisher": {
-      "@type": "Organization","name": "Brilliant Labs"
-    }
-  }
-</script><style data-shopify="">.article--template--24820771455287__main {
+</article><style data-shopify="">.article--template--24820771455287__main {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 32px;
@@ -1057,24 +1036,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

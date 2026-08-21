@@ -596,7 +596,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--default">
     <div class="row"><div class="hero__content-column hero__content-column--grid hero__content-column--mobile-below_image hero__content-column--desktop-middle col-12 col-md-6 d-none d-md-flex" data-aos="fade-up">
         <div class="hero__content-wrapper">
-          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date" itemprop="dateCreated pubdate datePublished">
+          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date">
                   08/20/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 2
@@ -650,7 +650,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   </div>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
-      <span class="hero__date" itemprop="dateCreated pubdate datePublished">
+      <span class="hero__date">
                   08/20/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 2
@@ -802,9 +802,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   }
 </script></div><div id="shopify-section-template--24820771455287__main" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<article class="article article--template--24820771455287__main main-section" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article class="article article--template--24820771455287__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up">
-    <div class="rte" itemprop="articleBody">
+    <div class="rte">
       <h3 style="text-align: center;">
 <strong><span>Noa</span></strong> dành cho <strong><span>Halo</span></strong> đã có một bước tiến vượt bậc! 🥳🛠<meta charset="utf-8">
 </h3>
@@ -837,28 +837,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       </span>
     </a>
   </div>
-</article><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": "\nNoa for Halo has taken a tremendous leap! 🥳🛠\n\n\nWe had a clear sense of what the right software experience should feel like. In line with advancements in AI speech technology, we set out to build a low-latency, multimodal conversational interface that felt like natural dialogue.\n\n\na trusted friend who respects your privacy — with on-device inference on the horizon\n\n🧠👀But there is one more thing which has been on our mind for a while: **MEMORY** — a pillar of the human experience and a growing requirement for intelligent technologies. \n(Click Image Below for Demo👇)\n \n\n \nUnlike prevailing memory solutions which are oriented toward written text, we felt we could make a contribution to this space by designing Noa’s memory to learn from the challenging contours of daily life — what you see, hear, and say — while discerning useful signal from the abundance of noise. \n🤯The prospect of a private, trusted agent reasoning over years of the life you live opens previously unimaginable possibilities. \n(Click Image Below for Demo 2👇)\n \n\nUI\/UX on Halo and in the mobile app is set for a dramatic twist: back to our childhood of retro vibes coinciding with the emergence of personal computing, arcade games, and the early internet.\n\nStay tuned 😎\n",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https:\/\/brilliant.xyz"
-    },
-    "headline": "Hành trình đến Halo | Phần 2","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/articles\/IMG_7016.jpg?v=1755644717\u0026width=2316"
-      ],"datePublished": "2025-08-20T07:00:38Z",
-    "dateCreated": "2025-08-19T05:17:47Z",
-    "author": {
-      "@type": "Person",
-      "name": "Sam Khorshid"
-    },
-    "publisher": {
-      "@type": "Organization","name": "Brilliant Labs"
-    }
-  }
-</script><style data-shopify="">.article--template--24820771455287__main {
+</article><style data-shopify="">.article--template--24820771455287__main {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 32px;
@@ -889,24 +868,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

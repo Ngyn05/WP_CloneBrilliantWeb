@@ -48,6 +48,7 @@ require_once get_template_directory() . '/inc/database-seeder.php';
 require_once get_template_directory() . '/inc/product-seeder.php';
 require_once get_template_directory() . '/inc/page-seeder.php';
 require_once get_template_directory() . '/inc/seo-sitemap-robots.php';
+require_once get_template_directory() . '/inc/seo-schema.php';
 
 /**
  * Static source routes for special policy and developer pages

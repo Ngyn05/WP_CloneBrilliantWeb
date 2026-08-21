@@ -596,7 +596,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--default">
     <div class="row"><div class="hero__content-column hero__content-column--grid hero__content-column--mobile-below_image hero__content-column--desktop-middle col-12 col-md-6 d-none d-md-flex" data-aos="fade-up">
         <div class="hero__content-wrapper">
-          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date" itemprop="dateCreated pubdate datePublished">
+          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date">
                   08/26/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 3
@@ -650,7 +650,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   </div>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
-      <span class="hero__date" itemprop="dateCreated pubdate datePublished">
+      <span class="hero__date">
                   08/26/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 3
@@ -802,9 +802,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   }
 </script></div><div id="shopify-section-template--24820771455287__main" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<article class="article article--template--24820771455287__main main-section" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article class="article article--template--24820771455287__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up">
-    <div class="rte" itemprop="articleBody">
+    <div class="rte">
       <h3>🎨 Quá trình nghiên cứu phần cứng <strong><span>Halo</span></strong> đòi hỏi sự định hướng rõ ràng, chắt lọc tinh tế, mục tiêu mạch lạc và thiết kế tỉ mỉ ở mọi tầng công nghệ. </h3>
 <p><img src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/s/files/1/0722/5190/0215/files/Falo_Shines.gif?v=1756151572' ); ?>" alt=""></p>
 <h4>🙄 Bạn có thể nhận thấy hầu hết mọi chiếc kính thông minh khác ra mắt trên thị trường đều đi theo một lối mòn dễ đoán. </h4>
@@ -833,28 +833,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       </span>
     </a>
   </div>
-</article><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": "🎨Our work on Halo’s hardware required intentionality and restraint, clarity of purpose, and intensive design across every level of the stack. \n\n🙄You may have noticed that nearly every other pair of smart glasses coming to market is following a predictable path. \n\nBut we are thinking different: these devices are not for social media capture or watching YouTube videos. Instead, they should exist to perform all-day AI inference for deep personalization and memory enhancement while still looking like a beautiful pair of glasses.\n\n🎯So with this clarity of intention we set about designing Halo’s hardware system. \n\nWhile keeping a full color display and camera, we introduced an additional microphone and two speakers — all wired into a low-power AI processor.\nBy eschewing bulky or expensive optics, over-powered processors, WiFi, and hefty image sensors geared more for social media capture than focused AI inference, we accomplished a hardware design made for all-day wearability, memory capture, and multimodal agent interactions. \n\n(check out an example below 👇)\n\n\n\n⛩️These architectural decisions allowed us to enrich the customer experience and broaden the value proposition to developers while lowering the price point and multiplying battery life — all within the constraints of Halo’s deceptively inevitable industrial design. \n🧑🏼🎨We believe these devices need to feel beautiful and unobtrusive while enabling tremendous creativity and intelligence. \n😇Halo is a milestone for us as we double down on the open source movement ushering in the next age of intelligent computing.\n",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https:\/\/brilliant.xyz"
-    },
-    "headline": "Hành trình đến Halo | Phần 3","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/articles\/IMG_7142_3ca8e4c3-66bc-4262-a193-f9213bc38c2e.webp?v=1756165881\u0026width=523"
-      ],"datePublished": "2025-08-26T07:50:56Z",
-    "dateCreated": "2025-08-26T04:07:54Z",
-    "author": {
-      "@type": "Person",
-      "name": "Sam Khorshid"
-    },
-    "publisher": {
-      "@type": "Organization","name": "Brilliant Labs"
-    }
-  }
-</script><style data-shopify="">.article--template--24820771455287__main {
+</article><style data-shopify="">.article--template--24820771455287__main {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 32px;
@@ -885,24 +864,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

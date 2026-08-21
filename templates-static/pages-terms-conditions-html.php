@@ -702,24 +702,7 @@ Email hỗ trợ &amp; Pháp lý: <a href="mailto:contact@brilliantvietnam.com" 
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz\/pages\/terms-conditions"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

@@ -1971,25 +1971,7 @@ function blSubmitPhoneConsultation(btn) {
 
       
     }
-  }</style><script type="application/ld+json">
-  {
-    "@context": "http://schema.org/",
-    "@type": "Product",
-    "name": "Halo",
-    "url": "https:\/\/brilliant.xyz\/products\/halo","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/files\/Halo_1.png?v=1753738731\u0026width=2200"
-      ],"description": "Giới thiệu Halo! \sku nguồn mở AI glasses for the curious, creative, and forward thinking. \nHalo features a fresh design, reimagined optics and electronics, and Noa, your private conversational AI agent with long-term memory of your life.\nWith Miniapps, Halo lets you build new experiences using natural language and share them with others on our App Store.\n \nThese features are included free out of the box with daily usage caps.\n \nThe first Halo units are rolling off the production line now, with shipments beginning in early August. ","sku": "BLHALOBLK","brand": {
-      "@type": "Brand",
-      "name": "Brilliant Labs"
-    },
-    "offers": [{
-          "@type" : "Offer","sku": "BLHALOBLK","gtin12": 015706436602,"availability" : "http://schema.org/InStock",
-          "price" : 399.0,
-          "priceCurrency" : "USD",
-          "url" : "https:\/\/brilliant.xyz\/products\/halo?variant=50778480509239"
-        }]
-  }
-</script>
+  }</style>
 </div><div id="shopify-section-template--24912567468343__c2a0cb4c-6039-407a-b4e2-18d36a739375" class="shopify-section">
 
 
@@ -2455,24 +2437,7 @@ function blSubmitPhoneConsultation(btn) {
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

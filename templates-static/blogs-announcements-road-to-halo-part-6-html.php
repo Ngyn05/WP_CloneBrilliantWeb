@@ -596,7 +596,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--default">
     <div class="row"><div class="hero__content-column hero__content-column--grid hero__content-column--mobile-below_image hero__content-column--desktop-middle col-12 col-md-6 d-none d-md-flex" data-aos="fade-up">
         <div class="hero__content-wrapper">
-          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date" itemprop="dateCreated pubdate datePublished">
+          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date">
                   10/11/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 6
@@ -650,7 +650,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   </div>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
-      <span class="hero__date" itemprop="dateCreated pubdate datePublished">
+      <span class="hero__date">
                   10/11/2025
                 </span><h1 class="hero__heading h2">
                   Hành trình đến Halo | Phần 6
@@ -802,9 +802,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   }
 </script></div><div id="shopify-section-template--24820771455287__main" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<article class="article article--template--24820771455287__main main-section" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article class="article article--template--24820771455287__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up">
-    <div class="rte" itemprop="articleBody">
+    <div class="rte">
       <!-- SCOPED: only affects this post -->
 <style>
   .bl-post table, .bl-post tr, .bl-post td {
@@ -994,28 +994,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       </span>
     </a>
   </div>
-</article><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": "\n\n\n\n\n\n\n\n\n\n\n\nThis will change everything.\n📺💾📼📸📟📀🎮🖥️💻📱⌚️… 😎\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese are the early days of a shift in computing: from reactive device experiences that feel unnatural to our form — to proactive, collaborative experiences that respond to how we see and hear the world. It will change everything.\n\n\n🤘🏼But it will be business as usual unless the DNA of this revolution in intelligent computing is open source — hardware, firmware, and software.\n\n😳👹⛓️💥The current paradigm has shown the risks of the alternative: five companies run the modern world. Is that the future we envision?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n👾Until recently, open source was viewed as a fringe movement—baked into the heart of foundational technologies we use every day, yet underappreciated for their impact.\n🥳But everything has changed. Generative AI’s embrace of open source has sparked a decentralized wave of innovation unlike anything we’ve seen before.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHalo-UI Demo👇\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🤖As models move closer to the edge—embodied, personal, and ever-present—the impetus is on the hardware to embrace openness so humanity remains in the driver’s seat of this new era. The ultimate agent is the human being, but that cannot be taken for granted.\n🫵🏼🦾This openness is vital not only for unleashing creativity but also for ensuring the explainability of these complex intelligent systems—from silicon to software.\n✌🏼🚀We are living in a watershed moment, on the cusp of world-spanning transformation, and it will take all of us to ensure it leads to collective wellbeing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https:\/\/brilliant.xyz"
-    },
-    "headline": "Hành trình đến Halo | Phần 6","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/articles\/breakdown_2c66ec25-5764-4999-99e3-c0b9ad7b8714.gif?v=1760154505\u0026width=1280"
-      ],"datePublished": "2025-10-11T11:47:36Z",
-    "dateCreated": "2025-10-11T11:43:34Z",
-    "author": {
-      "@type": "Person",
-      "name": "Sam Khorshid"
-    },
-    "publisher": {
-      "@type": "Organization","name": "Brilliant Labs"
-    }
-  }
-</script><style data-shopify="">.article--template--24820771455287__main {
+</article><style data-shopify="">.article--template--24820771455287__main {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 32px;
@@ -1046,24 +1025,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>

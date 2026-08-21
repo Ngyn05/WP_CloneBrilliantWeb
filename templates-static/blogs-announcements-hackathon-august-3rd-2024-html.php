@@ -596,7 +596,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   <div class="container container--default">
     <div class="row"><div class="hero__content-column hero__content-column--grid hero__content-column--mobile-below_image hero__content-column--desktop-middle col-12 col-md-6 d-none d-md-flex" data-aos="fade-up">
         <div class="hero__content-wrapper">
-          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date" itemprop="dateCreated pubdate datePublished">
+          <div class="hero__content hero__content--grid text-left text-md-left"><span class="hero__date">
                   10/10/2024
                 </span><h1 class="hero__heading h2">
                   Hackathon: Ngày 3 tháng 8 năm 2024
@@ -650,7 +650,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   </div>
 </div><div class="hero-mobile-content d-md-none">
     <div class="container text-left">
-      <span class="hero__date" itemprop="dateCreated pubdate datePublished">
+      <span class="hero__date">
                   10/10/2024
                 </span><h1 class="hero__heading h2">
                   Hackathon: Ngày 3 tháng 8 năm 2024
@@ -802,9 +802,9 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   }
 </script></div><div id="shopify-section-template--24820771455287__main" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-main-article.css?v=62561071357533081791752050582' ); ?>" rel="stylesheet" type="text/css" media="all">
 
-<article class="article article--template--24820771455287__main main-section" itemscope="" itemtype="http://schema.org/BlogPosting">
+<article class="article article--template--24820771455287__main main-section">
   <div class="container container--extra-narrow" data-aos="fade-up">
-    <div class="rte" itemprop="articleBody">
+    <div class="rte">
       <meta charset="utf-8">
 <p class="p1" data-mce-fragment="1">Chúng tôi rất vinh dự được đồng tổ chức sự kiện Hackathon cùng Niantic, nhà sáng tạo của tựa game Pokémon Go nổi tiếng!</p>
 <p class="p1" data-mce-fragment="1">Hơn 50 nhà phát triển tài năng từ khắp nơi trên toàn quốc — và cả quốc tế — đã tham gia cùng chúng tôi để xây dựng các ứng dụng độc đáo tại giao điểm giữa AI và thực tế tăng cường (AR) trên kính Frame.</p>
@@ -819,28 +819,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
       </span>
     </a>
   </div>
-</article><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "articleBody": "\nWe had the pleasure of hosting a hackathon with Niantic, the creators of Pokémon Go!\nOver 50 developers from across the country—and even around the world—joined us to build applications at the intersection of AI and AR on Frame.\nCheck out videos from the event below!\nHackathon: Ngày 3 tháng 8 năm 2024 Playlist!",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https:\/\/brilliant.xyz"
-    },
-    "headline": "Hackathon: Ngày 3 tháng 8 năm 2024","description": "We hosted a hackathon with Niantic, the creators of Pokémon Go!","image": [
-        "https:\/\/brilliant.xyz\/cdn\/shop\/articles\/Frame_hackathon_v001.jpg?v=1728988033\u0026width=3909"
-      ],"datePublished": "2024-10-10T18:30:00Z",
-    "dateCreated": "2024-10-15T18:27:13Z",
-    "author": {
-      "@type": "Person",
-      "name": "Sam Khorshid"
-    },
-    "publisher": {
-      "@type": "Organization","name": "Brilliant Labs"
-    }
-  }
-</script><style data-shopify="">.article--template--24820771455287__main {
+</article><style data-shopify="">.article--template--24820771455287__main {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 32px;
@@ -871,24 +850,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <!-- END sections: footer-group --><ul hidden="">
       <li id="a11y-refresh-page-message">Việc chọn một mục sẽ tải lại toàn bộ trang.</li>
       <li id="a11y-new-window-message">Mở trong cửa sổ mới.</li>
-    </ul><script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Brilliant Labs","sameAs": [
-      "https:\/\/twitter.com\/brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.instagram.com\/brilliantlabsar\/",
-      "https:\/\/www.tiktok.com\/@brilliantlabsar",
-      "",
-      "",
-      "https:\/\/www.youtube.com\/@brilliantlabsAR",
-      ""
-    ],
-    "url": "https:\/\/brilliant.xyz"
-  }
-</script><style> .seal-subscription-page {padding-top: 100px !important;} </style>
+    </ul><style> .seal-subscription-page {padding-top: 100px !important;} </style>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/storefront/standard-actions.js' ); ?>" type="module" data-source-attribution="shopify.standard_actions"></script>
 <?php wp_footer(); ?>
 </body>
