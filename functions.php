@@ -517,16 +517,8 @@ function bl_ajax_quick_order() {
                 <td style="font-weight: 600; color: #111827;"><a href="' . $safe_prod_url . '" target="_blank" style="color: #111827; text-decoration: none;">' . $safe_prod_name . '</a></td>
               </tr>
               <tr>
-                <td style="color: #4b5563;">Đơn giá:</td>
-                <td style="color: #374151;">' . $unit_price_display . '</td>
-              </tr>
-              <tr>
                 <td style="color: #4b5563;">Số lượng:</td>
                 <td style="font-weight: 600; color: #111827;">' . $quantity . '</td>
-              </tr>
-              <tr>
-                <td style="color: #4b5563; padding-top: 8px; border-top: 1px dashed #e5e7eb; font-weight: 600;">Tổng thanh toán:</td>
-                <td style="color: #dc2626; font-size: 16px; font-weight: 700; padding-top: 8px; border-top: 1px dashed #e5e7eb;">' . $total_display . ' (COD)</td>
               </tr>
             </table>
           </div>
@@ -606,7 +598,6 @@ function bl_ajax_quick_order() {
               <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin: 20px 0;">
                 <p style="margin: 0 0 8px; font-weight: 600;">Sản phẩm: ' . $safe_prod_name . '</p>
                 <p style="margin: 0 0 8px;">Số lượng: ' . $quantity . '</p>
-                <p style="margin: 0; font-weight: 700; color: #dc2626;">Tổng thanh toán: ' . $total_display . ' (COD - Thanh toán khi nhận hàng)</p>
               </div>
               <p style="font-size: 13px; color: #6b7280;">Nếu cần hỗ trợ gấp, vui lòng liên hệ hotline/Zalo: 0917 834 532.</p>
             </div>
@@ -768,5 +759,4 @@ function bl_render_contact_admin_page() {
     </div>
     <?php
 }
-
 

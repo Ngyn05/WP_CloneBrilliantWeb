@@ -262,6 +262,7 @@ site-header,
 .product-price__badge--sale,
 .bl-sub-price,
 .bl-order-summary__unit-price,
-.bl-order-total-wrap {
+.bl-order-total-wrap,
+.bl-success-card p:last-child {
     display: none !important;
 }
