@@ -1222,10 +1222,16 @@ variant-selects {
   border-radius: 20px;
   font-size: 13px;
   font-weight: 600;
-  color: #4ade80;
+  color: #ffffff;
   margin-left: 10px;
   vertical-align: middle;
   line-height: 1.2;
+}
+
+.bl-stock-status-badge.bl-stock-badge--instock .bl-stock-text,
+.bl-modal-stock-badge.bl-stock-badge--instock {
+  color: #ffffff !important;
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.45);
 }
 
 .bl-stock-status-badge.bl-stock-badge--out {
@@ -1261,7 +1267,7 @@ variant-selects {
   gap: 6px;
   font-size: 12px;
   font-weight: 600;
-  color: #4ade80;
+  color: #ffffff;
   margin-top: 4px;
 }
 

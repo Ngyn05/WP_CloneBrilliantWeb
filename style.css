@@ -256,3 +256,12 @@ site-header,
         transform: translateX(-100%);
     }
 }
+
+/* Hide product pricing from the storefront while retaining internal order data. */
+.product-price__container,
+.product-price__badge--sale,
+.bl-sub-price,
+.bl-order-summary__unit-price,
+.bl-order-total-wrap {
+    display: none !important;
+}
