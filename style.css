@@ -266,3 +266,42 @@ site-header,
 .bl-success-card p:last-child {
     display: none !important;
 }
+
+/* Seller details live with the product FAQ instead of interrupting the buy box. */
+.bl-product-geo-wrap {
+    padding-top: 0 !important;
+    padding-bottom: 60px !important;
+}
+
+.bl-product-geo {
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #161616;
+    color: #ddd;
+}
+
+.bl-product-geo summary {
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bl-product-geo__content {
+    padding: 0 20px 18px;
+}
+
+.bl-product-geo__content p,
+.bl-product-geo__content ul {
+    margin: 0 0 10px;
+    line-height: 1.65;
+}
+
+.bl-product-geo__content ul {
+    padding-left: 20px;
+}
+
+.bl-product-geo__content a {
+    color: #f288bf;
+}

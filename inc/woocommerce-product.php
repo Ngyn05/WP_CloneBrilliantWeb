@@ -428,7 +428,7 @@ function bl_render_header_buy_button( $is_mobile = false ) {
                         </a>
                     <?php endforeach; ?>
                 <?php else : ?>
-                    <a href="<?php echo esc_url( home_url( '/product/halo/' ) ); ?>" class="bl-sub-item">
+                    <a href="<?php echo esc_url( home_url( '/products/halo/' ) ); ?>" class="bl-sub-item">
                         <span class="bl-sub-title">Halo</span>
                         <span class="bl-sub-price">8.867.000 ₫</span>
                     </a>

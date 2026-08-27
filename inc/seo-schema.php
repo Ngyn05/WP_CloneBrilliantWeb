@@ -38,6 +38,11 @@ function bl_get_accurate_canonical_url() {
         return home_url( '/' );
     }
 
+    // Product URLs are canonicalized to the public /products/{slug}/ route.
+    if ( preg_match( '#^products?/([^/]+)$#i', $req_path, $matches ) ) {
+        return home_url( '/products/' . sanitize_title( $matches[1] ) . '/' );
+    }
+
     // Các trang tĩnh đặc thù
     $static_routes = array(
         'contact'          => '/contact/',
@@ -99,6 +104,10 @@ function bl_filter_canonical_url( $canonical ) {
         return home_url( '/' );
     }
 
+    if ( preg_match( '#^products?/([^/]+)$#i', $req_path, $matches ) ) {
+        return home_url( '/products/' . sanitize_title( $matches[1] ) . '/' );
+    }
+
     $static_routes = array( 'contact', 'developers', 'privacy-policy', 'terms-conditions' );
     if ( in_array( $req_path, $static_routes, true ) ) {
         return home_url( '/' . $req_path . '/' );
@@ -122,6 +131,9 @@ function bl_output_dynamic_rel_canonical() {
     if ( defined( 'WPSEO_VERSION' ) || defined( 'RANK_MATH_VERSION' ) || defined( 'AIOSEO_VERSION' ) ) {
         return;
     }
+	if ( is_404() || is_search() ) {
+		return;
+	}
 
     $canonical_url = bl_get_accurate_canonical_url();
 
@@ -130,6 +142,19 @@ function bl_output_dynamic_rel_canonical() {
     }
 }
 add_action( 'wp_head', 'bl_output_dynamic_rel_canonical', 1 );
+
+/** Output a permissive search/snippet directive when an SEO plugin is absent. */
+function bl_output_robots_meta() {
+    if ( is_404() || is_search() ) {
+        echo '<meta name="robots" content="noindex, follow" />' . "\n";
+        return;
+    }
+
+    if ( ! defined( 'WPSEO_VERSION' ) && ! defined( 'RANK_MATH_VERSION' ) && ! defined( 'AIOSEO_VERSION' ) ) {
+        echo '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />' . "\n";
+    }
+}
+add_action( 'wp_head', 'bl_output_robots_meta', 2 );
 
 /**
  * 2. Output JSON-LD Schema (Organization, LocalBusiness, WebSite, Product, Article)
@@ -161,7 +186,7 @@ function bl_output_dynamic_json_ld_schema() {
             'caption' => $site_name,
         ),
         'image'               => $logo_url,
-        'description'         => 'Đại diện phân phối chính thức kính thông minh AI Brilliant Halo và hệ sinh thái mã nguồn mở Brilliant Labs tại Việt Nam.',
+        'description'         => 'Đơn vị cung cấp kính thông minh AI Brilliant Halo và hỗ trợ khách hàng tại Việt Nam.',
         'telephone'           => '+84-981-114-028',
         'email'               => 'support@brilliantvietnam.com',
         'priceRange'          => '$$$',
@@ -248,42 +273,56 @@ function bl_output_dynamic_json_ld_schema() {
     if ( is_singular( 'product' ) || is_page( 'halo' ) || strpos( $_SERVER['REQUEST_URI'] ?? '', '/products/halo' ) !== false ) {
         $product_id = get_the_ID() ?: 0;
         $title      = 'Halo – Kính thông minh AI';
-        $price      = '8867000';
+        $price      = '';
         $desc       = 'Kính thông minh AI thế hệ mới nhất với màn hình hiển thị màu sắc, loa truyền xương kép và trợ lý Noa.';
         $img_url    = $theme_uri . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png';
+		$product_url = home_url( '/products/halo/' );
 
         if ( $product_id ) {
             $post = get_post( $product_id );
             if ( $post && $post->post_title ) {
                 $title = $post->post_title;
+				$product_url = home_url( '/products/' . $post->post_name . '/' );
+				$excerpt = wp_strip_all_tags( $post->post_excerpt );
+				$content = wp_trim_words( wp_strip_all_tags( strip_shortcodes( $post->post_content ) ), 45, '' );
+				$desc = $excerpt ?: ( $content ?: $desc );
+				$stored_price = get_post_meta( $product_id, '_price', true );
+				if ( is_numeric( $stored_price ) && (float) $stored_price > 0 ) {
+					$price = (string) $stored_price;
+				}
+				$featured = get_the_post_thumbnail_url( $product_id, 'full' );
+				if ( $featured ) {
+					$img_url = $featured;
+				}
             }
         }
 
         $product_schema = array(
             '@type'        => 'Product',
-            '@id'          => home_url( '/products/halo/' ) . '#product',
+			'@id'          => $product_url . '#product',
             'name'         => $title,
             'image'        => array( $img_url ),
             'description'  => $desc,
-            'sku'          => 'BLHALOBLK',
-            'mpn'          => 'BL-HALO-01',
             'brand'        => array(
                 '@type' => 'Brand',
-                'name'  => $site_name,
+                'name'  => 'Brilliant Labs',
             ),
-            'offers'       => array(
+        );
+
+		// Never invent a price: only publish Offer when a positive storefront price exists.
+		if ( $price !== '' ) {
+			$product_schema['offers'] = array(
                 '@type'           => 'Offer',
-                'url'             => home_url( '/products/halo/' ),
+				'url'             => $product_url,
                 'priceCurrency'   => 'VND',
                 'price'           => $price,
-                'priceValidUntil' => '2027-12-31',
                 'itemCondition'   => 'https://schema.org/NewCondition',
                 'availability'    => 'https://schema.org/InStock',
                 'seller'          => array(
                     '@id' => $home_url . '#organization',
                 ),
-            ),
-        );
+			);
+		}
         $schema_graph[] = $product_schema;
 
         // BreadcrumbList for Product
@@ -300,7 +339,7 @@ function bl_output_dynamic_json_ld_schema() {
                     '@type'    => 'ListItem',
                     'position' => 2,
                     'name'     => 'Sản phẩm',
-                    'item'     => home_url( '/products/halo/' ),
+					'item'     => $product_url,
                 ),
                 array(
                     '@type'    => 'ListItem',

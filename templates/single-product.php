@@ -28,6 +28,8 @@ if ( ! $product_id ) {
 }
 
 $product_title   = $product_id ? ( get_the_title( $product_id ) ?: 'N/A' ) : 'N/A';
+$product_slug    = $product_id ? get_post_field( 'post_name', $product_id ) : 'halo';
+$product_url     = home_url( '/products/' . sanitize_title( $product_slug ) . '/' );
 $raw_price       = $product_id ? ( get_post_meta( $product_id, '_regular_price', true ) ?: get_post_meta( $product_id, '_price', true ) ) : '';
 if ( $raw_price !== '' && $raw_price !== false && $raw_price !== 'N/A' ) {
     $num_price = floatval( preg_replace( '/[^0-9.]/', '', (string) $raw_price ) );
@@ -120,12 +122,14 @@ if ( empty( $gallery_urls ) && $is_halo ) {
     <meta name="description" content="<?php echo esc_attr( wp_strip_all_tags( $product_excerpt ?: $product_title ) ); ?>">
 
     <meta property="og:site_name" content="Brilliant Việt Nam">
-    <meta property="og:url" content="<?php echo esc_url( get_permalink( $product_id ) ); ?>">
+    <meta property="og:url" content="<?php echo esc_url( $product_url ); ?>">
     <meta property="og:title" content="<?php echo esc_attr( $product_title ); ?> – Brilliant Việt Nam">
     <meta property="og:type" content="product">
     <meta property="og:description" content="<?php echo esc_attr( wp_strip_all_tags( $product_excerpt ?: $product_title ) ); ?>">
     <meta property="og:image" content="<?php echo esc_url( $product_thumb ?: ( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png' ) ); ?>">
     <meta property="og:image:secure_url" content="<?php echo esc_url( $product_thumb ?: ( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png' ) ); ?>">
+    <meta property="og:image:alt" content="<?php echo esc_attr( $product_title . ' do Brilliant Việt Nam cung cấp' ); ?>">
+	<meta property="og:locale" content="vi_VN">
     <meta name="twitter:site" content="@brilliantlabsar">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo esc_attr( $product_title ); ?> – Brilliant Việt Nam">
@@ -2179,6 +2183,21 @@ function blSubmitPhoneConsultation(btn) {
   <?php else : ?>
     <div class="container" style="padding: 60px 20px; text-align: center; color: #666;"><p>N/A</p></div>
   <?php endif; ?>
+
+  <div class="container container--default bl-product-geo-wrap">
+    <details class="bl-product-geo">
+      <summary>Thông tin mua hàng tại Việt Nam</summary>
+      <div class="bl-product-geo__content">
+        <p><?php echo esc_html( $product_title ); ?> được Brilliant Việt Nam cung cấp và hỗ trợ khách hàng tại Việt Nam. Bạn có thể đặt mua trực tiếp trên website hoặc liên hệ hotline <a href="tel:1900638400">1900.63.8400</a> để được tư vấn tình trạng hàng, giao hàng và bảo hành.</p>
+        <ul>
+          <li><strong>Đơn vị bán hàng:</strong> Brilliant Việt Nam</li>
+          <li><strong>Tình trạng:</strong> <?php echo esc_html( $stock_info['text'] ); ?></li>
+          <li><strong>Thanh toán:</strong> Thanh toán khi nhận hàng (COD)</li>
+          <li><strong>Cập nhật:</strong> <?php echo esc_html( get_the_modified_date( 'd/m/Y', $product_id ) ); ?></li>
+        </ul>
+      </div>
+    </details>
+  </div>
 </div>
 </div><div id="shopify-section-template--24912567468343__press-items" class="shopify-section"><link href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/section-press-items.css?v=180064749476445111791752050581' ); ?>" rel="stylesheet" type="text/css" media="all">
 

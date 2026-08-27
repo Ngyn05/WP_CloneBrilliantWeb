@@ -7,7 +7,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 // Setup theme features
 function brilliant_xyz_setup() {
-    add_theme_support( 'title-tag' );
+	// Templates in this static-clone theme provide their own URL-specific <title>.
+	// Do not enable the core title-tag renderer, which would create a duplicate.
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
     
@@ -127,6 +128,25 @@ function brilliant_xyz_add_rewrite_rules() {
     );
 }
 add_action( 'init', 'brilliant_xyz_add_rewrite_rules' );
+
+/**
+ * Keep one public product URL. The legacy singular route remains resolvable by
+ * WordPress only so it can be redirected instead of becoming a duplicate page.
+ */
+function brilliant_xyz_redirect_legacy_product_urls() {
+    if ( is_admin() || wp_doing_ajax() ) {
+        return;
+    }
+
+    $request_uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_unslash( $_SERVER['REQUEST_URI'] ) : '';
+    $path        = trim( (string) wp_parse_url( $request_uri, PHP_URL_PATH ), '/' );
+
+    if ( preg_match( '#^product/([^/]+)$#i', $path, $matches ) ) {
+        wp_safe_redirect( home_url( '/products/' . sanitize_title( $matches[1] ) . '/' ), 301 );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'brilliant_xyz_redirect_legacy_product_urls', 0 );
 
 function brilliant_xyz_query_vars( $vars ) {
     $vars[] = 'brilliant_static';
@@ -759,4 +779,3 @@ function bl_render_contact_admin_page() {
     </div>
     <?php
 }
-

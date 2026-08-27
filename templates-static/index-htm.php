@@ -17,21 +17,23 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
   <script src="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/t/24/assets/theme-4ed993c7.js' ); ?>" type="module" crossorigin="anonymous"></script>
 
     <title>Brilliant Việt Nam – Kính thông minh AI & Hệ sinh thái công nghệ mã nguồn mở</title>
-    <meta name="description" content="Brilliant Việt Nam - Đại diện phân phối chính hãng kính thông minh AI Halo tích hợp trợ lý Noa, loa truyền xương kép và hệ sinh thái miniapp mã nguồn mở hàng đầu.">
+    <meta name="description" content="Brilliant Việt Nam cung cấp kính thông minh AI Halo tích hợp trợ lý Noa, loa truyền xương kép và hệ sinh thái miniapp mã nguồn mở tại Việt Nam.">
 
 <meta property="og:site_name" content="Brilliant Việt Nam">
 <meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>">
 <meta property="og:title" content="Brilliant Việt Nam – Kính thông minh AI & Hệ sinh thái công nghệ">
 <meta property="og:type" content="website">
-<meta property="og:description" content="Brilliant Việt Nam - Đại diện phân phối chính hãng kính thông minh AI Halo tích hợp trợ lý Noa, loa truyền xương kép và hệ sinh thái miniapp mã nguồn mở hàng đầu.">
+<meta property="og:description" content="Brilliant Việt Nam cung cấp kính thông minh AI Halo tích hợp trợ lý Noa, loa truyền xương kép và hệ sinh thái miniapp mã nguồn mở tại Việt Nam.">
 <meta property="og:image" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
 <meta property="og:image:secure_url" content="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/Halo_16_9e6dbe16-f264-4d22-bca1-175227d4ade6.png?v=1753981531' ); ?>">
 <meta property="og:image:width" content="2200">
 <meta property="og:image:height" content="2200">
+<meta property="og:image:alt" content="Kính thông minh AI Halo do Brilliant Việt Nam cung cấp">
+<meta property="og:locale" content="vi_VN">
 <meta name="twitter:site" content="@brilliantlabsar">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Brilliant Việt Nam – Kính thông minh AI & Hệ sinh thái công nghệ">
-<meta name="twitter:description" content="Brilliant Việt Nam - Đại diện phân phối chính hãng kính thông minh AI Halo tích hợp trợ lý Noa, loa truyền xương kép và hệ sinh thái miniapp mã nguồn mở hàng đầu.">
+  <meta name="twitter:description" content="Brilliant Việt Nam cung cấp kính thông minh AI Halo tích hợp trợ lý Noa, loa truyền xương kép và hệ sinh thái miniapp mã nguồn mở tại Việt Nam.">
 <script>
   
   window.moneyFormat = "${{amount}}";

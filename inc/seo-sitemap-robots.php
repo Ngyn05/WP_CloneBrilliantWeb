@@ -508,7 +508,6 @@ function bl_seo_output_xsl_stylesheet() {
  * 4. Robots.txt Configuration
  */
 function bl_seo_custom_robots_txt( $output, $public ) {
-    $sitemap_url   = home_url( '/sitemap.xml' );
     $sitemap_index = home_url( '/sitemap_index.xml' );
 
     $robots = "User-agent: *\n";
@@ -517,9 +516,14 @@ function bl_seo_custom_robots_txt( $output, $public ) {
     $robots .= "Allow: /wp-admin/admin-ajax.php\n";
     $robots .= "Disallow: /cart/\n";
     $robots .= "Disallow: /checkout/\n";
+	$robots .= "Disallow: /my-account/\n";
     $robots .= "Disallow: /?s=\n";
-    $robots .= "Disallow: /search\n\n";
-    $robots .= "Sitemap: {$sitemap_url}\n";
+	$robots .= "Disallow: /search/\n\n";
+	$robots .= "User-agent: OAI-SearchBot\n";
+	$robots .= "Allow: /\n";
+	$robots .= "Disallow: /cart/\n";
+	$robots .= "Disallow: /checkout/\n";
+	$robots .= "Disallow: /my-account/\n\n";
     $robots .= "Sitemap: {$sitemap_index}\n";
 
     return $robots;
