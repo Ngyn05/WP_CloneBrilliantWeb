@@ -1983,6 +1983,7 @@ function blSubmitQuickOrder(e) {
 
   var data = new FormData();
   data.append('action', 'bl_submit_quick_order');
+  data.append('security', '<?php echo esc_js( wp_create_nonce( 'bl_public_forms' ) ); ?>');
   data.append('phone', phone);
   data.append('name', name);
   data.append('email', email);
@@ -2049,6 +2050,7 @@ function blSubmitPhoneConsultation(btn) {
 
   var data = new FormData();
   data.append('action', 'bl_submit_phone_consultation');
+  data.append('security', '<?php echo esc_js( wp_create_nonce( 'bl_public_forms' ) ); ?>');
   data.append('phone', phone);
   data.append('product_name', '<?php echo esc_js( $product_title ); ?>');
   data.append('product_url', window.location.href);

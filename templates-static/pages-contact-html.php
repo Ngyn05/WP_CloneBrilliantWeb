@@ -669,6 +669,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
             const formData = new FormData();
             formData.append('action', 'bl_submit_contact_form');
+            formData.append('security', '<?php echo esc_js( wp_create_nonce( 'bl_public_forms' ) ); ?>');
             formData.append('name', name);
             formData.append('email', email);
             formData.append('subject', subject);

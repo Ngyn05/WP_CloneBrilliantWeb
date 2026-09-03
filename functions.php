@@ -50,6 +50,7 @@ require_once get_template_directory() . '/inc/product-seeder.php';
 require_once get_template_directory() . '/inc/page-seeder.php';
 require_once get_template_directory() . '/inc/seo-sitemap-robots.php';
 require_once get_template_directory() . '/inc/seo-schema.php';
+require_once get_template_directory() . '/inc/security.php';
 
 /**
  * Static source routes for special policy and developer pages
@@ -324,6 +325,8 @@ add_filter( 'wp_mail_from_name', function( $original_name ) {
  * Handle AJAX for phone consultation leads
  */
 function bl_ajax_phone_consultation() {
+    bl_security_guard_public_form( 'phone_consultation' );
+
     $phone        = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
     $product_name = isset( $_POST['product_name'] ) ? sanitize_text_field( $_POST['product_name'] ) : 'Sản phẩm Brilliant';
     $product_url  = isset( $_POST['product_url'] ) ? esc_url_raw( $_POST['product_url'] ) : '';
@@ -441,6 +444,8 @@ add_action( 'wp_ajax_nopriv_bl_submit_phone_consultation', 'bl_ajax_phone_consul
  * Handle AJAX for Quick Order (Mua Ngay)
  */
 function bl_ajax_quick_order() {
+    bl_security_guard_public_form( 'quick_order' );
+
     $phone        = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
     $name         = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
     $email        = isset( $_POST['email'] ) ? sanitize_email( $_POST['email'] ) : '';
@@ -644,6 +649,8 @@ add_action( 'wp_ajax_nopriv_bl_submit_quick_order', 'bl_ajax_quick_order' );
  * Handle AJAX for Contact Form Submissions
  */
 function bl_ajax_submit_contact_form() {
+    bl_security_guard_public_form( 'contact_form' );
+
     $name    = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
     $email   = isset( $_POST['email'] ) ? sanitize_email( $_POST['email'] ) : '';
     $subject = isset( $_POST['subject'] ) ? sanitize_text_field( $_POST['subject'] ) : '';
