@@ -11,9 +11,19 @@ function brilliant_xyz_setup() {
 	// Do not enable the core title-tag renderer, which would create a duplicate.
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+    add_theme_support( 'site-icon' );
     
     // Default image sizes
     set_post_thumbnail_size( 720, 486, true );
+
+    // Auto-sync favicon.ico to web root if missing (allows Nginx/Apache direct serving)
+    if ( defined( 'ABSPATH' ) ) {
+        $root_favicon = ABSPATH . 'favicon.ico';
+        $theme_favicon = get_template_directory() . '/favicon.ico';
+        if ( ! file_exists( $root_favicon ) && file_exists( $theme_favicon ) && is_writable( ABSPATH ) ) {
+            @copy( $theme_favicon, $root_favicon );
+        }
+    }
 }
 add_action( 'after_setup_theme', 'brilliant_xyz_setup' );
 

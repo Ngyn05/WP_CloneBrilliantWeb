@@ -47,6 +47,11 @@ $blog_query = new WP_Query( $query_args );
     <meta name="theme-color" content="#000000">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="">
     <link rel="manifest" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/site.webmanifest' ); ?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=5' ); ?>">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.ico?v=5' ); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-32x32.png?v=5' ); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/favicon-16x16.png?v=5' ); ?>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=5' ); ?>">
 
   
 

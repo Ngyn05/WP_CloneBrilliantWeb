@@ -15,15 +15,41 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function bl_output_global_favicons() {
     $theme_uri = get_template_directory_uri();
-    echo '<link rel="icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=4' ) . '" />' . "\n";
-    echo '<link rel="shortcut icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=4' ) . '" />' . "\n";
-    echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-32x32.png?v=4' ) . '" />' . "\n";
-    echo '<link rel="icon" type="image/png" sizes="16x16" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-16x16.png?v=4' ) . '" />' . "\n";
-    echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=4' ) . '" />' . "\n";
+    echo '<link rel="icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=5' ) . '" />' . "\n";
+    echo '<link rel="shortcut icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=5' ) . '" />' . "\n";
+    echo '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-32x32.png?v=5' ) . '" />' . "\n";
+    echo '<link rel="icon" type="image/png" sizes="16x16" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-16x16.png?v=5' ) . '" />' . "\n";
+    echo '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=5' ) . '" />' . "\n";
 }
 add_action( 'wp_head', 'bl_output_global_favicons', 1 );
 add_action( 'admin_head', 'bl_output_global_favicons', 1 );
 add_action( 'login_head', 'bl_output_global_favicons', 1 );
+
+// WordPress Core Site Icon Filters fallback
+add_filter( 'get_site_icon_url', function( $url, $size, $blog_id ) {
+    if ( empty( $url ) ) {
+        $theme_uri = get_template_directory_uri();
+        if ( $size <= 32 ) {
+            return $theme_uri . '/site-assets/cdn/shop/files/favicon-32x32.png?v=5';
+        }
+        return $theme_uri . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=5';
+    }
+    return $url;
+}, 10, 3 );
+
+add_filter( 'site_icon_meta_tags', function( $meta_tags ) {
+    if ( empty( $meta_tags ) ) {
+        $theme_uri = get_template_directory_uri();
+        $meta_tags = array(
+            '<link rel="icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=5' ) . '" />',
+            '<link rel="shortcut icon" type="image/x-icon" href="' . esc_url( $theme_uri . '/favicon.ico?v=5' ) . '" />',
+            '<link rel="icon" type="image/png" sizes="32x32" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-32x32.png?v=5' ) . '" />',
+            '<link rel="icon" type="image/png" sizes="16x16" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/favicon-16x16.png?v=5' ) . '" />',
+            '<link rel="apple-touch-icon" sizes="180x180" href="' . esc_url( $theme_uri . '/site-assets/cdn/shop/files/apple-touch-icon.png?v=5' ) . '" />',
+        );
+    }
+    return $meta_tags;
+} );
 
 /**
  * 1. Canonical URL Helper & Generator

@@ -44,12 +44,13 @@ function bl_seo_direct_init_interceptor() {
     $uri  = $_SERVER['REQUEST_URI'] ?? '';
     $path = trim( parse_url( $uri, PHP_URL_PATH ), '/' );
 
-    if ( $path === 'favicon.ico' ) {
-        $favicon_path = get_template_directory() . '/favicon.ico';
+    if ( $path === 'favicon.ico' || $path === 'apple-touch-icon.png' || $path === 'apple-touch-icon-precomposed.png' ) {
+        $favicon_path = ( $path === 'favicon.ico' ) ? get_template_directory() . '/favicon.ico' : get_template_directory() . '/site-assets/cdn/shop/files/apple-touch-icon.png';
         if ( file_exists( $favicon_path ) ) {
-            header( 'Content-Type: image/x-icon' );
+            $mime = ( $path === 'favicon.ico' ) ? 'image/x-icon' : 'image/png';
+            header( 'Content-Type: ' . $mime );
             header( 'Content-Length: ' . filesize( $favicon_path ) );
-            header( 'Cache-Control: public, max-age=604800' );
+            header( 'Cache-Control: public, max-age=2592000, must-revalidate' );
             readfile( $favicon_path );
             exit;
         }

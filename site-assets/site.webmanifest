@@ -1,1 +1,25 @@
-{"name":"Brilliant","short_name":"Brilliant","display":"standalone"}
+{
+  "name": "Brilliant Việt Nam",
+  "short_name": "Brilliant",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/wp-content/themes/brilliant_wp_theme/site-assets/cdn/shop/files/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/brilliant_wp_theme/site-assets/cdn/shop/files/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/wp-content/themes/brilliant_wp_theme/site-assets/cdn/shop/files/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
